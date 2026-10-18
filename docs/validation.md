@@ -1,30 +1,23 @@
-# Draft validation
+# Validation
 
-This file records checks of the initial repository draft. It does not establish that a beginner can complete the whole course.
+Reviewed on **October 18, 2026**. Documentation checks and practical tests are different evidence.
 
-## Checks completed on October 18, 2026
+## Documentation review
 
-- All 18 local Markdown links and image paths resolve to existing files.
-- The learning-cycle SVG parses as XML. It is an authored illustration, not a screenshot.
-- The exercise contains the expected heading, counter, button, and live output markup.
-- Node's JavaScript syntax check passes.
-- A script smoke check with stand-in DOM objects verifies an initial zero, two click-handler calls producing one and two, and a fresh script context starting at zero.
-- The prose received the full 31-pattern `capstan:unslop` editorial review. Tutor instructions use `capstan:writing-for-agents`.
-- The local Git repository was initialized with a `main` branch. The selected remote is `https://github.com/MokeyBytes/ai-build-lab.git`.
+The current technical and cost claims were checked online against the product documentation and MDN linked in [tools and costs](tools-and-costs.md) and the lessons. Adoption claims use the 2026 Stack Overflow survey, with the respondent scope stated.
 
-The script smoke check does not establish browser behaviour. It does not test real clicks, keyboard input, rendering, or page reloads.
+The review covered onboarding instructions, web basics, supported Node releases, React's setup recommendations, container requirements, Copilot access, Supabase keys and access controls, free-plan and email limits, Workers billing and local development, and Expo's device/build guidance. Future installation commands and package versions remain to be selected and tested when those lessons are written.
 
-## Browser checks still needed
+## Repository checks
 
-The browser tool blocked the local `file:` URL because it permits only HTTP and HTTPS URLs. No browser screenshots were captured. The diagram in this draft is labelled as an illustration.
+- 32 local Markdown links and image paths resolve, including local heading anchors.
+- All 38 distinct linked external URLs returned HTTP 200, following the official GitHub Desktop redirect where needed. Reachability alone does not verify a claim; the source review above checks the contents.
+- The SVG parses as XML. It is an authored illustration.
+- The exercise script is unchanged. Its earlier syntax check and smoke check passed. The smoke check used stand-in DOM objects to check zero, two increments, and a fresh context starting at zero.
+- The documentation has no trailing whitespace or unresolved local links.
 
-- Open the exercise from disk and confirm the initial page.
-- Check mouse and keyboard activation of the button.
-- Reload the page and confirm the counter resets.
-- Change the heading, save, refresh, then undo and repeat the check.
-- Check a narrow browser viewport.
-- Capture the verified before and after results for the lesson.
+## Practical checks still needed
 
-## User testing still needed
+The browser tool blocked the local `file:` URL. Browser rendering, actual mouse and keyboard activation, reload behaviour, and the heading edit/undo sequence remain unverified in a browser. No browser screenshots were captured.
 
-Windows and macOS onboarding must be tested with beginners before release. The drafted steps currently rely on the official product instructions and author review. Later lessons have not been implemented or tested.
+Test onboarding and lessons 0 and 1 with beginners on Windows and macOS. Later lessons, Podman compatibility, hosted authentication, deployment, rollback, and backup restoration remain planned and untested.

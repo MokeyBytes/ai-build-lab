@@ -17,7 +17,7 @@
 | HTML | The document structure and content of a web page |
 | CSS | Rules that control a web page's appearance and layout |
 | JavaScript | Code that can make the page respond to actions |
-| TypeScript | JavaScript with extra checks on the kinds of values code uses |
+| TypeScript | JavaScript with types that development tools check before the app runs. It does not replace checks on incoming data |
 | Local | Running on your computer |
 | Server | A program that responds to requests from other programs |
 | API | A defined way for programs to request data or actions from each other |

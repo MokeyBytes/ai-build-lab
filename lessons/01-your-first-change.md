@@ -4,6 +4,8 @@ You will change an app's heading, check it in the browser, and undo the change. 
 
 Allow about 20 to 30 minutes after getting the files and choosing an editor. Taking longer is fine. This exercise costs nothing to run.
 
+Start with [lesson 0](00-read-the-docs.md) if you have not checked a reference yet. Use [MDN's heading reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements) for the edit and [its title reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/title) for the browser tab. These sources were checked on October 18, 2026.
+
 ## Open the app
 
 1. In your repository folder, open `exercises`, then `01-first-change`.

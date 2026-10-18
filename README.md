@@ -2,11 +2,11 @@
 
 Learn to build apps with an AI tutor.
 
-Start here even if you have never written code, opened a terminal, or used GitHub. You will change a small app, learn how its parts work, and practise checking the AI's work yourself.
+Start here even if you have never written code, opened a terminal, or used GitHub. Learn to read a short piece of documentation, use AI to explain it, then check the result in a small app.
 
 **[Start the walkthrough](START-HERE.md)**
 
-This repository is the guide. Read it here on GitHub or keep a copy on your computer. The small app in `exercises/` is lesson material.
+This repository is the guide. The small app in `exercises/` is lesson material. Documentation reviewed on **October 18, 2026**. [Sources, tool choices, and costs](docs/tools-and-costs.md).
 
 If you already use Git:
 
@@ -19,9 +19,9 @@ New to Git? The walkthrough explains how to get your copy with GitHub Desktop or
 
 ## Your first session
 
-1. Get a copy of this repository. The walkthrough explains cloning and offers a download option.
-2. Open the first exercise in your browser.
-3. Give your AI the tutor instructions.
+1. [Read a short reference](lessons/00-read-the-docs.md) and check who published it.
+2. Get a copy of this repository and open the exercise.
+3. Ask your AI tutor to explain the relevant code.
 4. Change one heading, check the result, and undo it.
 
 The first exercise needs a browser and a text editor. It uses no cloud services, packages, API keys, or paid subscriptions.
@@ -29,7 +29,7 @@ The first exercise needs a browser and a text editor. It uses no cloud services,
 Already have the repository open in an AI coding tool? Say:
 
 ```text
-Read AGENTS.md and START-HERE.md. Help me begin lesson 1 as a beginner.
+Read AGENTS.md and START-HERE.md. Help me start as a beginner.
 ```
 
 Using a chat app? Follow the [instructions for a chat tutor](START-HERE.md#use-ai-as-your-tutor).
@@ -48,6 +48,7 @@ The proposed course follows one project, **Tiny Wins**, a personal task tracker.
 
 | Stage | What you learn |
 | --- | --- |
+| Read the docs | Find the original source, check its scope, and use AI to explain it |
 | First change | Files, the browser, an AI tutor, checking and undoing a change |
 | Development tools | An editor, Git, a terminal, and running an app locally |
 | Small features | Planning, asking AI for bounded changes, and reviewing differences |
@@ -70,6 +71,6 @@ You can use the AI assistant you already have. The course does not require addin
 
 ## Current state
 
-This is an initial course draft. The onboarding instructions and [first lesson](lessons/01-your-first-change.md) are written. The later lessons are a curriculum proposal. They are not complete walkthroughs yet.
+This is a course draft. [Reading the docs](lessons/00-read-the-docs.md) and [your first change](lessons/01-your-first-change.md) are written. Later lessons are a curriculum proposal. Documentation checks and practical testing are recorded separately in [validation](docs/validation.md).
 
 For help, use [troubleshooting](docs/troubleshooting.md) or the [glossary](docs/glossary.md). For course development, read the [course design and release plan](docs/course-design.md).
