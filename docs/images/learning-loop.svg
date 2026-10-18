@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="210" viewBox="0 0 960 210" role="img" aria-labelledby="title description">
+  <title id="title">How each exercise works</title>
+  <desc id="description">Predict the result, make one change, check what happened, explain it, and keep or undo the change. Repeat for the next step.</desc>
+  <rect width="960" height="210" rx="16" fill="#f3f5f7"/>
+  <g font-family="system-ui, sans-serif" fill="#162431">
+    <text x="28" y="38" font-size="20" font-weight="700">One small change at a time</text>
+    <g fill="white" stroke="#a5b6c3" stroke-width="2">
+      <rect x="28" y="66" width="152" height="70" rx="10"/>
+      <rect x="216" y="66" width="152" height="70" rx="10"/>
+      <rect x="404" y="66" width="152" height="70" rx="10"/>
+      <rect x="592" y="66" width="152" height="70" rx="10"/>
+      <rect x="780" y="66" width="152" height="70" rx="10"/>
+    </g>
+    <g text-anchor="middle" font-size="19" font-weight="600">
+      <text x="104" y="108">Predict</text>
+      <text x="292" y="108">Change</text>
+      <text x="480" y="108">Check</text>
+      <text x="668" y="108">Explain</text>
+      <text x="856" y="108">Keep or undo</text>
+    </g>
+    <g stroke="#125b45" stroke-width="3" fill="none">
+      <path d="M187 101h21m-7-7 7 7-7 7"/>
+      <path d="M375 101h21m-7-7 7 7-7 7"/>
+      <path d="M563 101h21m-7-7 7 7-7 7"/>
+      <path d="M751 101h21m-7-7 7 7-7 7"/>
+    </g>
+    <text x="28" y="178" font-size="17">Illustration. Ask your AI to explain, then verify the result yourself.</text>
+  </g>
+</svg>
