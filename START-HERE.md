@@ -47,6 +47,8 @@ You can also complete this exercise in Windows Notepad. On a Mac, use VS Code or
 
 You can use an AI chat account you already have. A free account with available usage is enough for the first exercise.
 
+Already using Codex or Claude Code? Use it as your tutor now. The main course introduces [coding-agent setup](docs/coding-agents.md) after Git basics in lesson 2, then uses the chosen agent for small changes in lessons 3 onward. Choose one tool; the course does not require both subscriptions.
+
 If you prefer AI inside VS Code, [GitHub's Copilot Free plan](https://docs.github.com/en/copilot/get-started/plans) is an option for eligible accounts. Follow [VS Code's Copilot setup](https://code.visualstudio.com/docs/setup/copilot). An eligible account without a subscription enrolls in Free when signing in. An existing subscription remains in use. Check the plan and usage allowance before starting.
 
 ### In an AI coding tool

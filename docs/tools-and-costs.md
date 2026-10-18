@@ -14,7 +14,8 @@ That supports the core choices. Supabase and Cloudflare are our choices for this
 | --- | --- | --- |
 | Read and change a page | [MDN web basics](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website) | Explains HTML, CSS, and JavaScript before adding a framework |
 | Keep and review work | [Git](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control), [GitHub Desktop](https://docs.github.com/en/desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop), [VS Code](https://code.visualstudio.com/docs/getstarted/overview) | A change history, a graphical cloning route, and an editor |
-| Use AI | Existing chat, or [Copilot in VS Code](https://code.visualstudio.com/docs/setup/copilot) | Explains the current task without requiring a new paid subscription |
+| Learn with AI | Existing chat, or [Copilot in VS Code](https://code.visualstudio.com/docs/setup/copilot) | An explanation route using available access |
+| Work with a coding agent | Choose [Codex or Claude Code](coding-agents.md) after Git basics | Reads the project and makes reviewable changes throughout the app lessons |
 | Build the task tracker | [Node.js LTS](https://nodejs.org/en/about/previous-releases), [React](https://react.dev/learn/build-a-react-app-from-scratch), [TypeScript](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html), [Vite](https://vite.dev/guide/) | One language family for the web course, a local development server, and checks on types |
 | Run local services | Docker Desktop for [Windows](https://docs.docker.com/desktop/setup/install/windows-install/) or [Mac](https://docs.docker.com/desktop/setup/install/mac-install/) | Repeatable environments and local database services |
 | Add accounts and data | [Supabase local development](https://supabase.com/docs/guides/local-development/cli/getting-started) | PostgreSQL, authentication, and an API in one documented workflow |
@@ -35,6 +36,8 @@ The exercises in lessons 0 and 1 need no cloud app account or model API key. The
 | Service | Current fact and supporting source |
 | --- | --- |
 | Copilot Free | Eligible individual accounts get limited features and AI credits. Avoid fixed prompt-count promises. Check [GitHub's plan table](https://docs.github.com/en/copilot/get-started/plans) and your account's allowance |
+| Codex | [OpenAI's current plan table](https://learn.chatgpt.com/docs/pricing) lists free desktop access subject to rollout. IDE and CLI access depend on the plan or separately billed API access. Free desktop access does not establish free IDE access |
+| Claude Code | [Anthropic's quickstart](https://code.claude.com/docs/en/quickstart) requires an eligible Claude subscription, Console access with prepaid API credits, or a supported cloud-provider route. Free Claude chat does not establish Claude Code access |
 | Docker Desktop | Free for personal use and education under its terms. Check the linked installation guide's subscription terms for employer or government use |
 | Supabase Free | [Two free projects and 500 MB of database size per project](https://supabase.com/docs/guides/platform/billing-on-supabase), with other quotas. [Low activity over seven days can trigger pausing](https://supabase.com/docs/guides/platform/free-project-pausing) |
 | Supabase email | [Default SMTP is restricted to project-team addresses and currently two messages per hour](https://supabase.com/docs/guides/auth/auth-smtp). It is for testing. Public email sign-ups require a separate delivery plan |

@@ -6,8 +6,8 @@ Lessons 0 and 1 are written. Later rows describe lessons still to build and test
 | --- | --- | --- |
 | 0. Read the docs | Identifies the original source, reads a small section, and checks an AI explanation | Names the source and explains a heading versus a browser-tab title |
 | 1. Your first change | Opens a local file, changes a heading, checks the button, and restores the heading | Demonstrates and explains the edit, check, and undo |
-| 2. Know your tools | Learns folders, HTML/CSS/JavaScript basics, the editor, terminal output, and Git | Locates the app's files, makes a commit, and recovers an edit |
-| 3. Build Tiny Wins | Uses the planned React, TypeScript, and Vite starter to add, complete, and delete tasks | Runs the documented local server and verifies each task action |
+| 2. Know your tools and agent | Learns folders, HTML/CSS/JavaScript basics, the editor, terminal output, and Git, then chooses Codex or Claude Code | Makes a commit, recovers an edit, and verifies that the agent's read-only tour changed no files |
+| 3. Build Tiny Wins | Uses the planned React, TypeScript, and Vite starter with the chosen agent to add, complete, and delete tasks, one small change at a time | Reviews the diffs, runs the local server, and verifies each task action |
 | 4. Give AI a small job | States a user need and acceptance checks, reviews a plan and diff, then adds one feature | Shows that the change meets the checks and explains the affected files |
 | 5. Make it reliable | Saves tasks locally, tests behaviour, fixes a planted bug, and checks keyboard use | Data survives refresh, tests catch the bug, and keyboard-only entry works |
 | 6. Use containers | Runs the app in Docker, learns ports and storage, then stops and restarts it | Reproduces the result from a clean checkout and explains where data lives |
@@ -18,7 +18,7 @@ Lessons 0 and 1 are written. Later rows describe lessons still to build and test
 
 ## Working with AI
 
-First the AI explains while the learner edits. Next it helps plan and review. Later an agent can perform a bounded task after the learner defines the goal and checks. An agent is an AI tool that can act, such as editing files or running commands.
+First the AI explains while the learner edits. In lesson 2, introduce [Codex or Claude Code](coding-agents.md) after Git basics. From lesson 3, the chosen agent can perform a bounded task after the learner defines the goal and checks. An agent is an AI tool that can act, such as editing files or running commands. Existing users can use their agent for explanations from lesson 0.
 
 Each lesson starts with its reference and ends with an independent task. Completion depends on what the learner can do and explain.
 

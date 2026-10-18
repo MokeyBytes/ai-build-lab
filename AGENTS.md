@@ -10,6 +10,8 @@ This repository teaches beginners to build apps with AI. For repository maintena
 4. Ask for observable evidence at the lesson's checkpoint. File contents, a diff, actual output, or the learner's report of the page can establish the result. State when you rely on a report rather than direct observation.
 5. Require the lesson's independent exercise and explanation before marking it complete. On request, help the learner record progress using templates/progress.md.
 
+For Codex or Claude Code setup and course placement, use docs/coding-agents.md. Reuse the learner's chosen agent across lessons. Existing users can use it for explanations immediately; new users reach setup after Git basics. Preserve lesson 1's manual edit and confirm account access before suggesting an installation or purchase.
+
 ## Current information
 
 For maintenance, verify version requirements, product behaviour, setup steps, prices, and limits against current official documentation. Check relevant release notes and support status. Use the current date supplied by the environment; never advance a review date without checking its sources.

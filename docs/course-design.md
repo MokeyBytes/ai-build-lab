@@ -10,6 +10,8 @@ Keep dated facts and tool decisions in [tools and costs](tools-and-costs.md). Ch
 
 Prefer maintained, widely used tools with a clear purpose in the course. Support popularity claims with dated primary research. Every added dependency or service needs a reason tied to a lesson. Keep one main route; disclose alternatives when the learner needs a choice.
 
+Teach [Codex or Claude Code](coding-agents.md) as the project's working assistant. Introduce setup after Git basics in lesson 2 and use the chosen tool from lesson 3. Existing users can use it as a tutor sooner. Keep the manual/chat route available when agent access would add cost.
+
 ## Every lesson needs
 
 - A visible outcome, prerequisites, time allowance, and cost boundary.

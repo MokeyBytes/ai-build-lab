@@ -31,6 +31,8 @@ Then ask me to explain it back. Do not change any files.
 
 Check the explanation against the page yourself. An AI response with a link can still misread the source. If it disagrees, quote the relevant line and ask it to correct its explanation.
 
+A coding agent can also edit project files and run commands when its tools and permissions allow. Codex and Claude Code are examples. You can use either for explanations now if you already have access. [The course introduces agent setup after Git basics](../docs/coding-agents.md).
+
 ## Check whether instructions apply to you
 
 For software setup, check the operating system and supported version. For a cloud service, check the plan and limits. Open release notes when the instructions and your tool disagree. An older page can still be correct; its publication date alone does not settle that.

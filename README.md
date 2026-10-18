@@ -50,7 +50,7 @@ The proposed course follows one project, **Tiny Wins**, a personal task tracker.
 | --- | --- |
 | Read the docs | Find the original source, check its scope, and use AI to explain it |
 | First change | Files, the browser, an AI tutor, checking and undoing a change |
-| Development tools | An editor, Git, a terminal, and running an app locally |
+| Development tools | An editor, Git, a terminal, and choosing Codex or Claude Code |
 | Small features | Planning, asking AI for bounded changes, and reviewing differences |
 | Reliable behaviour | Debugging, tests, keyboard access, and handling bad input |
 | Containers | Repeatable environments with Docker, plus a Podman route |
@@ -63,7 +63,9 @@ See the [learning path](docs/learning-path.md) for the proposed lesson outcomes.
 
 ## Tools and cost
 
-We introduce tools when a lesson needs them. The proposed main path uses VS Code, GitHub, React with TypeScript and Vite, Docker Desktop, Supabase, and Cloudflare Workers. Podman is an alternative container track.
+Choose [Codex or Claude Code](docs/coding-agents.md) during tool setup, then use it throughout the app lessons. Either can tutor from the beginning if you already have access. The first edit is manual so you can practise checking and undoing a change.
+
+The proposed app tools are VS Code, GitHub, React with TypeScript and Vite, Docker Desktop, Supabase, and Cloudflare Workers. Podman is an alternative container track.
 
 The target is $0 for the core learning exercises within free plan allowances. AI usage limits, cloud quotas, and store distribution can change that. See [tools and costs](docs/tools-and-costs.md) before creating accounts or upgrading a plan.
 
