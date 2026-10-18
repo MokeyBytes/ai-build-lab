@@ -1,85 +1,72 @@
-# Lesson 1: your first change
+# Lesson 1: your first AI-made change
 
-You will change an app's heading, check it in the browser, and undo the change. Leave the button's behaviour alone for now.
+Ask the AI to change a heading, check the result yourself, then have it undo that edit. Allow about 20 minutes after [desktop setup](../START-HERE.md). The exercise uses no hosting or database account; AI access follows your plan.
 
-Allow about 20 to 30 minutes after getting the files and choosing an editor. Taking longer is fine. This exercise costs nothing to run.
+Use [MDN's heading reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements) and [title reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/title) from lesson 0. These sources were checked on October 18, 2026.
 
-Start with [lesson 0](00-read-the-docs.md) if you have not checked a reference yet. Use [MDN's heading reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements) for the edit and [its title reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/title) for the browser tab. These sources were checked on October 18, 2026.
+## Open the exercise
 
-## Open the app
+1. In File Explorer on Windows or Finder on macOS, open the repository folder, then `exercises`, then `01-first-change`.
+2. Double-click `index.html` and choose a browser if asked. You can ask your AI to help locate this exact file.
+3. Find the heading **My first app**, the number **0**, and **Add a win**.
+4. Click the button twice. The number should show **2**. Refresh the page. It should return to **0**.
 
-1. In your repository folder, open `exercises`, then `01-first-change`.
-2. Double-click `index.html` to open it in your browser. If your computer asks which app to use, choose a browser such as Edge, Chrome, Safari, or Firefox.
-3. Find the heading **My first app**, the number **0**, and the **Add a win** button.
-4. Click the button once. The number should become **1**. Click again. It should become **2**.
-5. Refresh the page using your browser's reload button. The number should return to **0**. This version does not save the counter.
+The `file:` address means you opened a file on your computer. This version keeps the counter in memory and does not save it.
 
-The address starts with `file:` because you opened a file on your own computer. You have not published an app on the internet.
+## Ask for a proposal
 
-## Look at the file
-
-In VS Code, find `exercises/01-first-change/index.html` in the file list and click it. In Notepad, use **File > Open** and choose that file. You may need to change the file filter from text documents to all files.
-
-Ask your tutor:
+In your AI desktop app, with this repository selected, send:
 
 ```text
-Explain how this file becomes the page I see. Point to the heading and the
-button's code. Define HTML, CSS, and JavaScript in plain English. Keep the
-explanation short, then ask me to predict what changing the heading will do.
+Read exercises/01-first-change/index.html. Explain the heading and the
+button in plain English. Propose changing only the visible heading
+from "My first app" to "Tiny Wins". Show the before and after line.
+Do not edit anything yet. Ask me what I expect to change, then wait.
 ```
 
-If you use ordinary AI chat, paste the file contents with your question.
-
-## Predict, then change
-
-Find this exact line in the editor:
+The proposal should show:
 
 ```html
 <h1>My first app</h1>
 ```
 
-Before editing it, predict what will change in the browser. Will the number or button change too?
-
-Replace only `My first app` with `Tiny Wins`. Keep the `<h1>` and `</h1>` parts. Your line should now be:
+changing to:
 
 ```html
 <h1>Tiny Wins</h1>
 ```
 
-Save the file. On Windows, use **Ctrl+S**. On macOS, use **Command+S**. Return to the browser and refresh.
+Predict what will happen to the heading, browser tab, and button. Check your app's permission controls as explained in [the workspace guide](../docs/coding-agents.md).
 
-## Check the result
+## Let the AI make the change
 
-You should see **Tiny Wins** as the heading. The browser tab will still say **First change exercise**, because the tab title comes from a different line.
+After reviewing the proposal, say:
 
-Check the button again. One click should change **0** to **1**. Two clicks should show **2**.
+```text
+Apply only that heading change. Show which file and line changed.
+Do not change the script, styles, browser-tab title, or other files.
+```
 
-Ask your tutor to compare your prediction with what happened. The heading changed. The button kept working.
+Approve the proposed edit if your app asks. Inspect the changed lines in the app. If no diff view is available yet, ask the AI to display the saved heading line and inspect the file in the app's file viewer where available.
 
-## Review and undo
+Refresh the browser yourself. Check that:
 
-If you cloned with GitHub Desktop, open its **Changes** tab and select `index.html`. The difference, called a diff, should show the old heading and the new heading. There should be one changed line.
+- The heading says **Tiny Wins**.
+- The browser tab still says **First change exercise**.
+- Two button clicks still show **2**.
 
-If you downloaded a ZIP, compare your edited heading with the original line printed above.
+An AI saying "done" does not establish those results. Report what you actually observe. If it differs, use [troubleshooting](../docs/troubleshooting.md).
 
-Now change the heading text back to `My first app`. Save and refresh. Check that the original heading appears. This is a manual undo. A later lesson will teach Git's recovery tools.
+## Undo this edit
 
-## Try it yourself
+Ask the AI to restore only the heading text it changed, keeping any other work. It should return to `<h1>My first app</h1>`.
 
-Choose a new heading. Change it, save, refresh, and check the button. Try this without asking AI for the line to edit.
+Refresh and confirm that the original heading appears. Avoid a whole-project reset for a one-line change. We will learn Git checkpoints in the next lesson.
 
-If it does not work, open [troubleshooting](../docs/troubleshooting.md) before asking for a complete replacement file.
+## Try your own request
 
-## Show what you learned
+Choose a new heading and write your own request for it. Include what may change and how you will check it. Review the proposal, let the AI apply it, and test the heading and button.
 
-Explain these in your own words, then ask your tutor to check your answer:
+You have completed this lesson when you can direct a small change, inspect it, verify the behaviour, undo that edit, and explain why the browser-tab title and counter behaved as they did.
 
-- Which file did you change?
-- Why did you save the file and refresh the browser?
-- Why did the browser tab keep its old title?
-- What happened to the counter when you refreshed?
-- How would you undo your heading change?
-
-You have completed this lesson when you can make a heading change, verify that the button still works, restore the old heading, and explain those steps.
-
-Record what you did using [the progress template](../templates/progress.md). See [the learning path](../docs/learning-path.md) for what comes next. Lesson 2 is still being written.
+Ask the tutor to help record [your progress](../templates/progress.md). Lesson 2 is planned in [the learning path](../docs/learning-path.md). For manual editing with an ordinary chat, follow [the alternative route](../START-HERE.md#manualchat-alternative) using the same before and after lines.

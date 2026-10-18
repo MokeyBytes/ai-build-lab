@@ -1,49 +1,40 @@
-# Choose your coding agent
+# Your desktop coding workspace
 
-Codex and Claude Code belong in the main course. Choose one for your project. The same goals, prompts, and checks apply to either tool.
+Use Codex desktop or Claude Desktop's Code tab from the first lesson. Choose one. The AI teaches from the repository while it works on the app with you.
 
-## When to use it
+Official documentation checked on October 18, 2026. These steps still need beginner testing on Windows and macOS.
 
-| Stage | What the agent does | What you check |
+| Workspace | Official source | What to select |
 | --- | --- | --- |
-| Lessons 0 and 1 | Explains documentation and code, if you already have access | Compare its explanation with the source and make the first edit yourself |
-| Lesson 2, after Git basics | Opens the project and gives a read-only tour | Confirm the project folder, its instructions, and that no files changed |
-| Lessons 3 and 4 | Proposes and implements one small change at a time | Review the diff, run the app, and verify the requested behaviour |
-| Later lessons | Helps with tests, containers, data, and deployment preparation | Review commands and verify their results before proceeding |
+| Codex desktop | [Desktop guide](https://learn.chatgpt.com/docs/app), [local projects](https://learn.chatgpt.com/docs/projects?surface=app) | In the current documented ChatGPT desktop app, select Codex and add the repository folder as a local project |
+| Claude Desktop's Code tab | [Desktop quickstart](https://code.claude.com/docs/en/desktop-quickstart), [desktop reference](https://code.claude.com/docs/en/desktop) | Code tab, Local environment, then the repository folder |
 
-You can begin with an ordinary AI chat. If coding-agent access would require spending money, continue with the manual/chat route until you choose otherwise. See [current access and cost checks](tools-and-costs.md#cost-boundaries).
+Claude's Code tab is the graphical Claude Code experience used here. Its Chat and Cowork workspaces have different purposes and controls. Follow the Code instructions for the exercises.
 
-## Choose an entry point
+Check [access and costs](tools-and-costs.md#cost-boundaries) first. The course does not require both subscriptions. If coding access is unavailable, [the manual/chat route](../START-HERE.md#manualchat-alternative) still lets you begin.
 
-Official documentation checked on October 18, 2026. This orientation has not been tested as a Windows or Mac installation walkthrough.
+## How each task works
 
-| Tool | Official setup | Course recommendation |
-| --- | --- | --- |
-| Codex | [Quickstart](https://learn.chatgpt.com/docs/quickstart), [IDE extension](https://learn.chatgpt.com/docs/codex/ide) | Use the desktop route if your account has access there. Use the VS Code extension if your plan supports it and you want the agent beside the editor |
-| Claude Code | [VS Code extension](https://code.claude.com/docs/en/vs-code) | Use the extension to keep the code and diff in the editor. It bundles the CLI needed for its chat panel, so a separate terminal installation is unnecessary for that route |
+1. State a small goal and what you expect to see.
+2. Have the AI inspect the relevant file and documentation, explain its plan, and show the proposed change.
+3. Review the proposal and let it make the agreed edit.
+4. Inspect the changed lines and check the running app yourself.
+5. Explain the result. Keep the change or undo that edit.
 
-Follow the current setup page for your operating system and sign-in method. Check the account's access before installing. Terminal clients can come after the terminal lesson; they are another way to use the agent.
+Ask the AI to pause after each meaningful step. Start with explanations and one-file changes. Add tools only when the lesson needs them.
 
-## Open the project and inspect it
+## Review and permissions
 
-1. Save and commit any changes you want to keep. Confirm the project's Changes view is empty.
-2. Open the repository's root folder in your chosen tool.
-3. Use its read-only or planning controls for the first tour. Read the [Codex permission guidance](https://learn.chatgpt.com/docs/agent-approvals-security) or [Claude Code permission guidance](https://code.claude.com/docs/en/permissions). Check permissions in the tool; a prompt is not an access control.
-4. Send this prompt:
+Read the [Codex permission guidance](https://learn.chatgpt.com/docs/agent-approvals-security) or [Claude Code permission guidance](https://code.claude.com/docs/en/permissions). Use the app's controls to restrict actions. An instruction to wait is useful, but it does not replace those controls.
 
-```text
-Read AGENTS.md and START-HERE.md. I am learning this project.
-Explain the purpose of exercises/01-first-change/index.html and the
-heading and counter in that file. Do not edit files or run commands.
-Ask me one question to check my understanding, then wait.
-```
+Claude Code's documented **Manual** mode presents proposed changes for acceptance. Codex's approval controls depend on the permission profile; workspace edits may be allowed without a separate prompt for each line. For either tool, ask for a text preview before applying the first edit.
 
-5. Compare the explanation with the file. Confirm no files changed. If the agent cannot read the file, provide the relevant contents and have it state that limitation.
+Both desktop workflows provide ways to inspect changed files. See [Codex's local development and Git controls](https://learn.chatgpt.com/docs/environments/local-environment) and Claude's desktop reference above. If a diff view needs Git history that your downloaded folder does not have, compare the printed before/after lines and inspect the file. Introduce Git in the next lesson rather than assuming a ZIP includes it.
 
-Keep the tool's approval controls in use as you move on to edits and commands. Review each proposed action and the resulting diff. The learner's check establishes completion.
+Use one local session and one project folder for the first exercise. Worktrees, remote sessions, and cloud execution can come later. If the app requests a missing prerequisite, check its current official guide before installing anything.
 
 ## Shared tutor instructions
 
-[AGENTS.md](../AGENTS.md) holds this repository's tutor workflow. [Codex reads AGENTS.md](https://learn.chatgpt.com/docs/agent-configuration/agents-md). [CLAUDE.md](../CLAUDE.md) imports the same file using [Claude Code's documented import syntax](https://code.claude.com/docs/en/memory), so the rules have one source.
+[AGENTS.md](../AGENTS.md) holds the tutor workflow. [Codex reads AGENTS.md](https://learn.chatgpt.com/docs/agent-configuration/agents-md). [CLAUDE.md](../CLAUDE.md) imports it through [Claude Code's documented import syntax](https://code.claude.com/docs/en/memory).
 
-The complete lesson 2 walkthrough and the installation screenshots remain to be written and tested.
+An editor extension or terminal client is an optional entry point later. The main course uses the desktop workspace.

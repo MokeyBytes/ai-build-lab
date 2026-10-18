@@ -4,18 +4,17 @@ Checked against the linked sources on **October 18, 2026**. This records a docum
 
 ## Why these tools
 
-Use one main route and introduce each tool when it solves the lesson's next problem. Start with a browser and text editor. Cloud accounts and containers come later.
+Start inside one desktop coding app with this repository open. Use a browser to check sources and the exercise. Add development tools when they solve the next problem; cloud app accounts and containers come later.
 
-The [2026 Stack Overflow survey](https://survey.stackoverflow.co/2026/technology/data) reports VS Code as its most-used editor, Node.js and React as widely used web technologies, and PostgreSQL as its most-used database. [Docker / Docker Compose leads the cloud development category](https://survey.stackoverflow.co/2026/technology/data/cloud-plat). These are results among respondents to each question, not measurements of every developer.
+The [2026 Stack Overflow survey](https://survey.stackoverflow.co/2026/technology/data) reports Node.js and React as widely used web technologies and PostgreSQL as its most-used database. [Docker / Docker Compose leads the cloud development category](https://survey.stackoverflow.co/2026/technology/data/cloud-plat). These are results among respondents to each question, not measurements of every developer.
 
 That supports the core choices. Supabase and Cloudflare are our choices for this small app's data, authentication, and hosting needs. The survey does not establish that they are the largest providers or the best choice for every app.
 
 | Course stage | Main route and source | Why it earns a place |
 | --- | --- | --- |
 | Read and change a page | [MDN web basics](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website) | Explains HTML, CSS, and JavaScript before adding a framework |
-| Keep and review work | [Git](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control), [GitHub Desktop](https://docs.github.com/en/desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop), [VS Code](https://code.visualstudio.com/docs/getstarted/overview) | A change history, a graphical cloning route, and an editor |
-| Learn with AI | Existing chat, or [Copilot in VS Code](https://code.visualstudio.com/docs/setup/copilot) | An explanation route using available access |
-| Work with a coding agent | Choose [Codex or Claude Code](coding-agents.md) after Git basics | Reads the project and makes reviewable changes throughout the app lessons |
+| Learn and work with AI | [Codex desktop or Claude Desktop's Code tab](coding-agents.md) | One interface to explain sources, inspect files, make changes, and review the work from the start |
+| Keep and review work | [Git](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control) and the desktop app's review controls | Checkpoints and recovery, introduced after the first small edit |
 | Build the task tracker | [Node.js LTS](https://nodejs.org/en/about/previous-releases), [React](https://react.dev/learn/build-a-react-app-from-scratch), [TypeScript](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html), [Vite](https://vite.dev/guide/) | One language family for the web course, a local development server, and checks on types |
 | Run local services | Docker Desktop for [Windows](https://docs.docker.com/desktop/setup/install/windows-install/) or [Mac](https://docs.docker.com/desktop/setup/install/mac-install/) | Repeatable environments and local database services |
 | Add accounts and data | [Supabase local development](https://supabase.com/docs/guides/local-development/cli/getting-started) | PostgreSQL, authentication, and an API in one documented workflow |
@@ -35,9 +34,8 @@ The exercises in lessons 0 and 1 need no cloud app account or model API key. The
 
 | Service | Current fact and supporting source |
 | --- | --- |
-| Copilot Free | Eligible individual accounts get limited features and AI credits. Avoid fixed prompt-count promises. Check [GitHub's plan table](https://docs.github.com/en/copilot/get-started/plans) and your account's allowance |
 | Codex | [OpenAI's current plan table](https://learn.chatgpt.com/docs/pricing) lists free desktop access subject to rollout. IDE and CLI access depend on the plan or separately billed API access. Free desktop access does not establish free IDE access |
-| Claude Code | [Anthropic's quickstart](https://code.claude.com/docs/en/quickstart) requires an eligible Claude subscription, Console access with prepaid API credits, or a supported cloud-provider route. Free Claude chat does not establish Claude Code access |
+| Claude Code on desktop | [The desktop quickstart](https://code.claude.com/docs/en/desktop-quickstart) requires a Pro, Max, Team, or Enterprise subscription for the Code tab. Free Claude chat does not provide this route. CLI and cloud-provider billing options are separate |
 | Docker Desktop | Free for personal use and education under its terms. Check the linked installation guide's subscription terms for employer or government use |
 | Supabase Free | [Two free projects and 500 MB of database size per project](https://supabase.com/docs/guides/platform/billing-on-supabase), with other quotas. [Low activity over seven days can trigger pausing](https://supabase.com/docs/guides/platform/free-project-pausing) |
 | Supabase email | [Default SMTP is restricted to project-team addresses and currently two messages per hour](https://supabase.com/docs/guides/auth/auth-smtp). It is for testing. Public email sign-ups require a separate delivery plan |
@@ -46,6 +44,8 @@ The exercises in lessons 0 and 1 need no cloud app account or model API key. The
 Review the plan and usage controls before creating hosted resources. A usage alert does not by itself establish a hard spending cap. Save progress when a free AI allowance runs out. Upgrades remain an explicit choice.
 
 ## Later routes
+
+A separate editor such as [VS Code](https://code.visualstudio.com/docs/getstarted/overview), an editor extension, or a terminal client is optional. The desktop app handles the main course workflow. It does not remove the need for app runtimes and local services when later lessons use them.
 
 Podman is an alternative after the Docker walkthrough works. [Supabase lists it as a Docker-compatible option](https://supabase.com/docs/guides/local-development/cli/getting-started), but the course has not tested it. [Podman on Windows also requires a virtual machine](https://podman-desktop.io/docs/installation/windows-install).
 

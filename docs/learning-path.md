@@ -1,35 +1,35 @@
 # The learning path
 
-Lessons 0 and 1 are written. Later rows describe lessons still to build and test. The project is Tiny Wins, a personal task tracker. Each tool solves the next problem in that app.
+The desktop AI is the tutor and working interface from the first session. Lessons 0 and 1 are drafted. Later rows describe lessons still to build and test.
 
-| Lesson | The learner does | Evidence of completion |
+The project is Tiny Wins, a personal task tracker. Each tool enters when it solves the next problem in that app.
+
+| Lesson | The learner directs the AI to do | Evidence of completion |
 | --- | --- | --- |
-| 0. Read the docs | Identifies the original source, reads a small section, and checks an AI explanation | Names the source and explains a heading versus a browser-tab title |
-| 1. Your first change | Opens a local file, changes a heading, checks the button, and restores the heading | Demonstrates and explains the edit, check, and undo |
-| 2. Know your tools and agent | Learns folders, HTML/CSS/JavaScript basics, the editor, terminal output, and Git, then chooses Codex or Claude Code | Makes a commit, recovers an edit, and verifies that the agent's read-only tour changed no files |
-| 3. Build Tiny Wins | Uses the planned React, TypeScript, and Vite starter with the chosen agent to add, complete, and delete tasks, one small change at a time | Reviews the diffs, runs the local server, and verifies each task action |
-| 4. Give AI a small job | States a user need and acceptance checks, reviews a plan and diff, then adds one feature | Shows that the change meets the checks and explains the affected files |
-| 5. Make it reliable | Saves tasks locally, tests behaviour, fixes a planted bug, and checks keyboard use | Data survives refresh, tests catch the bug, and keyboard-only entry works |
-| 6. Use containers | Runs the app in Docker, learns ports and storage, then stops and restarts it | Reproduces the result from a clean checkout and explains where data lives |
-| 7. Add accounts and data | Uses local Supabase, migrations, authentication, and ownership rules | Two users can access their own records and cannot access each other's |
-| 8. Put it online | Reviews costs, creates hosted resources, deploys on Cloudflare, and checks the result | Verifies the deployed version and exercises rollback with fake data |
-| 9. Keep it working | Checks usage, updates a dependency, exports data, and restores a backup | Demonstrates restoration and explains what the backup covers |
-| 10. Build your own feature | Defines and delivers a feature without the lesson's exact implementation steps | Presents the plan, diff, checks, limitations, and recovery method |
+| 0. Read the docs | Find a reference and explain one relevant section | Identifies the source and explains a heading versus a tab title |
+| 1. Your first change | Propose, apply, and undo a one-line edit | Inspects the change and checks the page and button independently |
+| 2. Keep your work | Check Git availability, explain a diff, create a checkpoint, and recover an edit | Explains what the checkpoint contains and demonstrates recovery |
+| 3. Build Tiny Wins | Explain and set up the planned React, TypeScript, and Vite starter, then add tasks in small steps | Reviews changes and verifies adding, completing, and deleting tasks |
+| 4. Describe a useful feature | Turn a user need into a small plan and acceptance checks, then implement it | Checks the behaviour and explains the affected files |
+| 5. Make it reliable | Save tasks, add tests, investigate a planted bug, and check keyboard use | Verifies persistence, catches the bug, and uses keyboard-only entry |
+| 6. Use containers | Explain the need for Docker, check prerequisites, then run and restart local services | Explains ports and storage and reproduces the result |
+| 7. Add accounts and data | Use Supabase migrations, authentication, and ownership rules | Proves two users can access their own data and cannot access each other's |
+| 8. Put it online | Check costs, prepare hosted resources, and deploy after the learner's decision | Verifies the deployed version and exercises rollback with fake data |
+| 9. Keep it working | Check usage, update a dependency, export data, and restore a backup | Demonstrates restoration and explains its coverage |
+| 10. Build your own feature | Help plan and implement the learner's own bounded feature | Presents the plan, diff, checks, limitations, and recovery method |
 
-## Working with AI
+## What the learner owns
 
-First the AI explains while the learner edits. In lesson 2, introduce [Codex or Claude Code](coding-agents.md) after Git basics. From lesson 3, the chosen agent can perform a bounded task after the learner defines the goal and checks. An agent is an AI tool that can act, such as editing files or running commands. Existing users can use their agent for explanations from lesson 0.
+The learner chooses the goal, checks the documentation and changed lines, tests the app, and decides what to keep. The AI explains and performs the technical steps. Each lesson ends with an independent request and an explanation in the learner's own words.
 
-Each lesson starts with its reference and ends with an independent task. Completion depends on what the learner can do and explain.
+[Desktop setup](coding-agents.md) comes before lesson 0. Git, terminal concepts, and optional editors appear when needed. The course teaches the tools through work on the app.
 
 ## Containers and hosting
 
-Containers follow the first local app so the learner can distinguish an app problem from an environment problem. Docker is the main route; Podman needs a separately tested walkthrough.
-
-Cloudflare Workers uses its own runtime. Check Worker code with [Wrangler or Cloudflare's Vite plugin](https://developers.cloudflare.com/workers/local-development/), then verify the hosted behaviour too.
+Docker is the main container route. Podman needs a separately tested walkthrough. Check Worker code with [Cloudflare's local development tools](https://developers.cloudflare.com/workers/local-development/) and verify the hosted behaviour too.
 
 ## Optional mobile track
 
-Make the web app usable on a phone-sized screen first. The later React Native and Expo track needs separate lessons for mobile components, permissions, device testing, signing, and release. React knowledge carries over; the web interface needs adaptation.
+First make the web app usable on a phone-sized screen. Later React Native and Expo lessons cover mobile components, permissions, device testing, signing, and release. Use the dated [tool and cost checks](tools-and-costs.md) when planning that track.
 
-Use the dated [tool and cost checks](tools-and-costs.md) when planning that track. Sensitive data, payments, and business-critical use need further design and review beyond this starter course.
+Sensitive data, payments, and business-critical use need further design and review beyond this starter course.

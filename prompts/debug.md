@@ -4,7 +4,7 @@ Help me diagnose this problem at my current skill level. Ask for missing evidenc
 
 Collect:
 
-- My operating system, editor, and shell if commands are involved.
+- My operating system, desktop AI app, and shell if commands are involved.
 - The lesson and step I am on.
 - What I expected and what actually happened.
 - The exact error text, with credentials and personal data removed.

@@ -4,20 +4,20 @@ AI Build Lab teaches a non-technical Windows or Mac user to build and check a sm
 
 ## Start with the source
 
-Teach the learner to find the product owner's documentation, read the section needed for the task, and check whether it applies to their version and operating system. Use MDN for web fundamentals. AI explains the source and helps test the learner's understanding.
+Begin inside the desktop coding app with this repository open. The AI finds the product owner's documentation, explains the section needed for the task, and helps the learner check whether it applies to their setup. The learner opens the source and checks the explanation. Use MDN for web fundamentals.
 
 Keep dated facts and tool decisions in [tools and costs](tools-and-costs.md). Check official documentation and relevant release notes before changing instructions. Record source checks separately from practical tests in [validation](validation.md). A new date alone does not make old instructions current.
 
 Prefer maintained, widely used tools with a clear purpose in the course. Support popularity claims with dated primary research. Every added dependency or service needs a reason tied to a lesson. Keep one main route; disclose alternatives when the learner needs a choice.
 
-Teach [Codex or Claude Code](coding-agents.md) as the project's working assistant. Introduce setup after Git basics in lesson 2 and use the chosen tool from lesson 3. Existing users can use it as a tutor sooner. Keep the manual/chat route available when agent access would add cost.
+Use [Codex desktop or Claude Desktop's Code tab](coding-agents.md) as the tutor and working interface from lesson 0. The learner directs the AI, reviews changes, and checks results. Introduce Git after the first edit and add other development tools when the task needs them. Keep the manual/chat alternative available when desktop coding access would add cost.
 
 ## Every lesson needs
 
 - A visible outcome, prerequisites, time allowance, and cost boundary.
 - The relevant documentation section, followed by numbered actions and expected results.
 - Windows and Mac differences where needed, with the correct shell named.
-- A small AI teaching prompt, a recovery step, and an independent exercise.
+- A small request for the AI to explain and do, a recovery step, and an independent learner-written request.
 - Evidence that the learner can do the task and explain it in their own words.
 
 Use diagrams for relationships and real screenshots for product controls and results. Record capture date and app version, redact private data, and add useful alt text. Text instructions must work without the images.

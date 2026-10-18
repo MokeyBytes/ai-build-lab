@@ -4,7 +4,7 @@ Date:
 
 Operating system:
 
-Editor and AI tool:
+AI desktop app and local project folder:
 
 Lesson and last completed step:
 

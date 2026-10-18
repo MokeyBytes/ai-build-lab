@@ -1,77 +1,64 @@
 # Start here
 
-Start with **[lesson 0: read the docs](lessons/00-read-the-docs.md)**. You can read it here on GitHub before installing anything. It shows how to check a source and use AI to explain a small part of it.
+Your AI desktop app is the place you will learn and work. First give it this repository's folder. Then ask it to teach you one step at a time.
 
-Then follow the setup below. In lesson 1, you will open a small app on your computer and change its heading.
+## Choose one desktop app
 
-If your computer belongs to work or school, use software your organisation permits. The download route below lets you try the exercise without installing development tools.
+Use an account you already have access to. Check [current access and costs](docs/tools-and-costs.md#cost-boundaries) before subscribing or upgrading.
+
+- **Codex desktop.** Follow the [official desktop guide](https://learn.chatgpt.com/docs/app). OpenAI's current documentation calls the app ChatGPT and includes Codex as a mode. Select Codex and work in a local project.
+- **Claude Desktop.** Follow the [official Claude Code desktop guide](https://code.claude.com/docs/en/desktop-quickstart). Use its **Code** tab for this course and select **Local** as the environment.
+
+The desktop apps provide the coding interface. You do not need to install VS Code or a standalone coding CLI for these routes. A CLI is a terminal interface; we can introduce it later if you want one.
+
+If you cannot use either coding workspace without an upgrade, you can read [lesson 0](lessons/00-read-the-docs.md) and use the [manual/chat alternative](#manualchat-alternative).
 
 ## Get your copy
 
-A repository is a project folder with a record of its changes. A clone is your copy of that repository on your computer.
+A repository is a project with files and a history of changes. For your first session, a downloaded copy of the files is enough.
 
-### Clone with GitHub Desktop
+1. Open [AI Build Lab on GitHub](https://github.com/MokeyBytes/ai-build-lab).
+2. Choose **Code > Download ZIP**.
+3. On Windows, right-click the ZIP and choose **Extract All**. On macOS, double-click it.
+4. Open the extracted folder. You should see `README.md`, `AGENTS.md`, `CLAUDE.md`, and the `lessons` folder.
 
-Use this route if you want to learn the normal project workflow from the beginning.
+A ZIP contains the files but not Git's history. [GitHub explains the difference](https://docs.github.com/en/repositories/working-with-files/using-files/downloading-source-code-archives). We introduce Git when you need checkpoints and recovery.
 
-1. Install [GitHub Desktop](https://desktop.github.com/) for Windows or macOS. Follow its setup and sign-in prompts.
-2. On [this repository's GitHub page](https://github.com/MokeyBytes/ai-build-lab), click **Code**, select **HTTPS**, and copy the repository URL. It should be `https://github.com/MokeyBytes/ai-build-lab.git`.
-3. In GitHub Desktop, choose **File > Clone repository**, then the **URL** tab.
-4. Paste the URL. Choose a folder you can find again, such as a `Projects` folder inside Documents.
-5. Click **Clone**. Wait for it to finish.
-6. Open that folder in File Explorer on Windows or Finder on macOS. GitHub Desktop's **Repository** menu has an option to show it there.
+If Git is already installed, you can clone instead:
 
-GitHub has [illustrated cloning instructions](https://docs.github.com/en/desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop) if the buttons look different.
-
-Cloning does not publish your edits to the original project. We will cover your own repository and publishing changes in a later lesson.
-
-### Download without installing Git
-
-1. On this repository's GitHub page, click **Code > Download ZIP**.
-2. On Windows, right-click the downloaded file and choose **Extract All**. Open the extracted folder.
-3. On macOS, double-click the downloaded ZIP and open the extracted folder.
-
-The ZIP route works for the first exercise. It does not include Git's change history. We will set up Git before lessons that need it.
-
-If somebody already gave you this folder, open it and continue below.
-
-## Choose your editor
-
-A text editor changes the contents of a file. A browser shows the result.
-
-I recommend [Visual Studio Code](https://code.visualstudio.com/), usually called VS Code. Follow its [official setup guide](https://code.visualstudio.com/docs/getstarted/overview) for your computer, then choose **File > Open Folder** and select this repository's folder.
-
-You can also complete this exercise in Windows Notepad. On a Mac, use VS Code or another editor that preserves plain text. A word processor can change the file's format.
-
-## Use AI as your tutor
-
-You can use an AI chat account you already have. A free account with available usage is enough for the first exercise.
-
-Already using Codex or Claude Code? Use it as your tutor now. The main course introduces [coding-agent setup](docs/coding-agents.md) after Git basics in lesson 2, then uses the chosen agent for small changes in lessons 3 onward. Choose one tool; the course does not require both subscriptions.
-
-If you prefer AI inside VS Code, [GitHub's Copilot Free plan](https://docs.github.com/en/copilot/get-started/plans) is an option for eligible accounts. Follow [VS Code's Copilot setup](https://code.visualstudio.com/docs/setup/copilot). An eligible account without a subscription enrolls in Free when signing in. An existing subscription remains in use. Check the plan and usage allowance before starting.
-
-### In an AI coding tool
-
-Open this repository's folder in your tool. Paste:
-
-```text
-Read AGENTS.md and START-HERE.md. Help me start as a beginner.
+```sh
+git clone https://github.com/MokeyBytes/ai-build-lab.git
+cd ai-build-lab
 ```
 
-Start in the tool's chat or ask mode, if available. You will make the first edit yourself.
+## Open the local folder
 
-### In an ordinary AI chat
+In Codex, add the extracted or cloned folder as a local project. Follow the official [local-project instructions](https://learn.chatgpt.com/docs/projects?surface=app) if the controls differ in your version.
 
-1. Open [the tutor instructions](prompts/tutor.md), copy their contents, and paste them into a new chat.
-2. Copy the lesson you are on into the same chat. Start with [lesson 0](lessons/00-read-the-docs.md), then use [lesson 1](lessons/01-your-first-change.md). Ordinary chat may need you to paste file contents and documentation excerpts.
-3. Tell it whether you use Windows or macOS and which editor you chose.
-4. When the lesson asks you to discuss the code, paste the contents of `exercises/01-first-change/index.html` too. That file contains no credentials.
+In Claude Desktop's Code tab, select **Local > Select folder** and choose that same folder. Use a session that works directly in this folder for the first exercise.
 
-If the AI cannot inspect a file or open a source, paste the relevant contents. A correct guess about a heading does not prove file access.
+Select the folder containing `AGENTS.md`. A chat with uploaded files can have different access from a local coding session. See [the desktop workspace guide](docs/coding-agents.md).
 
-## Begin
+Keep the app's permission controls active. The first step asks the AI to read and explain. In Claude Code, **Manual** mode lets you approve proposed edits. For Codex, use its documented permission controls and request a preview before an edit. The prompt does not enforce permissions.
 
-After lesson 0 and setup, open **[lesson 1: your first change](lessons/01-your-first-change.md)**. Keep the instructions and your AI chat available while you work.
+Paste:
 
-You can stop between any two steps. Copy [the progress template](templates/progress.md) into your notes and record your last completed step. You can paste those notes into a new chat later.
+```text
+Read AGENTS.md and START-HERE.md. Let's start.
+```
+
+The tutor should begin [lesson 0](lessons/00-read-the-docs.md), show a documentation source, and give one small step. It should ask about your computer and account access when those details matter.
+
+## Keep control of the work
+
+The AI can read files, make changes, and run tools when its permissions allow. Ask what an unfamiliar action does before approving it. You will check the app yourself and learn how to undo a change.
+
+A desktop interface does not install every tool an app might need. Later lessons will explain and check Git, Node.js, Docker, and other software when the project needs them.
+
+When you stop, ask the tutor to help fill in [your progress notes](templates/progress.md). Paste those notes into a later session to resume.
+
+## Manual/chat alternative
+
+Use an existing AI chat and a plain-text editor such as Notepad. [VS Code](https://code.visualstudio.com/docs/getstarted/overview) is optional. Copy the [tutor instructions](prompts/tutor.md), the current lesson, and the relevant file contents into the chat.
+
+In lesson 1, apply the heading change yourself using the printed before and after lines. Save the file and refresh the browser. The same checks and recovery exercise apply. A chat that cannot read your folder or edit files should say so.
