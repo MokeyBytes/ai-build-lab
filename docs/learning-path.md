@@ -1,22 +1,22 @@
 # The learning path
 
-The desktop AI is the tutor and working interface from the first session. Lessons 0 and 1 are drafted. Later rows describe lessons still to build and test.
+The desktop AI is the tutor and working interface from the first session. The core lessons are written. [Validation](validation.md) distinguishes source review, local tests, and platform checks still needed.
 
 The project is Tiny Wins, a personal task tracker. Each tool enters when it solves the next problem in that app.
 
 | Lesson | The learner directs the AI to do | Evidence of completion |
 | --- | --- | --- |
-| 0. Read the docs | Find a reference and explain one relevant section | Identifies the source and explains a heading versus a tab title |
-| 1. Your first change | Propose, apply, and undo a one-line edit | Inspects the change and checks the page and button independently |
-| 2. Keep your work | Check Git availability, explain a diff, create a checkpoint, and recover an edit | Explains what the checkpoint contains and demonstrates recovery |
-| 3. Build Tiny Wins | Explain and set up the planned React, TypeScript, and Vite starter, then add tasks in small steps | Reviews changes and verifies adding, completing, and deleting tasks |
-| 4. Describe a useful feature | Turn a user need into a small plan and acceptance checks, then implement it | Checks the behaviour and explains the affected files |
-| 5. Make it reliable | Save tasks, add tests, investigate a planted bug, and check keyboard use | Verifies persistence, catches the bug, and uses keyboard-only entry |
-| 6. Use containers | Explain the need for Docker, check prerequisites, then run and restart local services | Explains ports and storage and reproduces the result |
-| 7. Add accounts and data | Use Supabase migrations, authentication, and ownership rules | Proves two users can access their own data and cannot access each other's |
-| 8. Put it online | Check costs, prepare hosted resources, and deploy after the learner's decision | Verifies the deployed version and exercises rollback with fake data |
-| 9. Keep it working | Check usage, update a dependency, export data, and restore a backup | Demonstrates restoration and explains its coverage |
-| 10. Build your own feature | Help plan and implement the learner's own bounded feature | Presents the plan, diff, checks, limitations, and recovery method |
+| [0. Read the docs](../lessons/00-read-the-docs.md) | Find a reference and explain one relevant section | Identifies the source and explains a heading versus a tab title |
+| [1. Your first change](../lessons/01-your-first-change.md) | Propose, apply, and undo a one-line edit | Inspects the change and checks the page and button independently |
+| [2. Keep your work](../lessons/02-keep-your-work.md) | Set Git identity, commit, recover an edit, authenticate, and push to the learner's own GitHub repo | Checks author, committer, destination, and matching local/remote commit IDs |
+| [3. Build Tiny Wins](../lessons/03-build-tiny-wins.md) | Build a React, TypeScript, and Vite app in small steps | Verifies tasks and reviews a pull request |
+| [4. Describe a feature](../lessons/04-describe-a-feature.md) | Turn a user need into acceptance checks and a small change | Checks filters without losing hidden tasks |
+| [5. Make it reliable](../lessons/05-make-it-reliable.md) | Save tasks, add tests, investigate a planted bug, and check keyboard use | Verifies persistence, catches the bug, and uses keyboard-only entry |
+| [6. Use containers](../lessons/06-use-containers.md) | Check prerequisites, then run and restart local services | Explains ports and storage and reproduces the result |
+| [7. Accounts and data](../lessons/07-add-accounts-and-data.md) | Use Supabase migrations, authentication, and ownership rules | Proves allowed and forbidden operations through direct API requests |
+| [8. Put it online](../lessons/08-put-it-online.md) | Check costs and deploy a controlled pilot after an explicit decision | Verifies the public version and practices rollback with fake data |
+| [9. Keep it working](../lessons/09-keep-it-working.md) | Check usage, update a dependency, export data, and restore a backup | Restores separately and explains backup coverage |
+| [10. Your own feature](../lessons/10-build-your-own-feature.md) | Plan and implement the learner's own bounded feature | Presents the plan, diff, checks, limitations, and recovery method |
 
 ## What the learner owns
 

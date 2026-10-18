@@ -69,4 +69,4 @@ Choose a new heading and write your own request for it. Include what may change 
 
 You have completed this lesson when you can direct a small change, inspect it, verify the behaviour, undo that edit, and explain why the browser-tab title and counter behaved as they did.
 
-Ask the tutor to help record [your progress](../templates/progress.md). Lesson 2 is planned in [the learning path](../docs/learning-path.md). For manual editing with an ordinary chat, follow [the alternative route](../START-HERE.md#manualchat-alternative) using the same before and after lines.
+Ask the tutor to help record [your progress](../templates/progress.md), then continue to [lesson 2](02-keep-your-work.md). For manual editing with an ordinary chat, follow [the alternative route](../START-HERE.md#manualchat-alternative) using the same before and after lines.

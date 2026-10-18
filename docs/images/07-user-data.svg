@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="460" viewBox="0 0 1080 460" role="img" aria-labelledby="title desc"><title id="title">Prove that accounts stay separate</title><desc id="desc">Test both allowed and forbidden requests. Hiding controls is not access control.</desc>
+<rect width="1080" height="460" rx="16" fill="#f2f6fa"/>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#172a3a}.heading{font-size:32px;font-weight:700}.label{font-size:22px;font-weight:700}.body{font-size:20px}.foot{font-size:18px}</style>
+<text x="38" y="44" class="foot">AI BUILD LAB  /  WALKTHROUGH ILLUSTRATION  /  2026-10-18</text>
+<text x="38" y="91" class="heading">Prove that accounts stay separate</text>
+<rect x="38" y="127" width="318" height="230" rx="12" fill="#ffffff" stroke="#bccbd6"/>
+<rect x="38" y="127" width="318" height="6" rx="3" fill="#087e8b"/>
+<text x="57" y="174" class="label">1  User A signs in</text>
+<text x="57" y="214" class="body">A can create, read,</text>
+<text x="57" y="243" class="body">change, and delete A&#x27;s own</text>
+<text x="57" y="272" class="body">tasks.</text>
+<path d="M361 241h14m-6-6 6 6-6 6" fill="none" stroke="#087e8b" stroke-width="3"/>
+<rect x="380" y="127" width="318" height="230" rx="12" fill="#ffffff" stroke="#bccbd6"/>
+<rect x="380" y="127" width="318" height="6" rx="3" fill="#087e8b"/>
+<text x="399" y="174" class="label">2  Database checks owner</text>
+<text x="399" y="214" class="body">Table grants allow</text>
+<text x="399" y="243" class="body">operations. RLS checks the</text>
+<text x="399" y="272" class="body">signed-in user.</text>
+<path d="M703 241h14m-6-6 6 6-6 6" fill="none" stroke="#087e8b" stroke-width="3"/>
+<rect x="722" y="127" width="318" height="230" rx="12" fill="#ffffff" stroke="#bccbd6"/>
+<rect x="722" y="127" width="318" height="6" rx="3" fill="#087e8b"/>
+<text x="741" y="174" class="label">3  User B tries A&#x27;s row</text>
+<text x="741" y="214" class="body">Direct API reads return no</text>
+<text x="741" y="243" class="body">row. Changes and</text>
+<text x="741" y="272" class="body">reassignment fail.</text>
+<text x="38" y="398" class="foot">Test both allowed and forbidden requests. Hiding controls is not access control.</text>
+</svg>

@@ -22,7 +22,7 @@ Use [Codex desktop or Claude Desktop's Code tab](coding-agents.md) as the tutor 
 
 Use diagrams for relationships and real screenshots for product controls and results. Record capture date and app version, redact private data, and add useful alt text. Text instructions must work without the images.
 
-## Checks before later lessons ship
+## Checks before a tested release
 
 Pin tested dependency versions and commit lockfiles. Verify a fresh checkout on each supported platform. Teach the browser, server, database, and identity roles before adding hosted services. Docker, Podman, and the Workers runtime each need their own checks.
 
@@ -35,9 +35,9 @@ Demonstrate a backup restore and a deployment rollback. Explain which database c
 ## Release work
 
 1. Test onboarding and lessons 0 and 1 with a Windows beginner and a Mac beginner. Record where they hesitate.
-2. Build and test the remaining local-app lessons before hosted services.
+2. Test the written local-app lessons on fresh Windows and Mac setups.
 3. Add containers, hosted data, deployment, and recovery. Test Podman separately.
 4. Choose a licence and publish a versioned core release after its checks pass.
 5. Add native mobile lessons after validating device support and costs.
 
-The later lessons remain planned. A documentation review does not establish that their commands or complete workflows work.
+Core lessons 0 through 10 are written. Use docs/validation.md for the evidence and unfinished checks. A documentation review does not establish that a complete workflow works.

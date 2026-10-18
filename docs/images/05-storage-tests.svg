@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="460" viewBox="0 0 1080 460" role="img" aria-labelledby="title desc"><title id="title">Keep the list and catch mistakes</title><desc id="desc">A passing build and a browser check answer different questions.</desc>
+<rect width="1080" height="460" rx="16" fill="#f2f6fa"/>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#172a3a}.heading{font-size:32px;font-weight:700}.label{font-size:22px;font-weight:700}.body{font-size:20px}.foot{font-size:18px}</style>
+<text x="38" y="44" class="foot">AI BUILD LAB  /  WALKTHROUGH ILLUSTRATION  /  2026-10-18</text>
+<text x="38" y="91" class="heading">Keep the list and catch mistakes</text>
+<rect x="38" y="127" width="318" height="230" rx="12" fill="#ffffff" stroke="#bccbd6"/>
+<rect x="38" y="127" width="318" height="6" rx="3" fill="#087e8b"/>
+<text x="57" y="174" class="label">1  Save the full list</text>
+<text x="57" y="214" class="body">Keep IDs, titles,</text>
+<text x="57" y="243" class="body">completion states, and a</text>
+<text x="57" y="272" class="body">format version.</text>
+<path d="M361 241h14m-6-6 6 6-6 6" fill="none" stroke="#087e8b" stroke-width="3"/>
+<rect x="380" y="127" width="318" height="230" rx="12" fill="#ffffff" stroke="#bccbd6"/>
+<rect x="380" y="127" width="318" height="6" rx="3" fill="#087e8b"/>
+<text x="399" y="174" class="label">2  Refresh the same URL</text>
+<text x="399" y="214" class="body">Both tasks return, even if</text>
+<text x="399" y="243" class="body">a filter hid one before</text>
+<text x="399" y="272" class="body">refresh.</text>
+<path d="M703 241h14m-6-6 6 6-6 6" fill="none" stroke="#087e8b" stroke-width="3"/>
+<rect x="722" y="127" width="318" height="230" rx="12" fill="#ffffff" stroke="#bccbd6"/>
+<rect x="722" y="127" width="318" height="6" rx="3" fill="#087e8b"/>
+<text x="741" y="174" class="label">3  Catch a planted bug</text>
+<text x="741" y="214" class="body">A duplicate-title test</text>
+<text x="741" y="243" class="body">fails when completion</text>
+<text x="741" y="272" class="body">matches by title.</text>
+<text x="38" y="398" class="foot">A passing build and a browser check answer different questions.</text>
+</svg>

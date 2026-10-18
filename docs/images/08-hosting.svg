@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="460" viewBox="0 0 1080 460" role="img" aria-labelledby="title desc"><title id="title">Know where each part lives</title><desc id="desc">An app rollback does not roll back the database. Keep schema compatibility.</desc>
+<rect width="1080" height="460" rx="16" fill="#f2f6fa"/>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#172a3a}.heading{font-size:32px;font-weight:700}.label{font-size:22px;font-weight:700}.body{font-size:20px}.foot{font-size:18px}</style>
+<text x="38" y="44" class="foot">AI BUILD LAB  /  WALKTHROUGH ILLUSTRATION  /  2026-10-18</text>
+<text x="38" y="91" class="heading">Know where each part lives</text>
+<rect x="38" y="127" width="318" height="230" rx="12" fill="#ffffff" stroke="#bccbd6"/>
+<rect x="38" y="127" width="318" height="6" rx="3" fill="#087e8b"/>
+<text x="57" y="174" class="label">1  GitHub</text>
+<text x="57" y="214" class="body">Your repository holds</text>
+<text x="57" y="243" class="body">reviewed source and commit</text>
+<text x="57" y="272" class="body">history.</text>
+<path d="M361 241h14m-6-6 6 6-6 6" fill="none" stroke="#087e8b" stroke-width="3"/>
+<rect x="380" y="127" width="318" height="230" rx="12" fill="#ffffff" stroke="#bccbd6"/>
+<rect x="380" y="127" width="318" height="6" rx="3" fill="#087e8b"/>
+<text x="399" y="174" class="label">2  Cloudflare</text>
+<text x="399" y="214" class="body">The deployment serves the</text>
+<text x="399" y="243" class="body">built browser files in</text>
+<text x="399" y="272" class="body">dist/.</text>
+<path d="M703 241h14m-6-6 6 6-6 6" fill="none" stroke="#087e8b" stroke-width="3"/>
+<rect x="722" y="127" width="318" height="230" rx="12" fill="#ffffff" stroke="#bccbd6"/>
+<rect x="722" y="127" width="318" height="6" rx="3" fill="#087e8b"/>
+<text x="741" y="174" class="label">3  Supabase</text>
+<text x="741" y="214" class="body">A separate project stores</text>
+<text x="741" y="243" class="body">accounts, task rows, and</text>
+<text x="741" y="272" class="body">access policies.</text>
+<text x="38" y="398" class="foot">An app rollback does not roll back the database. Keep schema compatibility.</text>
+</svg>

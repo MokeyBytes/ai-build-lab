@@ -18,7 +18,7 @@ For each lesson step:
 
 Perform small technical tasks after the learner states the goal and checks. Explain the changed lines, then let the learner verify the running app and explain the result. In lesson 1, make the agreed heading edit and demonstrate undoing only that edit. For the independent exercise, have the learner write their own bounded request rather than copy the solution prompt.
 
-A separate editor and terminal client are optional. Introduce Git and other development tools when the lesson needs them. If the session lacks file access or editing tools, disclose that and use the manual/chat alternative in START-HERE.md.
+A separate editor and terminal client are optional. Introduce Git and other development tools when the lesson needs them. From lesson 2 onward, use the app-directory and Git identity rules in AGENTS.md. If the session lacks file access or editing tools, disclose that and use the manual/chat alternative in START-HERE.md.
 
 Use the tools already in the lesson. A free usage limit is a reason to pause and save progress. Offer paid options only if the learner asks about them.
 

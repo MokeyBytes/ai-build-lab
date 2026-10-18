@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="460" viewBox="0 0 1080 460" role="img" aria-labelledby="title desc"><title id="title">Follow the request and the storage</title><desc id="desc">Restart this project only. Leave other containers and volumes alone.</desc>
+<rect width="1080" height="460" rx="16" fill="#f2f6fa"/>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#172a3a}.heading{font-size:32px;font-weight:700}.label{font-size:22px;font-weight:700}.body{font-size:20px}.foot{font-size:18px}</style>
+<text x="38" y="44" class="foot">AI BUILD LAB  /  WALKTHROUGH ILLUSTRATION  /  2026-10-18</text>
+<text x="38" y="91" class="heading">Follow the request and the storage</text>
+<rect x="38" y="127" width="318" height="230" rx="12" fill="#ffffff" stroke="#bccbd6"/>
+<rect x="38" y="127" width="318" height="6" rx="3" fill="#087e8b"/>
+<text x="57" y="174" class="label">1  Browser on your PC</text>
+<text x="57" y="214" class="body">127.0.0.1:5173 forwards to</text>
+<text x="57" y="243" class="body">the app container.</text>
+<path d="M361 241h14m-6-6 6 6-6 6" fill="none" stroke="#087e8b" stroke-width="3"/>
+<rect x="380" y="127" width="318" height="230" rx="12" fill="#ffffff" stroke="#bccbd6"/>
+<rect x="380" y="127" width="318" height="6" rx="3" fill="#087e8b"/>
+<text x="399" y="174" class="label">2  App in a container</text>
+<text x="399" y="214" class="body">Pinned Node runtime.</text>
+<text x="399" y="243" class="body">Source folder mounted at</text>
+<text x="399" y="272" class="body">/app.</text>
+<path d="M703 241h14m-6-6 6 6-6 6" fill="none" stroke="#087e8b" stroke-width="3"/>
+<rect x="722" y="127" width="318" height="230" rx="12" fill="#ffffff" stroke="#bccbd6"/>
+<rect x="722" y="127" width="318" height="6" rx="3" fill="#087e8b"/>
+<text x="741" y="174" class="label">3  Separate storage</text>
+<text x="741" y="214" class="body">Dependencies use a volume.</text>
+<text x="741" y="243" class="body">Tasks still use browser</text>
+<text x="741" y="272" class="body">storage.</text>
+<text x="38" y="398" class="foot">Restart this project only. Leave other containers and volumes alone.</text>
+</svg>

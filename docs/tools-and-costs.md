@@ -24,9 +24,9 @@ React's [general recommendation for new apps is a framework](https://react.dev/l
 
 ## Version and platform checks
 
-- Use **Node 24 LTS** for the planned tooling lessons. Node's release table currently lists 24 as LTS, 26 as Current, and 20 as end of life. A package's minimum Node version does not establish that the version still receives support.
-- The Docker lesson will use a supported Windows 11 release or supported macOS. Check the vendor's current OS, memory, and virtualization requirements before installing. Keep PowerShell and Mac shell instructions separate.
-- Pin the starter's tested dependency versions and commit its lockfile when lesson 3 is built. Newest and supported are different decisions. Later lessons currently contain no validated package installation commands.
+- Use **Node 24 LTS**. Node's release table currently lists 24 as LTS, 26 as Current, and 20 as end of life. A package's minimum Node version does not establish that the version still receives support. The reference uses Node 24.22.0 for its runtime checks and container image.
+- The Docker lesson uses a supported Windows 11 release or supported macOS. Check the vendor's current OS, memory, and virtualization requirements before installing. Keep PowerShell and Mac shell instructions separate.
+- The [reference manifest](../reference/tiny-wins/package.json) pins direct dependencies, and its lockfile pins the installation. Versions were checked in the official npm registry on October 18. Add each tool at the lesson that needs it. Use [validation](validation.md) for what was actually run.
 
 ## Cost boundaries
 
@@ -34,6 +34,7 @@ The exercises in lessons 0 and 1 need no cloud app account or model API key. The
 
 | Service | Current fact and supporting source |
 | --- | --- |
+| GitHub | [GitHub Free](https://docs.github.com/en/get-started/learning-about-github/githubs-plans) includes private repositories with a limited feature set. This course uses manual commits, pushes, and pull request review; it does not require a paid GitHub plan |
 | Codex | [OpenAI's current plan table](https://learn.chatgpt.com/docs/pricing) lists free desktop access subject to rollout. IDE and CLI access depend on the plan or separately billed API access. Free desktop access does not establish free IDE access |
 | Claude Code on desktop | [The desktop quickstart](https://code.claude.com/docs/en/desktop-quickstart) requires a Pro, Max, Team, or Enterprise subscription for the Code tab. Free Claude chat does not provide this route. CLI and cloud-provider billing options are separate |
 | Docker Desktop | Free for personal use and education under its terms. Check the linked installation guide's subscription terms for employer or government use |

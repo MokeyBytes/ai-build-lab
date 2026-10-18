@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="460" viewBox="0 0 1080 460" role="img" aria-labelledby="title desc"><title id="title">Write down what success means</title><desc id="desc">Changing a view must not delete the underlying tasks.</desc>
+<rect width="1080" height="460" rx="16" fill="#f2f6fa"/>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#172a3a}.heading{font-size:32px;font-weight:700}.label{font-size:22px;font-weight:700}.body{font-size:20px}.foot{font-size:18px}</style>
+<text x="38" y="44" class="foot">AI BUILD LAB  /  WALKTHROUGH ILLUSTRATION  /  2026-10-18</text>
+<text x="38" y="91" class="heading">Write down what success means</text>
+<rect x="38" y="127" width="318" height="230" rx="12" fill="#ffffff" stroke="#bccbd6"/>
+<rect x="38" y="127" width="318" height="6" rx="3" fill="#087e8b"/>
+<text x="57" y="174" class="label">1  Name the need</text>
+<text x="57" y="214" class="body">I want to see unfinished</text>
+<text x="57" y="243" class="body">tasks without losing</text>
+<text x="57" y="272" class="body">completed ones.</text>
+<path d="M361 241h14m-6-6 6 6-6 6" fill="none" stroke="#087e8b" stroke-width="3"/>
+<rect x="380" y="127" width="318" height="230" rx="12" fill="#ffffff" stroke="#bccbd6"/>
+<rect x="380" y="127" width="318" height="6" rx="3" fill="#087e8b"/>
+<text x="399" y="174" class="label">2  Agree on checks</text>
+<text x="399" y="214" class="body">All shows both. Active</text>
+<text x="399" y="243" class="body">shows unfinished.</text>
+<text x="399" y="272" class="body">Completed shows done.</text>
+<path d="M703 241h14m-6-6 6 6-6 6" fill="none" stroke="#087e8b" stroke-width="3"/>
+<rect x="722" y="127" width="318" height="230" rx="12" fill="#ffffff" stroke="#bccbd6"/>
+<rect x="722" y="127" width="318" height="6" rx="3" fill="#087e8b"/>
+<text x="741" y="174" class="label">3  Review the change</text>
+<text x="741" y="214" class="body">Switch views, use the</text>
+<text x="741" y="243" class="body">keyboard, then check All</text>
+<text x="741" y="272" class="body">again.</text>
+<text x="38" y="398" class="foot">Changing a view must not delete the underlying tasks.</text>
+</svg>

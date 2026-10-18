@@ -6,6 +6,12 @@ Operating system:
 
 AI desktop app and local project folder:
 
+App folder and GitHub owner/repo, if created:
+
+Branch and last verified commit ID:
+
+Deployment version and public URL, if published:
+
 Lesson and last completed step:
 
 ## What I changed

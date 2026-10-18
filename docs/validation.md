@@ -1,24 +1,42 @@
 # Validation
 
-Reviewed on **October 18, 2026**. Documentation checks and practical tests are different evidence.
+Reviewed on **October 18, 2026**. The core lessons are written. Documentation review, automated checks, and a beginner completing the walkthrough are different evidence.
 
 ## Documentation review
 
-The current technical and cost claims were checked online against the product documentation and MDN linked in [tools and costs](tools-and-costs.md) and the lessons. Adoption claims use the 2026 Stack Overflow survey, with the respondent scope stated.
+The lessons link official documentation beside the relevant claims. The review covers Git and GitHub identity, repository-specific settings, HTTPS credential managers, SSH, signing, pull requests, current desktop AI access, supported runtimes, React/Vite setup, browser storage, keyboard controls, containers, Supabase authentication and ownership, Workers static assets, costs, and recovery.
 
-The review covered desktop onboarding, local project access, edit/review controls, web basics, supported Node releases, React's setup recommendations, container requirements, Codex and Claude Code access and project instructions, Supabase keys and access controls, free-plan and email limits, Workers billing and local development, and Expo's device/build guidance. The main route now uses Codex desktop or Claude Desktop's Code tab from lesson 0. Future installation commands and package versions remain to be selected and tested when those lessons are written.
+Supabase's current changelog was checked for API exposure, key, and runtime changes. Direct package versions were read from the official npm registry, pinned in the [reference manifest](../reference/tiny-wins/package.json), and installed into its lockfile. The reference includes later tools for verification; learners add them only when their lesson needs them.
 
-## Repository checks
+New and existing linked documentation URLs returned HTTP 200 across the October 18 checks. One obsolete GitHub co-author URL was replaced with its current official page. Reachability alone does not verify a claim; the source-content review checks the guidance.
 
-- 41 local Markdown links and image paths resolve, including local heading anchors.
-- All 43 distinct linked external URLs returned HTTP 200 across the October 18 checks. The six new desktop-route URLs were checked in this revision. Reachability alone does not verify a claim; the source review above checks the contents.
-- The one-line `CLAUDE.md` import points to the existing `AGENTS.md`. Loading it inside Claude Code remains untested.
-- The SVG parses as XML. It is an authored illustration.
-- The exercise script is unchanged. Its earlier syntax check and smoke check passed. The smoke check used stand-in DOM objects to check zero, two increments, and a fresh context starting at zero.
-- The documentation has no trailing whitespace or unresolved local links.
+## Practical evidence
 
-## Practical checks still needed
+Tests ran on this Mac with **Node 24.22.0**. The container used `node:24.22.0-bookworm-slim`. Supabase used the pinned **2.121.0** CLI and PostgreSQL 17. Cloudflare used the pinned **4.151.1** Wrangler. Existing local services occupied the default ports, so verification used an isolated Compose project on port 55173, Supabase on 624xx ports, and Wrangler on port 55187. Other projects were left running.
 
-The browser tool blocked the local `file:` URL. Browser rendering, actual mouse and keyboard activation, reload behaviour, and the heading edit/undo sequence remain unverified in a browser. No browser screenshots were captured.
+| Check | Result and scope |
+| --- | --- |
+| Clean install | `npm ci` in a fresh temporary source copy succeeded on Node 24. The installed dependency audit reported no known vulnerabilities at that time |
+| Logic and configuration | Eight Vitest tests passed, including duplicate titles, filters, backup parsing, malformed backups, partial cloud configuration, and rejection of privileged client keys |
+| Planted bug | Changing task completion to match by title made the duplicate-title test fail. The correct ID-based implementation was restored |
+| Production build | TypeScript and the Vite build passed in the reference and clean copy |
+| Docker | Compose configuration, image download, locked install, service startup, page/asset HTTP requests, and a normal stop/start passed |
+| Supabase migration | The CLI-generated migration applied to a real isolated local stack. Local security advisors reported no issues |
+| Account isolation | The supplied access-check script passed with two real local test accounts, their sessions, and a publishable key. Both users could manage their own rows. Cross-user reads, updates, deletes, reassignment, forged inserts, and unsigned access were denied as expected |
+| Database persistence | A fake task and its completion state survived a normal Supabase stop/start. Temporary test accounts and rows were then removed |
+| Workers preparation | Deployment dry run passed without upload. The local Workers runtime served the built page, assets, and single-page fallback over HTTP |
+| Backup format | Export/parse round-trip and invalid-backup rejection passed in logic tests. This does not verify a browser file picker or a hosted database restore |
+| Repository and images | Local Markdown paths and anchors resolve. All SVGs parse as XML. Walkthrough images are authored illustrations; rendered samples were inspected for legibility |
 
-Test desktop installation, local-folder selection, source reading, the AI-made heading edit, review, and targeted undo with beginners on Windows and macOS. Later lessons, Podman compatibility, hosted authentication, deployment, rollback, and backup restoration remain planned and untested.
+The first HTML exercise also retains its earlier script syntax and stand-in DOM smoke checks. Those verified zero, two increments, and a fresh context starting at zero.
+
+## Manual checks still needed
+
+- A beginner completing the desktop workflow on fresh supported Windows and macOS setups, including installation, local folder access, edits, review, and targeted recovery.
+- A fresh GitHub account's credential-manager login, private-repository creation, push, and pull request flow on both platforms. The identity guidance is source-checked; these onboarding sessions were not performed.
+- Actual browser clicks, keyboard navigation, storage errors, file export/import, responsive layout, and sign-in/out interface behaviour. The browser tool blocked the original local `file:` exercise. No product screenshots or browser interaction results are claimed here.
+- A dedicated hosted Supabase pilot, production API isolation checks, Cloudflare publication, phone access, and a live deployment rollback. No hosted resources were created for this revision.
+- A full database and file backup/restore. The course's task-export drill covers a user's task fields only.
+- Podman compatibility and native mobile lessons. These remain optional future routes.
+
+Follow [the release criteria](course-design.md) before calling this a tested course release. Keep an unperformed check marked unperformed when teaching or reporting progress.
