@@ -46,6 +46,8 @@ Review the plan and usage controls before creating hosted resources. A usage ale
 
 ## Later routes
 
+A separate [instructions and hooks lesson](../lessons/05a-instructions-and-hooks.md) was source-checked on October 19, 2026. Its local demo uses the existing Node runtime and no model API calls. Model-based hooks add model work and are not a no-cost guarantee. Check support in the linked Codex and Claude references before enabling them.
+
 A separate editor such as [VS Code](https://code.visualstudio.com/docs/getstarted/overview), an editor extension, or a terminal client is optional. The desktop app handles the main course workflow. It does not remove the need for app runtimes and local services when later lessons use them.
 
 Podman is an alternative after the Docker walkthrough works. [Supabase lists it as a Docker-compatible option](https://supabase.com/docs/guides/local-development/cli/getting-started), but the course has not tested it. [Podman on Windows also requires a virtual machine](https://podman-desktop.io/docs/installation/windows-install).

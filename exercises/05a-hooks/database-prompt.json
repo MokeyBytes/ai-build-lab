@@ -1,0 +1,5 @@
+{
+  "session_id": "lab-session",
+  "hook_event_name": "UserPromptSubmit",
+  "prompt": "Help me review a database migration."
+}

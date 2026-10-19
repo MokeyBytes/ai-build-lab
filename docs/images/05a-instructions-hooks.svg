@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="460" viewBox="0 0 1080 460" role="img" aria-labelledby="title desc">
+  <title id="title">Guide the model or run a check</title>
+  <desc id="desc">Markdown guides model behavior. A command hook can return a coded decision. A context-injection hook adds information for the model to interpret.</desc>
+  <rect width="1080" height="460" rx="16" fill="#f2f6fa"/>
+  <style>text{font-family:Arial,Helvetica,sans-serif;fill:#172a3a}.heading{font-size:32px;font-weight:700}.label{font-size:22px;font-weight:700}.body{font-size:20px}.foot{font-size:18px}</style>
+  <text x="38" y="44" class="foot">AI BUILD LAB / WALKTHROUGH ILLUSTRATION / 2026-10-19</text>
+  <text x="38" y="91" class="heading">Guide the model or run a check</text>
+  <rect x="38" y="127" width="318" height="230" rx="12" fill="white" stroke="#bccbd6"/>
+  <rect x="38" y="127" width="318" height="6" fill="#087e8b"/>
+  <text x="57" y="174" class="label">Markdown guidance</text>
+  <text x="57" y="214" class="body">AGENTS.md or CLAUDE.md</text>
+  <text x="57" y="243" class="body">gives instructions to the</text>
+  <text x="57" y="272" class="body">model. Check evidence</text>
+  <text x="57" y="301" class="body">that it followed them.</text>
+  <rect x="380" y="127" width="318" height="230" rx="12" fill="white" stroke="#bccbd6"/>
+  <rect x="380" y="127" width="318" height="6" fill="#087e8b"/>
+  <text x="399" y="174" class="label">Command hook</text>
+  <text x="399" y="214" class="body">An event runs a program.</text>
+  <text x="399" y="243" class="body">A fixed rule can return</text>
+  <text x="399" y="272" class="body">a decision the app acts on.</text>
+  <text x="399" y="301" class="body">Test its actual coverage.</text>
+  <rect x="722" y="127" width="318" height="230" rx="12" fill="white" stroke="#bccbd6"/>
+  <rect x="722" y="127" width="318" height="6" fill="#087e8b"/>
+  <text x="741" y="174" class="label">Context injection</text>
+  <text x="741" y="214" class="body">An event runs a program</text>
+  <text x="741" y="243" class="body">that adds a reminder.</text>
+  <text x="741" y="272" class="body">The model still has to</text>
+  <text x="741" y="301" class="body">interpret and act on it.</text>
+  <text x="38" y="398" class="foot">Context injection can use deterministic code. Model evaluation is a separate mechanism.</text>
+  <text x="38" y="427" class="foot">A Markdown instruction is not an installed hook. A reminder is not a passing test.</text>
+</svg>

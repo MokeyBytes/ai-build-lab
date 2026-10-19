@@ -51,4 +51,4 @@ If saved data will not load, keep a copy of its raw value before any repair. Ask
 
 Write your own request for one missing edge-case test. Explain what wrong behaviour would make it fail. Show that failure once, then restore the correct code and get a passing check. Record the test output and your own browser checks.
 
-[Previous](04-describe-a-feature.md) · [Next: use containers](06-use-containers.md)
+[Previous](04-describe-a-feature.md) · [Next: instructions and hooks](05a-instructions-and-hooks.md)

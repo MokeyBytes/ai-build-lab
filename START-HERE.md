@@ -39,6 +39,8 @@ In Claude Desktop's Code tab, select **Local > Select folder** and choose that s
 
 Select the folder containing `AGENTS.md`. A chat with uploaded files can have different access from a local coding session. See [the desktop workspace guide](docs/coding-agents.md).
 
+`AGENTS.md` and `CLAUDE.md` are the instruction files for our coding tools. `.md` means Markdown text. You open the project in the app; you do not run these files. Keep their exact names, without an extra `.txt` extension. [How both tools share the instructions](docs/coding-agents.md#shared-tutor-instructions).
+
 Keep the app's permission controls active. The first step asks the AI to read and explain. In Claude Code, **Manual** mode lets you approve proposed edits. For Codex, use its documented permission controls and request a preview before an edit. The prompt does not enforce permissions.
 
 Paste:

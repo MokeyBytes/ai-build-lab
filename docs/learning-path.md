@@ -12,6 +12,7 @@ The project is Tiny Wins, a personal task tracker. Each tool enters when it solv
 | [3. Build Tiny Wins](../lessons/03-build-tiny-wins.md) | Build a React, TypeScript, and Vite app in small steps | Verifies tasks and reviews a pull request |
 | [4. Describe a feature](../lessons/04-describe-a-feature.md) | Turn a user need into acceptance checks and a small change | Checks filters without losing hidden tasks |
 | [5. Make it reliable](../lessons/05-make-it-reliable.md) | Save tasks, add tests, investigate a planted bug, and check keyboard use | Verifies persistence, catches the bug, and uses keyboard-only entry |
+| [5a. Instructions and hooks](../lessons/05a-instructions-and-hooks.md) | Inspect shared Markdown guidance and run an inactive hook demo | Distinguishes a coded decision, added context, and model judgment |
 | [6. Use containers](../lessons/06-use-containers.md) | Check prerequisites, then run and restart local services | Explains ports and storage and reproduces the result |
 | [7. Accounts and data](../lessons/07-add-accounts-and-data.md) | Use Supabase migrations, authentication, and ownership rules | Proves allowed and forbidden operations through direct API requests |
 | [8. Put it online](../lessons/08-put-it-online.md) | Check costs and deploy a controlled pilot after an explicit decision | Verifies the public version and practices rollback with fake data |

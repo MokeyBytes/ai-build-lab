@@ -1,6 +1,6 @@
 # Validation
 
-Reviewed on **October 18, 2026**. The core lessons are written. Documentation review, automated checks, and a beginner completing the walkthrough are different evidence.
+Core course reviewed on **October 18, 2026**. Instructions and hooks reviewed on **October 19, 2026**. The core lessons are written. Documentation review, automated checks, and a beginner completing the walkthrough are different evidence.
 
 ## Documentation review
 
@@ -8,7 +8,17 @@ The lessons link official documentation beside the relevant claims. The review c
 
 Supabase's current changelog was checked for API exposure, key, and runtime changes. Direct package versions were read from the official npm registry, pinned in the [reference manifest](../reference/tiny-wins/package.json), and installed into its lockfile. The reference includes later tools for verification; learners add them only when their lesson needs them.
 
-New and existing linked documentation URLs returned HTTP 200 across the October 18 checks. One obsolete GitHub co-author URL was replaced with its current official page. Reachability alone does not verify a claim; the source-content review checks the guidance.
+The core revision's linked documentation URLs returned HTTP 200 across the October 18 checks. One obsolete GitHub co-author URL was replaced with its current official page. The instruction and hook sources were reviewed separately on October 19. Reachability alone does not verify a claim; the source-content review checks the guidance.
+
+## October 19 instruction and hook checks
+
+[Lesson 5a](../lessons/05a-instructions-and-hooks.md) links the official references for each mechanism. The review checked Markdown syntax, Codex instruction discovery, Claude's import and direct AGENTS support, hook configuration and trust, supported handler types, event output, desktop settings compatibility, and the distinction from Git hooks.
+
+The new official-source URLs and their linked section anchors passed reachability checks on October 19. The new walkthrough SVG parses and its rendered image was inspected for legibility. Local document links, JSON fixtures, and the unchanged shared import also passed checks.
+
+The [standalone demo](../exercises/05a-hooks/README.md) passed eight command-level tests on Node 24.22.0 and Node 26.10.0 on this Mac. It returns a repeatable deny decision for its matching sample event, no decision for an ordinary write, and extra context for its keyword-matched database prompt. Tests also cover Windows-style path strings, unsupported tools, invalid input, and prompt text treated as data. Windows-style input testing does not establish a Windows runtime test.
+
+The configuration example remains inactive. No hook was installed in Codex or Claude Code, and no permissions or trust settings were changed. Desktop event delivery, instruction-file loading, and enforcement still need client-level checks. Existing app and backend tests below retain their October 18 evidence; they were not rerun for this documentation and standalone-demo change.
 
 ## Practical evidence
 

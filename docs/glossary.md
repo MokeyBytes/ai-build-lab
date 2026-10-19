@@ -4,6 +4,12 @@
 | --- | --- |
 | AI assistant | A tool you can ask to explain, plan, write, or review work. Its answers need checking |
 | Agent | An AI assistant with tools that let it act, such as editing a file or running a command |
+| Markdown, or `.md` | Plain text with simple formatting marks for headings, lists, and links |
+| Instruction file | A document the coding app loads to guide the model, such as `AGENTS.md` or `CLAUDE.md` |
+| Hook | An event-triggered handler configured in a tool, such as a command run before a tool call |
+| Deterministic check | A coded rule whose result follows from its input and environment, without model judgment |
+| Context injection | Adding relevant information to the model's input; it does not establish that the model acted on it |
+| Model-based hook | A supported hook that asks a model to evaluate a condition |
 | Repository, or repo | A project with files and a history of changes |
 | Clone | A local copy of a repository, including its Git history |
 | Git | Software that records and compares changes to files |

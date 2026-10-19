@@ -1,0 +1,27 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "^Write$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"REPLACE_WITH_ABSOLUTE_SCRIPT_PATH/hook-lab.mjs\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"REPLACE_WITH_ABSOLUTE_SCRIPT_PATH/hook-lab.mjs\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

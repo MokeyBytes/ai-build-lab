@@ -37,4 +37,8 @@ Use one local session and one project folder for the first exercise. Worktrees, 
 
 [AGENTS.md](../AGENTS.md) holds the tutor workflow. [Codex reads AGENTS.md](https://learn.chatgpt.com/docs/agent-configuration/agents-md). [CLAUDE.md](../CLAUDE.md) imports it through [Claude Code's documented import syntax](https://code.claude.com/docs/en/memory).
 
+Use the exact names `AGENTS.md` and `CLAUDE.md`, including capitalization. They are Markdown text files the coding apps load, not programs you run to start a session. Our `CLAUDE.md` contains `@AGENTS.md` so both tools use the same course rules. These instruction-file details were checked on October 19, 2026; the desktop setup above retains its October 18 review date.
+
+For Markdown, conditional guidance, command hooks, context injection, and model-based hooks, continue to [lesson 5a](../lessons/05a-instructions-and-hooks.md) after the testing lesson. It includes current official sources and an uninstalled demo.
+
 An editor extension or terminal client is an optional entry point later. The main course uses the desktop workspace.

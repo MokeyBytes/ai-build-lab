@@ -2,7 +2,7 @@
 
 You will run Tiny Wins in a container, restart it, and explain where its data lives.
 
-Allow 45 to 60 minutes after lesson 5, plus download time. Docker Desktop is free for personal learning under its terms. Check employer or government licensing before using it at work.
+Allow 45 to 60 minutes after lesson 5a, plus download time. Docker Desktop is free for personal learning under its terms. Check employer or government licensing before using it at work.
 
 Containers are useful for repeatable services and tests. They are not required for every app. A browser interface, a Workers runtime, and a native phone app each have different execution environments. Here Docker prepares you for a local database in the next lesson.
 
@@ -55,4 +55,4 @@ Ask the AI to show which container, image, and volume belong to this app. Restar
 
 Podman remains an alternative that needs its own compatibility check. Its Windows/Mac virtual machine and Docker API compatibility add setup choices; do not assume replacing the word `docker` proves the walkthrough works. [Supabase's supported local runtimes](https://supabase.com/docs/guides/local-development/cli/getting-started).
 
-[Previous](05-make-it-reliable.md) · [Next: add accounts and data](07-add-accounts-and-data.md)
+[Previous](05a-instructions-and-hooks.md) · [Next: add accounts and data](07-add-accounts-and-data.md)
