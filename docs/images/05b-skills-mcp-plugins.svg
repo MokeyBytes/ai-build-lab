@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="490" viewBox="0 0 1080 490" role="img" aria-labelledby="title desc">
+  <title id="title">Instructions, access, and packaging</title>
+  <desc id="desc">A skill gives the AI a procedure. An MCP server provides tools or data. A plugin can package either or both, plus other supported components.</desc>
+  <rect width="1080" height="490" rx="16" fill="#f2f6fa"/>
+  <style>text{font-family:Arial,Helvetica,sans-serif;fill:#172a3a}.heading{font-size:32px;font-weight:700}.label{font-size:23px;font-weight:700}.body{font-size:20px}.foot{font-size:18px}</style>
+  <text x="38" y="42" class="foot">AI BUILD LAB / WALKTHROUGH ILLUSTRATION / 2026-10-19</text>
+  <text x="38" y="87" class="heading">Instructions, access, and packaging</text>
+  <rect x="38" y="124" width="650" height="294" rx="12" fill="#e4eef7" stroke="#728ca3" stroke-width="2"/>
+  <text x="58" y="162" class="label">Plugin</text>
+  <text x="162" y="161" class="body">An installable package can include:</text>
+  <rect x="58" y="186" width="288" height="211" rx="10" fill="white" stroke="#bccbd6"/>
+  <rect x="58" y="186" width="288" height="6" fill="#087e8b"/>
+  <text x="76" y="228" class="label">Skill</text>
+  <text x="76" y="266" class="body">Reusable instructions</text>
+  <text x="76" y="294" class="body">in SKILL.md.</text>
+  <text x="76" y="337" class="body">Example: explain a diff</text>
+  <text x="76" y="365" class="body">and suggest a check.</text>
+  <rect x="364" y="186" width="304" height="211" rx="10" fill="white" stroke="#bccbd6"/>
+  <rect x="364" y="186" width="304" height="6" fill="#087e8b"/>
+  <text x="382" y="228" class="label">MCP connection</text>
+  <text x="382" y="266" class="body">Access to tools or data</text>
+  <text x="382" y="294" class="body">through a server.</text>
+  <text x="382" y="337" class="body">Example: search official</text>
+  <text x="382" y="365" class="body">developer documentation.</text>
+  <rect x="718" y="124" width="324" height="294" rx="12" fill="white" stroke="#bccbd6"/>
+  <text x="738" y="164" class="label">Choose what you need</text>
+  <text x="738" y="211" class="body">Use a skill on its own.</text>
+  <text x="738" y="253" class="body">Connect a server directly.</text>
+  <text x="738" y="295" class="body">Or install a useful package.</text>
+  <text x="738" y="348" class="body">Inspect its parts and access.</text>
+  <text x="738" y="376" class="body">Verify one real result.</text>
+  <text x="38" y="457" class="foot">Start with the tools already available. Add an extension when a task gives you a reason.</text>
+</svg>

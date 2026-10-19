@@ -12,6 +12,8 @@ Documentation reviewed on **October 18, 2026**. [Tool choices, sources, and cost
 
 Instruction files and hooks were checked against official docs on **October 19, 2026**. [Lesson 5a](lessons/05a-instructions-and-hooks.md) explains Markdown guidance, deterministic checks, context injection, and model-based hooks for Codex and Claude Code.
 
+[Lesson 5b](lessons/05b-skills-mcp-and-plugins.md) covers skills, MCP servers, and plugins with a small skill to try and optional connection examples. Its official sources were checked on **October 19, 2026**.
+
 ## Get the guide
 
 New to Git? Use **Code > Download ZIP** on this repository's GitHub page and extract it. [The walkthrough](START-HERE.md) shows what to do next.
@@ -60,7 +62,7 @@ See the [learning path](docs/learning-path.md). Each tool enters when the app ne
 | | | [9. Keep it working](lessons/09-keep-it-working.md) |
 | | | [10. Your own feature](lessons/10-build-your-own-feature.md) |
 
-After lesson 5, complete [5a. Instructions and hooks](lessons/05a-instructions-and-hooks.md), then continue to containers.
+After lesson 5, complete [5a. Instructions and hooks](lessons/05a-instructions-and-hooks.md) and [5b. Skills, MCP servers, and plugins](lessons/05b-skills-mcp-and-plugins.md), then continue to containers.
 
 The core lessons are written, with walkthrough illustrations and a [reference app](reference/tiny-wins/README.md). Illustrations explain the steps; they are not screenshots of tested product controls. [Validation](docs/validation.md) records practical tests and remaining platform checks.
 

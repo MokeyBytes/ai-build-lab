@@ -10,6 +10,11 @@
 | Deterministic check | A coded rule whose result follows from its input and environment, without model judgment |
 | Context injection | Adding relevant information to the model's input; it does not establish that the model acted on it |
 | Model-based hook | A supported hook that asks a model to evaluate a condition |
+| Skill | Reusable instructions in a folder containing `SKILL.md`, with optional supporting files, that the AI loads for a task |
+| MCP | Model Context Protocol, a standard for connecting an AI app to tools or data provided by a server |
+| MCP server | A program or hosted service that offers those tools or data; its access depends on its configuration and signed-in account |
+| Plugin | An installable package that can include skills, MCP connections, hooks, or other supported components |
+| Marketplace | A catalog from which an app can find plugins |
 | Repository, or repo | A project with files and a history of changes |
 | Clone | A local copy of a repository, including its Git history |
 | Git | Software that records and compares changes to files |

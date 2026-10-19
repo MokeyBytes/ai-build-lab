@@ -1,0 +1,4 @@
+# Inactive example. Merge this table into the course's .codex/config.toml
+# only after inspecting existing settings and choosing project-scoped setup.
+[mcp_servers.openaiDeveloperDocs]
+url = "https://developers.openai.com/mcp"

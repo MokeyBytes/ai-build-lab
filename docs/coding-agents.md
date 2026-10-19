@@ -41,4 +41,6 @@ Use the exact names `AGENTS.md` and `CLAUDE.md`, including capitalization. They 
 
 For Markdown, conditional guidance, command hooks, context injection, and model-based hooks, continue to [lesson 5a](../lessons/05a-instructions-and-hooks.md) after the testing lesson. It includes current official sources and an uninstalled demo.
 
+[Lesson 5b](../lessons/05b-skills-mcp-and-plugins.md) follows with skills, MCP servers, and plugins. It shows both desktop apps' controls, a small skill, and optional connection examples. Those extension instructions were source-checked on October 19, 2026. Add them when a task needs them.
+
 An editor extension or terminal client is an optional entry point later. The main course uses the desktop workspace.

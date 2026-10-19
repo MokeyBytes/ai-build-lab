@@ -1,6 +1,6 @@
 # Validation
 
-Core course reviewed on **October 18, 2026**. Instructions and hooks reviewed on **October 19, 2026**. The core lessons are written. Documentation review, automated checks, and a beginner completing the walkthrough are different evidence.
+Core course reviewed on **October 18, 2026**. Instructions, hooks, skills, MCP, and plugins reviewed on **October 19, 2026**. The core lessons are written. Documentation review, automated checks, and a beginner completing the walkthrough are different evidence.
 
 ## Documentation review
 
@@ -19,6 +19,16 @@ The new official-source URLs and their linked section anchors passed reachabilit
 The [standalone demo](../exercises/05a-hooks/README.md) passed eight command-level tests on Node 24.22.0 and Node 26.10.0 on this Mac. It returns a repeatable deny decision for its matching sample event, no decision for an ordinary write, and extra context for its keyword-matched database prompt. Tests also cover Windows-style path strings, unsupported tools, invalid input, and prompt text treated as data. Windows-style input testing does not establish a Windows runtime test.
 
 The configuration example remains inactive. No hook was installed in Codex or Claude Code, and no permissions or trust settings were changed. Desktop event delivery, instruction-file loading, and enforcement still need client-level checks. Existing app and backend tests below retain their October 18 evidence; they were not rerun for this documentation and standalone-demo change.
+
+## October 19 skills, MCP, and plugin checks
+
+[Lesson 5b](../lessons/05b-skills-mcp-and-plugins.md) adds a skill exercise and optional connection and plugin walkthroughs for both desktop workspaces. The source review checked skill format, discovery paths, explicit and implicit selection, MCP transports and project scope, desktop controls, plugin packaging differences, account access, and cost boundaries. The review included the [Codex changelog](https://learn.chatgpt.com/docs/changelog) and [Claude Code changelog](https://code.claude.com/docs/en/changelog).
+
+All 16 official-source URLs in the new lesson and exercise guide returned HTTP 200, including the linked section anchors. The sample `SKILL.md` passed Skill Creator's frontmatter and naming validator. The inactive TOML and JSON settings parse and identify the same official documentation endpoint. The course's practice paths are ignored and contain no active installation. The shared Claude import is unchanged.
+
+The repository check passed 162 local Markdown links and anchors, 13 SVGs, and eight JSON files. The new SVG's rendered image was inspected for legibility. The prose received the full writing review; the skill received a separate agent-instruction review.
+
+No skill discovery, MCP handshake or tool call, or plugin installation was tested in either desktop client for this revision. Those walkthroughs still need client-level and beginner checks on Windows and macOS. No credentials, app accounts, user-wide settings, or hosted resources were changed. The app and backend tests retain their October 18 evidence.
 
 ## Practical evidence
 

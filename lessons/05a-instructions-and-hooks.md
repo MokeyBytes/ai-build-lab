@@ -95,4 +95,4 @@ Write a small instruction and classify it. Does it belong in the shared Markdown
 
 Then write your own prompt that should trigger the database reminder, and one that should not. Have the AI test both without installing anything. Explain why a printed reminder is not evidence that access controls passed. Record the outputs and leave desktop integration marked untested unless you actually verified it.
 
-[Previous](05-make-it-reliable.md) · [Next: use containers](06-use-containers.md)
+[Previous](05-make-it-reliable.md) · [Next: skills, MCP servers, and plugins](05b-skills-mcp-and-plugins.md)
