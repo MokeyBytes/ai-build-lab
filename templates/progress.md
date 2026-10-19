@@ -6,6 +6,8 @@ Operating system:
 
 AI desktop app and local project folder:
 
+AI app version, if known:
+
 App folder and GitHub owner/repo, if created:
 
 Branch and last verified commit ID:
@@ -13,6 +15,10 @@ Branch and last verified commit ID:
 Deployment version and public URL, if published:
 
 Lesson and last completed step:
+
+Local address and services to restart:
+
+Data mode, browser storage, local Supabase, or hosted pilot:
 
 ## What I changed
 

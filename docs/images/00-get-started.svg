@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="440" viewBox="0 0 1080 440" role="img" aria-labelledby="title desc">
+  <title id="title">Open the extracted course folder</title>
+  <desc id="desc">Download the course ZIP, extract it in File Explorer or Finder, select the extracted folder containing AGENTS.md in the desktop coding app, then ask the AI to begin.</desc>
+  <rect width="1080" height="440" rx="16" fill="#f2f6fa"/>
+  <style>text{font-family:Arial,Helvetica,sans-serif;fill:#172a3a}.heading{font-size:32px;font-weight:700}.label{font-size:22px;font-weight:700}.body{font-size:19px}.foot{font-size:18px}</style>
+  <text x="32" y="40" class="foot">AI BUILD LAB / WALKTHROUGH ILLUSTRATION / 2026-10-19</text>
+  <text x="32" y="86" class="heading">Open the extracted course folder</text>
+  <g fill="white" stroke="#bccbd6">
+    <rect x="32" y="124" width="240" height="233" rx="12"/>
+    <rect x="290" y="124" width="240" height="233" rx="12"/>
+    <rect x="548" y="124" width="240" height="233" rx="12"/>
+    <rect x="806" y="124" width="240" height="233" rx="12"/>
+  </g>
+  <text x="48" y="166" class="label">1. Get the ZIP</text>
+  <text x="48" y="208" class="body">On the GitHub repo:</text>
+  <text x="48" y="237" class="body">Code &gt; Download ZIP</text>
+  <text x="48" y="292" class="body">No Git installation</text>
+  <text x="48" y="321" class="body">needed for this step.</text>
+  <text x="306" y="166" class="label">2. Extract it</text>
+  <text x="306" y="208" class="body">Windows: Extract All</text>
+  <text x="306" y="237" class="body">Mac: double-click ZIP</text>
+  <text x="306" y="292" class="body">Open the resulting</text>
+  <text x="306" y="321" class="body">folder, not the ZIP.</text>
+  <text x="564" y="166" class="label">3. Select the folder</text>
+  <text x="564" y="208" class="body">Find AGENTS.md and</text>
+  <text x="564" y="237" class="body">the lessons folder.</text>
+  <text x="564" y="292" class="body">Use Codex local project</text>
+  <text x="564" y="321" class="body">or Claude Code Local.</text>
+  <text x="822" y="166" class="label">4. Begin lesson 0</text>
+  <text x="822" y="208" class="body">Ask the AI to read</text>
+  <text x="822" y="237" class="body">AGENTS.md and</text>
+  <text x="822" y="266" class="body">START-HERE.md.</text>
+  <text x="822" y="321" class="body">Then say: Let's start.</text>
+  <text x="32" y="400" class="foot">Keep this same course folder open. The AI teaches one step at a time.</text>
+</svg>

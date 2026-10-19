@@ -2,7 +2,9 @@
 
 You will prepare a small hosted pilot, verify it at its public address, and practice rolling back an interface change.
 
-Allow 60 to 90 minutes after lesson 7, plus account setup. Use fake data and the current [cost checks](../docs/tools-and-costs.md). Free allowances can change. You can finish the local preparation and stop before creating hosted resources.
+Allow 60 to 90 minutes after lesson 7, plus account setup. Use fake data and the current [cost checks](../docs/tools-and-costs.md). Free allowances can change. You can finish the local preparation and stop before creating hosted resources, then continue to lesson 9.
+
+Deploying means putting a built version on a service other people can reach. The local address `127.0.0.1` works on your computer; the HTTPS address returned by Cloudflare works over the internet.
 
 ![Illustration showing reviewed source on GitHub, built browser assets on Cloudflare, and account data in a separate Supabase project.](../docs/images/08-hosting.svg)
 
@@ -33,17 +35,18 @@ You can keep the app local here. If you choose to continue, state that you want 
 2. Follow [Supabase's environment/deployment guide](https://supabase.com/docs/guides/deployment/managing-environments). Have the AI inspect CLI help, then authenticate using the official flow. Enter credentials yourself. Link **this app** with `npx --no-install supabase link --project-ref YOUR_PROJECT_REF`. Check the project name and reference before continuing.
 3. `npx --no-install supabase db push --dry-run` lists pending migrations. Compare them with the migration you tested locally. After your explicit decision, `npx --no-install supabase db push` changes the linked database. Do not add a reset or seed flag.
 4. In hosted Auth settings, turn off new public sign-ups for this pilot. Create two dedicated test users through **Authentication > Users**. Use accounts you control and set their passwords privately. Explicitly confirm those test users when creating them. Keep the public sign-up confirmation policy enabled. [Auth configuration](https://supabase.com/docs/guides/auth/general-configuration).
-5. Run the two-user API checks against this pilot using a separate ignored test environment file. The reference script requires an explicit `--allow-hosted` argument outside localhost. Ask the AI to show the target and explain that it writes and removes only test rows before running it. Every access check must pass again.
+5. Copy `.env.test.example` to `.env.test.hosted.local` and enter this pilot's URL, publishable key, and two test-user credentials privately. Keep the local test file unchanged. Review the target and the script's test-row writes and cleanup. After choosing to run the hosted check, use `node --env-file=.env.test.hosted.local scripts/check-access.mjs --allow-hosted` in the app folder. The explicit flag allows a non-local target. Every access check must pass again.
 
 The app currently offers sign-in for existing test users. It does not offer public registration or password recovery. Public email flows need an explicit [SMTP delivery plan](https://supabase.com/docs/guides/auth/auth-smtp) before you invite users. This pilot is not ready for real customer accounts.
 
 ## Publish the browser app
 
-1. Set the hosted project URL and **publishable** key in the app's ignored `.env.local`. Rebuild. Vite embeds these values into `dist`; they are visible to every visitor. Check the output for accidental localhost URLs or privileged credentials.
-2. Run the built app locally through `npm run workers:dev`. Sign in and check the hosted data, then sign out. Stop the server.
-3. Sign in to your Cloudflare account using Wrangler's official login flow. `npx --no-install wrangler whoami` helps check the account. Review the project name, source commit, plan, and files to upload. A GitHub push alone does not deploy in this manual route.
-4. After your publishing decision, `npm run deploy` uploads `dist` and creates a deployment. Record the returned `workers.dev` URL and version ID. This route does not need a purchased domain. [Static-assets getting started](https://developers.cloudflare.com/workers/static-assets/get-started/).
-5. Open that exact HTTPS URL in a fresh browser profile. Check sign-in, add, complete, delete, reload, sign-out, and the second user's isolation. Open it on a phone too. Record what you actually checked, the app commit, and the deployment version.
+1. Copy `.env.example` to `.env.production.local`. Put only the hosted project URL and **publishable** key in that ignored file. Keep `.env.local` for local Supabase. `npm run build` uses production settings; `npm run dev` uses development settings. Ask the AI to check for inherited settings that could override either file. [Vite's environment and mode rules](https://vite.dev/guide/env-and-mode#env-files).
+2. Run `npm run build`. The public `VITE_` values go into `dist` and are visible to visitors. Have the AI verify the target and check for accidental localhost URLs or privileged credentials without printing credentials.
+3. Run the built app locally through `npm run workers:dev`. Sign in and check the hosted data, then sign out. Stop the server.
+4. Sign in to your Cloudflare account using Wrangler's official login flow. `npx --no-install wrangler whoami` helps check the account. Review the project name, source commit, plan, and files to upload. A GitHub push alone does not deploy in this manual route.
+5. After your publishing decision, `npm run deploy` uploads `dist` and creates a deployment. Record the returned `workers.dev` URL and version ID. This route does not need a purchased domain. [Static-assets getting started](https://developers.cloudflare.com/workers/static-assets/get-started/).
+6. Open that exact HTTPS URL in a fresh browser profile. Check sign-in, add, complete, delete, reload, sign-out, and the second user's isolation. Open it on a phone too. Record what you actually checked, the app commit, and the deployment version.
 
 ## Practice a rollback
 
@@ -52,6 +55,8 @@ Commit and push a harmless heading change. Build, check, and explicitly deploy i
 Use `npx --no-install wrangler deployments list` to inspect deployments. Have the AI identify version A. Review the target, then explicitly run `npx --no-install wrangler rollback VERSION_A_ID`. Refresh the public URL and verify the previous heading. [Cloudflare's rollback guide](https://developers.cloudflare.com/workers/versions-and-deployments/rollbacks/).
 
 Rollback changes the deployed app version. It does not undo Git commits or Supabase database changes. This drill changes only a heading so both versions use the same schema. For future schema changes, plan compatibility and recovery before migration.
+
+After the drill, Git still contains version B's heading. Record that source and public deployment differ. A later deploy would publish the current built source again. If you want Git to match version A, ask the AI to prepare and review a revert of just the heading commit.
 
 ## Try it yourself
 

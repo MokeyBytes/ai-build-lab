@@ -10,7 +10,7 @@ Authored walkthrough illustration. Decide what success looks like before asking 
 
 ## Turn a need into checks
 
-1. Run the app. Add `Read one page` and `Stretch`. Complete `Stretch`.
+1. From the updated `main` in your app folder, [start Vite](../docs/local-workflow.md#reopen-the-app). Add `Read one page` and `Stretch`. Complete `Stretch`.
 2. Describe the need in your own words. For example, "My list is busy. I want to see what I still need to do."
 3. Ask the AI for a plan with the smallest change, affected files, and checks. Ask it to explain React state using [React's state guide](https://react.dev/learn/state-a-components-memory). A filter changes the view; the tasks remain in memory.
 
@@ -32,12 +32,16 @@ Agree on these results:
 
 Also require a visible selected-filter state and keyboard-operable buttons. The reference uses native buttons and `aria-pressed`. Ask the AI to verify that choice in [MDN's toggle-button guidance](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-pressed).
 
+Storage comes in lesson 5. If an edit reloads the page and clears the in-memory list, add the two example tasks again before checking the table.
+
 ## Build, check, and review
 
 1. From a clean app checkpoint, ask for a branch named `task-filters`.
 2. Accept the small plan, then let the AI implement it. Review what changed. Ask why the filter must not remove tasks from the saved list.
 3. Check every row above. Complete `Read one page` while viewing Active. It should leave that view and appear in Completed. Switch to All and count both tasks.
 4. Use Tab and Enter to change filters. Check the selected state. Ask for `npm run build`, then commit, push the branch, and review its pull request before merging.
+
+Follow [Finish a feature branch](../docs/local-workflow.md#finish-a-feature-branch) to bring the merged result back to your local `main` before the next lesson.
 
 If tasks disappear from All, return to the last working checkpoint or ask for a correction to the filtering code. Do not rebuild the whole app to fix one filter.
 

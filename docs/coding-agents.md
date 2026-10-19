@@ -2,7 +2,7 @@
 
 Use Codex desktop or Claude Desktop's Code tab from the first lesson. Choose one. The AI teaches from the repository while it works on the app with you.
 
-Official documentation checked on October 18, 2026. These steps still need beginner testing on Windows and macOS.
+Desktop setup and its official sources reviewed on October 19, 2026. These steps still need beginner testing on fresh Windows and macOS systems.
 
 | Workspace | Official source | What to select |
 | --- | --- | --- |
@@ -33,13 +33,17 @@ Both desktop workflows provide ways to inspect changed files. See [Codex's local
 
 Use one local session and one project folder for the first exercise. Worktrees, remote sessions, and cloud execution can come later. If the app requests a missing prerequisite, check its current official guide before installing anything.
 
+Current Claude Desktop can use a direct Local session before Git is installed. Its [Git troubleshooting section](https://code.claude.com/docs/en/desktop#git-and-git-lfs-errors) says older Windows versions asked for Git for every local session. Update the app if that happens in a direct Local session. A worktree still needs Git. Lesson 2 introduces Git for saving app history.
+
+For lesson 2 onward, [Find your files and resume work](local-workflow.md) explains the command boxes, working folder, server tasks, and branch review. The AI runs the technical steps; you inspect their effects.
+
 ## Shared tutor instructions
 
 [AGENTS.md](../AGENTS.md) holds the tutor workflow. [Codex reads AGENTS.md](https://learn.chatgpt.com/docs/agent-configuration/agents-md). [CLAUDE.md](../CLAUDE.md) imports it through [Claude Code's documented import syntax](https://code.claude.com/docs/en/memory).
 
-Use the exact names `AGENTS.md` and `CLAUDE.md`, including capitalization. They are Markdown text files the coding apps load, not programs you run to start a session. Our `CLAUDE.md` contains `@AGENTS.md` so both tools use the same course rules. These instruction-file details were checked on October 19, 2026; the desktop setup above retains its October 18 review date.
+Use the exact names `AGENTS.md` and `CLAUDE.md`, including capitalization. They are Markdown text files the coding apps load, not programs you run to start a session. Our `CLAUDE.md` contains `@AGENTS.md` so both tools use the same course rules. These instruction-file details were checked on October 19, 2026.
 
-For Markdown, conditional guidance, command hooks, context injection, and model-based hooks, continue to [lesson 5a](../lessons/05a-instructions-and-hooks.md) after the testing lesson. It includes current official sources and an uninstalled demo.
+For Markdown, conditional guidance, command hooks, context injection, and model-based hooks, try optional [lesson 5a](../lessons/05a-instructions-and-hooks.md) after the testing lesson. It includes current official sources and an uninstalled demo.
 
 [Lesson 5b](../lessons/05b-skills-mcp-and-plugins.md) follows with skills, MCP servers, and plugins. It shows both desktop apps' controls, a small skill, and optional connection examples. Those extension instructions were source-checked on October 19, 2026. Add them when a task needs them.
 

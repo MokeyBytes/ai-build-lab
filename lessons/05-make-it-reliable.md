@@ -1,8 +1,8 @@
 # 5. Make it reliable
 
-You will keep tasks after a refresh, add useful tests, and fix a bug that a test catches.
+You will keep tasks after a refresh, add useful tests, and fix a bug that a test catches. A test is code that checks an expected result and reports when it differs.
 
-Allow 45 to 60 minutes after lesson 4. No cloud account is needed. Use fake task titles.
+Allow 45 to 60 minutes after lesson 4. Start from the updated app `main` and [reopen Vite](../docs/local-workflow.md#reopen-the-app). No cloud account is needed. Use fake task titles.
 
 ![Illustration of a task saved to browser storage, restored on refresh, and checked by a test.](../docs/images/05-storage-tests.svg)
 
@@ -45,10 +45,12 @@ Tab to the task input, type a title, and press Enter. Tab to its checkbox and us
 
 Ask the AI to run `npm run check`, inspect the diff, and commit the working result. Push and review the branch before merging. Tests cover the behaviours you wrote down. They do not replace the browser and keyboard checks you just performed.
 
+[Update your local `main`](../docs/local-workflow.md#finish-a-feature-branch) after merging. You can now continue to containers. Optional lessons [5a](05a-instructions-and-hooks.md) and [5b](05b-skills-mcp-and-plugins.md) explain instructions, hooks, skills, MCP, and plugins when you want to explore those tools.
+
 ## Recover and try it yourself
 
 If saved data will not load, keep a copy of its raw value before any repair. Ask the AI to diagnose the format without deleting storage. If saving fails, show the error and keep the previous confirmed list.
 
 Write your own request for one missing edge-case test. Explain what wrong behaviour would make it fail. Show that failure once, then restore the correct code and get a passing check. Record the test output and your own browser checks.
 
-[Previous](04-describe-a-feature.md) · [Next: instructions and hooks](05a-instructions-and-hooks.md)
+[Previous](04-describe-a-feature.md) · [Next: use containers](06-use-containers.md)

@@ -1,6 +1,6 @@
 # Validation
 
-Core course reviewed on **October 18, 2026**. Instructions, hooks, skills, MCP, and plugins reviewed on **October 19, 2026**. The core lessons are written. Documentation review, automated checks, and a beginner completing the walkthrough are different evidence.
+Beginner walkthrough and official-source review completed on **October 19, 2026**. The original backend verification dates from **October 18, 2026**. The core lessons are written. Documentation review, automated checks, and a beginner completing the walkthrough are different evidence.
 
 ## Documentation review
 
@@ -18,7 +18,7 @@ The new official-source URLs and their linked section anchors passed reachabilit
 
 The [standalone demo](../exercises/05a-hooks/README.md) passed eight command-level tests on Node 24.22.0 and Node 26.10.0 on this Mac. It returns a repeatable deny decision for its matching sample event, no decision for an ordinary write, and extra context for its keyword-matched database prompt. Tests also cover Windows-style path strings, unsupported tools, invalid input, and prompt text treated as data. Windows-style input testing does not establish a Windows runtime test.
 
-The configuration example remains inactive. No hook was installed in Codex or Claude Code, and no permissions or trust settings were changed. Desktop event delivery, instruction-file loading, and enforcement still need client-level checks. Existing app and backend tests below retain their October 18 evidence; they were not rerun for this documentation and standalone-demo change.
+The configuration example remains inactive. No hook was installed in Codex or Claude Code, and no permissions or trust settings were changed. Desktop event delivery, instruction-file loading, and enforcement still need client-level checks. The hook-only revision did not rerun app or backend checks; later checks have their own scope below.
 
 ## October 19 skills, MCP, and plugin checks
 
@@ -28,9 +28,21 @@ All 16 official-source URLs in the new lesson and exercise guide returned HTTP 2
 
 The repository check passed 162 local Markdown links and anchors, 13 SVGs, and eight JSON files. The new SVG's rendered image was inspected for legibility. The prose received the full writing review; the skill received a separate agent-instruction review.
 
-No skill discovery, MCP handshake or tool call, or plugin installation was tested in either desktop client for this revision. Those walkthroughs still need client-level and beginner checks on Windows and macOS. No credentials, app accounts, user-wide settings, or hosted resources were changed. The app and backend tests retain their October 18 evidence.
+No skill discovery, MCP handshake or tool call, or plugin installation was tested in either desktop client for that extension revision. Those walkthroughs still need client-level and beginner checks on Windows and macOS. No credentials, app accounts, user-wide settings, or hosted resources were changed. That revision did not rerun app or backend checks.
 
-## Practical evidence
+## October 19 beginner walkthrough review
+
+The review followed the repo from ZIP download through lesson 10, including the optional side lessons, reference app, prompts, templates, glossary, recovery instructions, and images. It fixed missing folder, command, server, identity, and branch transitions. The Mac HTTPS route now points to the official package installer. Hooks and extensions remain available as optional side lessons. Local development and a hosted pilot use separate environment files, and backup practice includes its restore control before the practice copy is made.
+
+All 116 linked external URLs returned HTTP 200 and all checked section anchors resolved. Source-content checks covered the product setup, account access, runtime support, credentials, environment precedence, containers, Supabase policies and cost boundaries, Workers deployment, and relevant release notes. The Supabase exposure claim now links the exact announcement. A GitHub-rendered section link was replaced with the installation page and its section name. Reachability is recorded separately from checking what a page says.
+
+All local document links and SVGs passed structure checks. Every walkthrough image was rendered and inspected against its lesson. New illustrations cover ZIP onboarding and the first heading change; the counter illustration uses the supplied HTML's actual labels and expected values. Illustrations remain distinct from product screenshots and browser testing.
+
+On this Mac with Node 24.22.0, the reference's eight tests, TypeScript check, and production build passed again. The eight standalone hook tests passed again. Vite's real environment loader also passed a temporary fake-settings check for separate development/production values and process-variable precedence. A temporary app repository passed local identity setup, staging, commit, single-file restore, and matching local/remote IDs using a disposable bare Git repository. That test did not authenticate to GitHub or exercise an OS credential manager.
+
+This review did not install desktop tools on fresh computers, observe a beginner, test Windows execution, install hooks or extensions in either client, create hosted resources, or rerun the Docker/Supabase lifecycle and isolation checks below. Those backend checks retain their October 18 evidence. Client-level and beginner testing remain release requirements.
+
+## October 18 app and backend evidence
 
 Tests ran on this Mac with **Node 24.22.0**. The container used `node:24.22.0-bookworm-slim`. Supabase used the pinned **2.121.0** CLI and PostgreSQL 17. Cloudflare used the pinned **4.151.1** Wrangler. Existing local services occupied the default ports, so verification used an isolated Compose project on port 55173, Supabase on 624xx ports, and Wrangler on port 55187. Other projects were left running.
 

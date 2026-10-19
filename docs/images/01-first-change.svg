@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="530" viewBox="0 0 1080 530" role="img" aria-labelledby="title desc">
+  <title id="title">Change the heading and check the page</title>
+  <desc id="desc">Before the edit the page heading is My first app. After the edit it is Tiny Wins. The tab title stays First change exercise. After refresh the counter is zero and Add a win still works.</desc>
+  <rect width="1080" height="530" rx="16" fill="#f2f6fa"/>
+  <style>text{font-family:Arial,Helvetica,sans-serif;fill:#172a3a}.heading{font-size:32px;font-weight:700}.label{font-size:24px;font-weight:700}.body{font-size:20px}.foot{font-size:18px}.button{font-size:20px;fill:white}</style>
+  <text x="36" y="39" class="foot">AI BUILD LAB / EXERCISE ILLUSTRATION / 2026-10-19</text>
+  <text x="36" y="84" class="heading">Change the heading and check the page</text>
+  <text x="36" y="128" class="label">Before</text>
+  <text x="560" y="128" class="label">After saving and refreshing</text>
+  <g fill="white" stroke="#bccbd6">
+    <rect x="36" y="147" width="484" height="292" rx="12"/>
+    <rect x="560" y="147" width="484" height="292" rx="12"/>
+  </g>
+  <path d="M36 194H520M560 194H1044" stroke="#bccbd6"/>
+  <text x="57" y="178" class="body">Tab: First change exercise</text>
+  <text x="581" y="178" class="body">Tab: First change exercise</text>
+  <text x="60" y="231" class="foot">AI Build Lab / Lesson 1</text>
+  <text x="584" y="231" class="foot">AI Build Lab / Lesson 1</text>
+  <text x="60" y="278" class="heading">My first app</text>
+  <text x="584" y="278" class="heading">Tiny Wins</text>
+  <text x="60" y="317" class="body">Start with one small change.</text>
+  <text x="584" y="317" class="body">Start with one small change.</text>
+  <text x="60" y="354" class="body">Wins this session: 0</text>
+  <text x="584" y="354" class="body">Wins this session: 0</text>
+  <rect x="60" y="375" width="155" height="43" rx="6" fill="#125b45"/>
+  <rect x="584" y="375" width="155" height="43" rx="6" fill="#125b45"/>
+  <text x="80" y="404" class="button">Add a win</text>
+  <text x="604" y="404" class="button">Add a win</text>
+  <text x="36" y="477" class="foot">The heading changes. The tab title stays the same. Two clicks after refresh must show 2.</text>
+  <text x="36" y="506" class="foot">Illustration based on exercises/01-first-change/index.html, not a captured browser screenshot.</text>
+</svg>

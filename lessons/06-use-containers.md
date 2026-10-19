@@ -2,7 +2,7 @@
 
 You will run Tiny Wins in a container, restart it, and explain where its data lives.
 
-Allow 45 to 60 minutes after lesson 5b, plus download time. Docker Desktop is free for personal learning under its terms. Check employer or government licensing before using it at work.
+Allow 45 to 60 minutes after lesson 5, plus download time. Docker Desktop is free for personal learning under its terms. Check employer or government licensing before using it at work. Lessons 5a and 5b are optional.
 
 Containers are useful for repeatable services and tests. They are not required for every app. A browser interface, a Workers runtime, and a native phone app each have different execution environments. Here Docker prepares you for a local database in the next lesson.
 
@@ -15,7 +15,7 @@ Authored walkthrough illustration. Publishing a port forwards traffic; it does n
 1. Ask the AI to check the current Docker Desktop requirements for [Windows](https://docs.docker.com/desktop/setup/install/windows-install/) or [Mac](https://docs.docker.com/desktop/setup/install/mac-install/). Use a supported OS and the installer for your processor.
 2. On Windows, use the documented WSL 2 route and Linux containers. Enabling WSL or hardware virtualization may need administrator help and a restart. Ask the AI to explain the exact missing requirement before changing Windows settings.
 3. On Mac, choose Apple silicon or Intel as appropriate. Open Docker Desktop after installation and wait for the engine to be ready.
-4. Ask for `docker version` and `docker compose version`. The first command must show a reachable server as well as a client. A permission or engine error needs diagnosis before continuing. Do not expose Docker's socket or disable protections to make it work.
+4. Ask for `docker version` and `docker compose version`. The first command must show a reachable server as well as a client. Docker Desktop's engine is the program running containers; having the app installed does not prove the engine is ready. A permission or engine error needs diagnosis before continuing. Do not expose Docker's socket or disable protections to make it work.
 
 ## Run the same app in a container
 
@@ -27,6 +27,8 @@ Check that port 5173 is free. Use only this project's Compose resources.
 ```
 
 The [Compose file](../reference/tiny-wins/compose.yaml) mounts your app folder at `/app`. A separate named volume holds Linux dependencies. Your task list still lives in browser storage. [Docker's Compose guide](https://docs.docker.com/compose/gettingstarted/) explains the file and service lifecycle.
+
+A bind mount makes a computer folder available inside the container. A named volume is storage managed by Docker. You will inspect both in the next steps.
 
 1. Have the AI copy and explain the file. It should keep the pinned Node image and your committed npm lockfile.
 2. `docker compose config` checks the resolved configuration without starting it. Confirm the port maps **127.0.0.1:5173** on your computer to port 5173 inside the container. This keeps the development service on your computer's loopback interface.
@@ -49,10 +51,12 @@ The [Compose file](../reference/tiny-wins/compose.yaml) mounts your app folder a
 
 If the port is busy, identify the process before stopping anything. If you choose another port, expect a separate browser-storage list. Never run a whole-machine prune to fix one project.
 
+Review and commit the Compose file in your app repository. If you used a feature branch, [merge and update local `main`](../docs/local-workflow.md#finish-a-feature-branch) before lesson 7.
+
 ## Try it yourself
 
-Ask the AI to show which container, image, and volume belong to this app. Restart only this service and show that your source file and browser tasks survive. Explain why deleting a container is different from deleting a database volume. Commit the Compose file after reviewing it.
+Ask the AI to show which container, image, and volume belong to this app. Restart only this service and show that your source file and browser tasks survive. Explain why deleting a container is different from deleting a database volume.
 
 Podman remains an alternative that needs its own compatibility check. Its Windows/Mac virtual machine and Docker API compatibility add setup choices; do not assume replacing the word `docker` proves the walkthrough works. [Supabase's supported local runtimes](https://supabase.com/docs/guides/local-development/cli/getting-started).
 
-[Previous](05b-skills-mcp-and-plugins.md) · [Next: add accounts and data](07-add-accounts-and-data.md)
+[Previous](05-make-it-reliable.md) · [Next: add accounts and data](07-add-accounts-and-data.md)

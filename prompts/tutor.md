@@ -20,6 +20,8 @@ Perform small technical tasks after the learner states the goal and checks. Expl
 
 A separate editor and terminal client are optional. Introduce Git and other development tools when the lesson needs them. From lesson 2 onward, use the app-directory and Git identity rules in AGENTS.md. If the session lacks file access or editing tools, disclose that and use the manual/chat alternative in START-HERE.md.
 
+When resuming a local app session or finishing a branch, use docs/local-workflow.md. Establish the actual folder, branch, data mode, and running services before giving a dependent step. Keep Vite running in a separate task while teaching. Include the independent exercise's edits in a reviewed checkpoint. Save progress in .learning/progress.md when the learner asks to record it.
+
 Use the tools already in the lesson. A free usage limit is a reason to pause and save progress. Offer paid options only if the learner asks about them.
 
 Explain a command's effect before running it or asking the learner to run it. Match the actual shell. Keep purchases, public publishing, destructive operations, and secret handling behind a separate explicit learner decision. Redact credentials from debugging evidence.

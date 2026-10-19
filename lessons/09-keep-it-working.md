@@ -18,12 +18,12 @@ cloud environment values, no credentials, and a different port.
 Never replace my live list or restore into the hosted database.
 ```
 
-1. Use fake tasks with distinct names. Complete one and leave another active. Add Export tasks using the reference's [backup functions](../reference/tiny-wins/src/tasks.ts) and [interface](../reference/tiny-wins/src/App.tsx) as guides. Export every task available to the current user, not only the current view. Save the downloaded JSON outside the repository.
+1. Start from updated local `main` and create a `backup-restore` branch. Use fake tasks with distinct names. Complete one and leave another active. Add **Export tasks** and a browser-mode-only **Restore a backup** control using the reference's [backup functions](../reference/tiny-wins/src/tasks.ts) and [interface](../reference/tiny-wins/src/App.tsx). Validate the whole file and request confirmation before replacing a browser list. Keep cloud restore unavailable. Export every task available to the current user, not only the current view. Save the downloaded JSON outside the repository.
 2. Open the export as text. It must contain a format version, each task's ID, title, completion state, and creation time. Exclude login tokens, passwords, and API credentials.
-3. Ask the AI to create `work/restore-practice` from app source and lockfile only. Exclude `.git`, dependencies, build output, `.wrangler`, and **all actual environment files**. Both Supabase values must be empty in this copy. Have it run `npm ci` there, then start Vite at port **5174**, bound to `127.0.0.1` with `--strictPort`.
+3. Ask the AI to create `work/restore-practice` from the updated app source, package manifest, and lockfile. Exclude `.git`, dependencies, build output, `.wrangler`, and **all actual environment files**. Both Supabase values must be empty in this copy, including inherited process settings. Have it run `npm ci` there, then `npm run dev -- --port 5174`. The reference's `dev` script already supplies `127.0.0.1` and `--strictPort`; retain those settings.
 4. Open `http://127.0.0.1:5174` and confirm the app says it uses browser storage. Add a disposable task so you can see replacement happen. Export that list too before restoring.
-5. Add a Restore a backup file control if needed. Validate the entire file before making any change, show how many tasks will replace the current list, and ask before replacement. Import the original export into this disposable copy.
-6. Compare every title, completion state, ID, and total count. Refresh and compare again. Try an invalid JSON file; it must show an error and leave the restored list unchanged. Stop the restore server when done.
+5. Choose **Restore a backup** in the disposable copy and select the original export. Check the confirmation's task count before accepting replacement.
+6. Compare every title, completion state, ID, creation time, and total count. Refresh and compare again. Try an invalid JSON file; it must show an error and leave the restored list unchanged. Stop the restore server when done. Run the main app's checks, review the feature branch, and [merge it back into local `main`](../docs/local-workflow.md#finish-a-feature-branch).
 
 Do not delete the original list to prove a backup works. The reference limits restores to browser storage. Cloud import needs a separate design for ownership, ID conflicts, validation, and transactions.
 
@@ -45,6 +45,8 @@ If you stayed local, record this review as not applicable. Check disk use and st
 2. Ask it to show the exact package and version before installation. Pin the selected version, update the lockfile, and inspect the diff. Avoid a blanket upgrade or `npm audit fix --force`.
 3. Use `npm ci` to verify that the committed manifest and lockfile install together. This replaces installed dependencies. Run `npm run check` and the browser checks. If auth or database code changed, rerun access checks too.
 4. Review the pull request and merge only after checking the results. Publishing the update is a separate release decision. [npm ci](https://docs.npmjs.com/cli/v11/commands/npm-ci).
+
+Finish by [updating local `main`](../docs/local-workflow.md#finish-a-feature-branch) from the merged result.
 
 If the update fails, keep the failure evidence. Restore the previous manifest and lockfile on the branch, reinstall with `npm ci`, and recheck. Preserve unrelated work.
 

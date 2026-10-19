@@ -14,6 +14,8 @@ Ask the AI to explain the [local development guide](https://supabase.com/docs/gu
 
 The publishable key identifies the app. A signed-in user's session identifies that user. Row-level security, or RLS, decides which rows they may use. The browser must never receive a secret or `service_role` key. A database password is another credential and stays outside the client too.
 
+PostgreSQL is the database. Supabase also supplies account sign-in, a browser dashboard called Studio, and an API the app calls. A migration is a saved SQL file describing a database change. SQL is the language used to define and query these tables. You will review the supplied migration before applying it.
+
 ## Start local Supabase
 
 ```text
@@ -27,7 +29,7 @@ Do not link or change any hosted project.
 1. Check that Docker is ready. Stop the lesson 6 web container with `docker compose stop`; use the regular local Vite server for this lesson. Install the reference's pinned `supabase` CLI as a development dependency.
 2. Ask the AI to inspect `npx --no-install supabase --help`, then the relevant subcommand's `--help`. `--no-install` uses your installed version and avoids fetching an unrelated newer CLI.
 3. `npx --no-install supabase init` creates `supabase/config.toml`. Review the local project name and ports. `npx --no-install supabase start` downloads and starts local services. The first download is much larger than the web app.
-4. The CLI reports local API, Studio, and mail-viewer addresses. Use those actual addresses. Open Studio and inspect it. Do not paste the full CLI status output into chat because it can contain privileged local credentials.
+4. The CLI reports local API, Studio, and mail-viewer addresses. Use those actual addresses. Studio is an administration page, separate from Tiny Wins at port 5173. Open Studio and inspect it. Do not paste the full CLI status output into chat because it can contain privileged local credentials.
 
 If the machine cannot run this stack, save progress. Choosing a hosted database is a separate decision with plan and privacy checks. Do not silently connect to an existing project.
 
@@ -37,7 +39,7 @@ If the machine cannot run this stack, save progress. Choosing a hosted database 
 2. `npx --no-install supabase migration new create_tasks` creates a new, timestamped SQL file. Ask the AI to put the reviewed SQL into **that generated file**. Do not also run it manually in Studio.
 3. `npx --no-install supabase migration up --local` applies pending migrations to your local database. Check the `tasks` table and its policies in Studio. `npx --no-install supabase db advisors --local` checks for database warnings; investigate any findings.
 
-The UPDATE policy needs both a rule for the existing row and a rule for its new values. That stops an owner changing `owner_id` to somebody else. Explicit table grants matter too. The [2026 Data API change](https://supabase.com/changelog) means a SQL-created table must not depend on automatic exposure.
+The UPDATE policy needs both a rule for the existing row and a rule for its new values. That stops an owner changing `owner_id` to somebody else. Explicit table grants matter too. The [Data API exposure change](https://supabase.com/changelog/45329-breaking-change-tables-not-exposed-to-data-and-graphql-api-automatically) means a SQL-created table must not depend on automatic exposure.
 
 ## Connect the app
 
@@ -50,6 +52,8 @@ The UPDATE policy needs both a rule for the existing row and a rule for its new 
 
 Use separate browser profiles for simultaneous sessions. Two tabs in the same profile usually share sign-in storage. A reload fetches the current list; this small app does not promise live synchronization or offline cloud editing.
 
+After adding the account feature, expect a sign-in form instead of your browser-only list. That earlier list remains in browser storage. Signing in shows the database list for the selected user. If the page still says **Saved in this browser only**, stop and check both environment values and whether Vite was restarted.
+
 ## Prove access through the API
 
 Copy the reference's [access-check script](../reference/tiny-wins/scripts/check-access.mjs) into your app's `scripts/` folder and review it. It signs in as both test users, creates temporary rows, tries forbidden requests, and removes its own test rows. It never needs a secret key.
@@ -58,6 +62,8 @@ Copy the reference's [access-check script](../reference/tiny-wins/scripts/check-
 2. Add the reference's `test:access` npm script, then run `npm run test:access` from the app folder.
 3. Require each PASS line. Both users must read and change their own tasks. Neither may read, update, delete, reassign, or insert for the other. Unsigned requests must fail. A request returning an empty array can mean RLS hid rows; check affected-row counts as well as HTTP success.
 4. Run `npm run check` and repeat the sign-in/out browser checks. Review and commit only source, migration, config, and lockfile changes. Check staged contents for secrets before pushing.
+
+Use [the branch review steps](../docs/local-workflow.md#finish-a-feature-branch) to merge and bring the checked version back to local `main`.
 
 If any isolation check fails, stop. Do not publish the app. Fix the grants and ownership policies, then rerun the same checks. Never disable RLS or use a privileged key to make the client work.
 

@@ -11,6 +11,10 @@ Use [MDN's heading reference](https://developer.mozilla.org/en-US/docs/Web/HTML/
 3. Find the heading **My first app**, the number **0**, and **Add a win**.
 4. Click the button twice. The number should show **2**. Refresh the page. It should return to **0**.
 
+![Illustration of the supplied counter showing My first app, zero wins, and Add a win, with only the heading changing to Tiny Wins.](../docs/images/01-first-change.svg)
+
+Authored illustration based on the exercise file. The browser-tab title is separate from the heading inside the page.
+
 The `file:` address means you opened a file on your computer. This version keeps the counter in memory and does not save it.
 
 ## Ask for a proposal
@@ -54,6 +58,8 @@ Refresh the browser yourself. Check that:
 - The heading says **Tiny Wins**.
 - The browser tab still says **First change exercise**.
 - Two button clicks still show **2**.
+
+Refresh first, then click twice. The refresh starts the counter at zero; saving the file alone does not refresh an already open page.
 
 An AI saying "done" does not establish those results. Report what you actually observe. If it differs, use [troubleshooting](../docs/troubleshooting.md).
 

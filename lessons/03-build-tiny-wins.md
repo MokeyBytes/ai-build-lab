@@ -6,6 +6,10 @@ Allow 60 to 90 minutes after lesson 2. Use your existing AI desktop workspace an
 
 ## Meet the tools
 
+React builds the interface from components, reusable pieces such as a task list. TypeScript checks how the code uses values. Vite starts the development server and builds the release files. Node runs these development tools, and npm downloads the packages they need.
+
+`package.json` lists the project's packages and commands. `package-lock.json` records the resolved package versions so another install can reproduce them. You will review both when packages change.
+
 Ask the AI to open the relevant sections of [React's from-scratch guide](https://react.dev/learn/build-a-react-app-from-scratch), [Vite's guide](https://vite.dev/guide/), and [TypeScript's introduction](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html). Ask which tool draws the interface, which starts the local server, and which checks types. Type checks cannot validate everything a user enters.
 
 ![Illustration of the AI preparing a React app, a local development server on port 5173, and a browser checking tasks.](../docs/images/03-local-app.svg)
@@ -14,8 +18,8 @@ Authored walkthrough illustration. A local server runs on your computer while yo
 
 ## Prepare the app
 
-1. Ask the AI to check `node --version` and `npm --version`. Install **Node 24 LTS** from the [official download page](https://nodejs.org/en/download) if needed. Use the Windows installer or the Mac installer for your computer's processor. Restart the AI app and recheck. [Node's support table](https://nodejs.org/en/about/previous-releases) explains LTS. Do not replace an employer-managed runtime without checking its rules.
-2. Ask the AI to confirm a clean Git checkpoint in `work/tiny-wins`. Create a branch named `build-task-tracker`. Keep all commands in that app folder.
+1. Ask the AI to check `node --version` and `npm --version`. Install **Node 24 LTS**, long-term support, from the [official download page](https://nodejs.org/en/download) if needed. Choose the prebuilt Windows `.msi` or Mac `.pkg` installer for your processor. npm comes with Node. Restart the AI app and recheck. Expect Node's version to begin `v24.`. The reference is checked with 24.22.0. [Node's support table](https://nodejs.org/en/about/previous-releases) explains LTS. Do not replace an employer-managed runtime without checking its rules.
+2. Ask the AI to confirm a clean Git checkpoint in `work/tiny-wins`. A branch is a separate line of saved work. Create one named `build-task-tracker` so you can review the task tracker before combining it into `main`. Keep all commands in that app folder.
 3. Ask for a small plan before replacing `index.html`. Start with a React page that shows only the heading. Keep the saved counter in Git history.
 
 ```text
@@ -29,10 +33,10 @@ Do not copy the completed reference App.tsx. Explain each command before running
 
 The [reference folder](../reference/tiny-wins/README.md) is an answer key and a tested toolchain, not a requirement to copy the finished app. Ask for a hint first if you get stuck. Package installs download code; check the package names and official sources before accepting them.
 
-4. Have the AI add `dev` and `build` scripts matching the reference. `npm run dev` starts Vite at `http://127.0.0.1:5173`. Open that address in your browser. Leave the server running while you work. Stop its task or use Ctrl+C when finished.
+4. Have the AI add `dev` and `build` scripts matching the reference. A script is a named command in `package.json`. For `dev`, keep the reference's host, port, and `--strictPort` settings so a busy port produces an error instead of another address. `npm run dev` starts Vite at `http://127.0.0.1:5173`. Open that address in your browser. Leave the server task running while you work. [Starting and stopping the app](../docs/local-workflow.md#reopen-the-app).
 5. Check that the page shows your heading. This app needs the development server. Double-clicking its new `index.html` is no longer the right way to open it.
 
-All command examples in later lessons run from `work/tiny-wins`. The AI should state the full path first. Git, npm, Docker, and `npx --no-install` commands shown in this course work in Windows PowerShell and Mac zsh. File-copy commands differ; let the AI use your actual shell. In PowerShell, use `npm.cmd` if a script execution policy blocks `npm.ps1`; do not weaken the machine's policy to fix that.
+App commands in later lessons run from `work/tiny-wins`. The optional hook demo runs from the course folder. The AI should state the full path and use your actual shell. [The command guide](../docs/local-workflow.md#know-where-to-put-an-instruction) explains PowerShell, zsh, and the Windows `npm.cmd` and `npx.cmd` alternatives.
 
 ## Build one behaviour at a time
 

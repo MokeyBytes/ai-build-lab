@@ -2,6 +2,8 @@
 
 Your first task is to check an AI explanation against a source. Allow about 10 minutes. Use the desktop workspace from [Start here](../START-HERE.md), or read this lesson in a browser with an ordinary chat if that is the access you have.
 
+Use your existing AI allowance. This lesson installs nothing and needs no app-hosting account.
+
 ## Ask for the source
 
 Documentation explains how a tool works and how to use it. For products, start with the maker's documentation. For web basics, this course uses MDN, a maintained reference. The formal HTML standard is published by [WHATWG](https://html.spec.whatwg.org/multipage/sections.html#headings-and-outlines).
@@ -30,7 +32,7 @@ Compare your answer and the AI's explanation with the page. If the AI disagrees 
 
 Ask the tutor what you should check before following a setup guide. Look for the operating system, supported software version, and service plan. Open release notes when a guide and your tool disagree. A publication date alone does not establish that an instruction is right or wrong.
 
-Our [tool and cost checks](../docs/tools-and-costs.md) record sources reviewed on October 18, 2026. Reopen the official sources before a later installation or purchase.
+Our [tool and cost checks](../docs/tools-and-costs.md) record dated source reviews. Reopen the official sources before a later installation or purchase.
 
 ## Try it yourself
 

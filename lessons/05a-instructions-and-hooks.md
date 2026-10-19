@@ -2,7 +2,7 @@
 
 You will explain what your AI reads, what runs as code, and what needs a model's judgment. Then you will inspect a small hook without installing it into your desktop app.
 
-Allow 30 to 45 minutes after lesson 5. Use the same desktop AI and Node installation. The exercise needs no new package, account, or model API key.
+This is an optional side lesson after lesson 5. Allow 30 to 45 minutes. Use the same desktop AI and Node installation. The exercise needs no new package, account, or model API key. You can go directly to [lesson 6](06-use-containers.md) without setting up hooks.
 
 Official documentation checked on **October 19, 2026**. App integration still needs testing in each desktop client; see [validation](../docs/validation.md).
 

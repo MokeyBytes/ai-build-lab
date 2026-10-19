@@ -1,6 +1,6 @@
 # Tools, sources, and costs
 
-Checked against the linked sources on **October 18, 2026**. This records a documentation review. Practical checks are listed separately in [validation](validation.md). Reopen the sources before installation or choosing a plan.
+Tool choices, setup, and cost guidance rechecked against current official sources on **October 19, 2026**. This records a documentation review. The pinned package and backend runtime checks retain their dated evidence in [validation](validation.md). Reopen the sources before installation or choosing a plan.
 
 ## Why these tools
 
@@ -9,6 +9,8 @@ Start inside one desktop coding app with this repository open. Use a browser to 
 The [2026 Stack Overflow survey](https://survey.stackoverflow.co/2026/technology/data) reports Node.js and React as widely used web technologies and PostgreSQL as its most-used database. [Docker / Docker Compose leads the cloud development category](https://survey.stackoverflow.co/2026/technology/data/cloud-plat). These are results among respondents to each question, not measurements of every developer.
 
 That supports the core choices. Supabase and Cloudflare are our choices for this small app's data, authentication, and hosting needs. The survey does not establish that they are the largest providers or the best choice for every app.
+
+The first session needs one desktop AI app and a browser. Git enters in lesson 2, Node and npm in lesson 3, and Docker in lesson 6. Hooks, skills, MCP connections, and plugins are optional side lessons. Their installation is not a prerequisite for containers, accounts, or publishing.
 
 | Course stage | Main route and source | Why it earns a place |
 | --- | --- | --- |
@@ -27,6 +29,8 @@ React's [general recommendation for new apps is a framework](https://react.dev/l
 - Use **Node 24 LTS**. Node's release table currently lists 24 as LTS, 26 as Current, and 20 as end of life. A package's minimum Node version does not establish that the version still receives support. The reference uses Node 24.22.0 for its runtime checks and container image.
 - The Docker lesson uses a supported Windows 11 release or supported macOS. Check the vendor's current OS, memory, and virtualization requirements before installing. Keep PowerShell and Mac shell instructions separate.
 - The [reference manifest](../reference/tiny-wins/package.json) pins direct dependencies, and its lockfile pins the installation. Versions were checked in the official npm registry on October 18. Add each tool at the lesson that needs it. Use [validation](validation.md) for what was actually run.
+
+The [current Supabase local guide](https://supabase.com/docs/guides/local-development/cli/getting-started) recommends OrbStack on macOS and also documents Docker-compatible alternatives. This course keeps Docker Desktop for one Windows/Mac route and its existing Mac test evidence. A provider recommendation and the course's tested choice are separate facts; changing runtimes needs a separate compatibility check.
 
 ## Cost boundaries
 

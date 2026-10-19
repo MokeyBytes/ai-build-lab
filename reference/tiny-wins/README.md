@@ -29,6 +29,8 @@ Task text renders as React text. The database also validates title length and ow
 
 For local Supabase, follow [lesson 7](../../lessons/07-add-accounts-and-data.md). The checked-in config and migration support testing this reference. A learner's app initializes its own config and migration. Never reuse a real project's credentials to run this example.
 
+The lessons keep `.env.local` for local development, `.env.production.local` for a chosen hosted pilot's public client settings, and separate local/hosted API-test files. All actual environment files are ignored. Check inherited process settings too. Vite's production build and development server can therefore use different database targets. [Environment and mode rules](https://vite.dev/guide/env-and-mode#env-files).
+
 For publishing and recovery, follow [lessons 8](../../lessons/08-put-it-online.md) and [9](../../lessons/09-keep-it-working.md). Commands that deploy, roll back, migrate a hosted database, or replace data change external or stored state. Review the target before running them.
 
 [Validation evidence and limits](../../docs/validation.md).

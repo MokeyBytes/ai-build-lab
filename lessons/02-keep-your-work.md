@@ -4,6 +4,8 @@ You will save a checkpoint, recover one edit, and upload your app to your own Gi
 
 Allow 45 to 60 minutes after lesson 1. Git and a GitHub Free account are enough. AI access follows your plan. You will choose a private repository for the exercise.
 
+Git saves history on your computer. GitHub stores an uploaded copy under an account you control. If you do not have an account, follow [GitHub's sign-up guide](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github), verify your email, and keep your login and recovery codes private.
+
 ## Start in the desktop app
 
 ```text
@@ -26,6 +28,8 @@ Authored walkthrough illustration. The steps below do not depend on a particular
 4. Ask the AI to initialize Git in **that app folder**. `git init -b main` creates local history storage with a `main` branch. It uploads nothing. Check `git rev-parse --show-toplevel`; the result must end in `work/tiny-wins`.
 
 Keep the course folder open in the desktop app. The AI reads lessons here but runs the app's commands with `work/tiny-wins` as its working directory. If you move to a new AI chat, paste the lesson number and both folder paths.
+
+Use [the folder and command guide](../docs/local-workflow.md) if a path or terminal message is unfamiliar. The AI should explain and run the commands; you inspect the results.
 
 ## Choose your identity before committing
 

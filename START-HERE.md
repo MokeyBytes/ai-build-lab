@@ -2,6 +2,8 @@
 
 Your AI desktop app is the place you will learn and work. First give it this repository's folder. Then ask it to teach you one step at a time.
 
+Use a Windows computer or Mac with internet access and a browser. The first lessons run on that computer. Phone access to the finished web app comes later.
+
 ## Choose one desktop app
 
 Use an account you already have access to. Check [current access and costs](docs/tools-and-costs.md#cost-boundaries) before subscribing or upgrading.
@@ -22,6 +24,12 @@ A repository is a project with files and a history of changes. For your first se
 3. On Windows, right-click the ZIP and choose **Extract All**. On macOS, double-click it.
 4. Open the extracted folder. You should see `README.md`, `AGENTS.md`, `CLAUDE.md`, and the `lessons` folder.
 
+The extracted folder may be called `ai-build-lab-main`. That is fine. Keep it somewhere you can find again, and use that same copy throughout the course. On Windows, leave the ZIP view and open the extracted folder before continuing.
+
+![Illustration of downloading the ZIP, extracting it, selecting the folder containing AGENTS.md, and asking the desktop AI to begin.](docs/images/00-get-started.svg)
+
+Authored walkthrough illustration. It shows the files to find rather than a particular app's button layout.
+
 A ZIP contains the files but not Git's history. [GitHub explains the difference](https://docs.github.com/en/repositories/working-with-files/using-files/downloading-source-code-archives). We introduce Git when you need checkpoints and recovery.
 
 If Git is already installed, you can clone instead:
@@ -35,7 +43,7 @@ cd ai-build-lab
 
 In Codex, add the extracted or cloned folder as a local project. Follow the official [local-project instructions](https://learn.chatgpt.com/docs/projects?surface=app) if the controls differ in your version.
 
-In Claude Desktop's Code tab, select **Local > Select folder** and choose that same folder. Use a session that works directly in this folder for the first exercise.
+In Claude Desktop's Code tab, select **Local > Select folder** and choose that same folder. Use a session that works directly in this folder for the first exercise. If offered a separate Git worktree, leave it off. A worktree is another checkout of a Git repository and is unnecessary here.
 
 Select the folder containing `AGENTS.md`. A chat with uploaded files can have different access from a local coding session. See [the desktop workspace guide](docs/coding-agents.md).
 
@@ -57,10 +65,15 @@ The AI can read files, make changes, and run tools when its permissions allow. A
 
 A desktop interface does not install every tool an app might need. Later lessons will explain and check Git, Node.js, Docker, and other software when the project needs them.
 
-When you stop, ask the tutor to help fill in [your progress notes](templates/progress.md). Paste those notes into a later session to resume.
+When you stop, ask the tutor to create or update `.learning/progress.md` using [the progress template](templates/progress.md). Read any existing note first and preserve information you still need. The `.learning` folder is ignored by Git. Ask for the saved note's full path. Paste those notes into a later session, or ask the tutor to read that file, to resume.
+
+From lesson 2 onward, use [Find your files and resume work](docs/local-workflow.md) for the app folder, command examples, and starting or stopping services.
 
 ## Manual/chat alternative
 
-Use an existing AI chat and a plain-text editor such as Notepad. [VS Code](https://code.visualstudio.com/docs/getstarted/overview) is optional. Copy the [tutor instructions](prompts/tutor.md), the current lesson, and the relevant file contents into the chat.
+Use an existing AI chat and a plain-text editor. Copy the [tutor instructions](prompts/tutor.md), the current lesson, and the relevant file contents into the chat. You can read these Markdown files on GitHub. [VS Code](https://code.visualstudio.com/docs/getstarted/overview) is optional.
+
+- On Windows, open the existing HTML file in Notepad to edit it, then save with Ctrl+S. In File Explorer, **View > Show > File name extensions** lets you confirm it remains `index.html`, not `index.html.txt`. [Microsoft's file extension guide](https://support.microsoft.com/en-us/windows/experience/storage-filemanagement/common-file-name-extensions-in-windows).
+- On Mac, TextEdit must show HTML as code and use plain text. Follow [Apple's HTML editing instructions](https://support.apple.com/guide/textedit/work-with-html-documents-txted0b6cd61/mac), then save the existing `.html` file with Command+S. Rich-text formatting can alter the code.
 
 In lesson 1, apply the heading change yourself using the printed before and after lines. Save the file and refresh the browser. The same checks and recovery exercise apply. A chat that cannot read your folder or edit files should say so.

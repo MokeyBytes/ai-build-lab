@@ -22,15 +22,26 @@
 | Commit | A recorded set of changes in Git with a message explaining it |
 | Branch | A separate line of Git history for doing work before combining it |
 | Diff | A comparison showing what changed |
+| Pull request | A proposal on GitHub to combine one branch's changes into another branch |
+| Merge | Combine changes from one branch into another after review |
+| Working directory | The folder a command acts on |
 | Editor | An app used to change text and code files |
 | Terminal | A text interface where you enter commands and read their output |
 | Shell | The program interpreting terminal commands, such as PowerShell or zsh |
+| Package or dependency | Reusable code or a tool that the project installs and uses |
+| Lockfile | A record of the exact package versions an installation should use |
+| npm script | A named command in `package.json`, run with `npm run NAME` |
+| LTS | Long-term support, a maintained release line intended for ongoing use |
+| Build | Check and transform source into files the browser can run for release |
 | HTML | The document structure and content of a web page |
 | CSS | Rules that control a web page's appearance and layout |
 | JavaScript | Code that can make the page respond to actions |
 | TypeScript | JavaScript with types that development tools check before the app runs. It does not replace checks on incoming data |
 | Local | Running on your computer |
 | Server | A program that responds to requests from other programs |
+| Port | A number selecting a service at an address, such as `5173` in `127.0.0.1:5173` |
+| Origin | The scheme, hostname, and port of an address; browser storage is separate for different origins |
+| Environment file | Local settings loaded by a development tool, such as `.env.local`; some settings become public in a browser build |
 | API | A defined way for programs to request data or actions from each other |
 | Container | An environment that packages a program and its dependencies. Its files and network access depend on how you configure it |
 | Database | Software that stores and queries structured data |

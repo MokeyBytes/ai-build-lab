@@ -5,7 +5,7 @@
 <text x="38" y="91" class="heading">Follow the request and the storage</text>
 <rect x="38" y="127" width="318" height="230" rx="12" fill="#ffffff" stroke="#bccbd6"/>
 <rect x="38" y="127" width="318" height="6" rx="3" fill="#087e8b"/>
-<text x="57" y="174" class="label">1  Browser on your PC</text>
+  <text x="57" y="174" class="label">1  Browser</text>
 <text x="57" y="214" class="body">127.0.0.1:5173 forwards to</text>
 <text x="57" y="243" class="body">the app container.</text>
 <path d="M361 241h14m-6-6 6 6-6 6" fill="none" stroke="#087e8b" stroke-width="3"/>

@@ -2,7 +2,7 @@
 
 You will use a small skill to explain a change, then decide whether an external connection or plugin would help your project.
 
-Allow 25 to 40 minutes after lesson 5a. Use your existing desktop AI access. The skill needs no service account. The optional documentation connection makes no model API calls; the AI's normal usage still counts. Official sources checked on **October 19, 2026**.
+This is an optional side lesson after lesson 5. Allow 25 to 40 minutes. Use your existing desktop AI access. The skill needs no service account. The optional documentation connection makes no model API calls; the AI's normal usage still counts. Official sources checked on **October 19, 2026**.
 
 ## Choose the tool for the job
 
@@ -34,7 +34,7 @@ Keep the **course folder** open in your desktop workspace. The example stays out
    ```
 
    Expect a before/after explanation, a suggested check, and any unknowns. If there is no uncommitted change, identify a saved commit and file to explain. Reading a file on request does not establish automatic discovery.
-3. To make it discoverable, ask the AI to copy only that example folder into the location for your app below. Have it show the full destination first and preserve any existing skill there. These exact practice folders are ignored by the course's Git settings.
+3. If you want to try automatic discovery, ask the AI to copy only that example folder into the location for your app below. You can also finish with the read-only trial above. Have it show the full destination first and preserve any existing skill there. These exact practice folders are ignored by the course's Git settings.
 
    | Workspace | Folder inside the course | How to select it |
    | --- | --- | --- |
@@ -42,7 +42,7 @@ Keep the **course folder** open in your desktop workspace. The example stays out
    | Claude Desktop, Code tab, Local | `.claude/skills/explain-change/SKILL.md` | Type `/explain-change`, or use **+ > Slash commands** |
 
    See [Codex skill discovery and selection](https://learn.chatgpt.com/docs/build-skills) and [Claude skill locations](https://code.claude.com/docs/en/skills). Codex CLI and its IDE extension use `/skills` or `$skill-name`; those are different entry points from the desktop picker.
-4. Start a new local session in the same course folder if the skill is absent. Select it, ask for another small explanation, and inspect the diff it cites. Both tools can also choose relevant skills from their descriptions. Explicit selection makes this exercise easier to check. [Claude's desktop skill controls](https://code.claude.com/docs/en/desktop#use-skills).
+4. If you copied the skill, check its picker in the same course folder. Start a new local session if it is absent. Select it, ask for another small explanation, and inspect the diff it cites. Both tools can also choose relevant skills from their descriptions. Explicit selection makes this exercise easier to check. [Claude's desktop skill controls](https://code.claude.com/docs/en/desktop#use-skills).
 
 If discovery fails, check the exact filename, folder, selected project, and current app version before installing anything else. To undo the practice setup, remove only the copy you added and start a new session. Keep the original exercise file.
 

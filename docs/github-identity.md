@@ -35,7 +35,7 @@ git var GIT_AUTHOR_IDENT
 git var GIT_COMMITTER_IDENT
 ```
 
-An unset value can produce no output. Environment variables or app settings can override Git config. If the effective identities differ from your choice, ask the AI to explain the source before changing anything. [Git identity settings](https://git-scm.com/docs/git-config#Documentation/git-config.txt-username).
+An unset config value can produce no output. `git var` can instead report that identity is unknown. That is expected on a computer where Git has not been configured; choose and set your app's identity below, then recheck. Environment variables or app settings can override Git config. If effective identities differ from your choice, ask the AI to explain the source before changing anything. [Git identity settings](https://git-scm.com/docs/git-config#Documentation/git-config.txt-username).
 
 After replacing the placeholders, these commands set credit **only in this app repository**:
 
@@ -53,7 +53,7 @@ For AI-assisted work, keep the learner's chosen identity when the learner direct
 Use one existing authentication route. A GitHub connection in an AI app does not by itself prove that the local Git process can push.
 
 - On Windows, current **Git for Windows** includes Git Credential Manager. Use its browser login when Git asks for authentication.
-- On Mac, use Git Credential Manager's installation instructions if there is no working HTTPS credential helper. The official GitHub guide describes its Homebrew route. Ask the AI to inspect your existing setup before adding another helper.
+- On Mac, first check for an existing working HTTPS credential helper. If one is missing, open Git Credential Manager's official [installation guide](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/install.md) and use its **macOS Package** section. Download its package for your processor and follow the installer. This route does not require Homebrew. Restart the AI app if it cannot find the helper.
 - If you already use GitHub CLI, `gh auth login` can configure HTTPS Git authentication. Choose GitHub.com, HTTPS, browser login, and allow it to authenticate Git. `gh auth status` checks the selected account; do not add `--show-token`.
 
 GitHub documents these routes in [caching credentials](https://docs.github.com/en/get-started/git-basics/caching-your-github-credentials-in-git). Sign in yourself on the official browser page. Check the account and permissions there. Keep passwords, access tokens, recovery codes, and private keys out of the AI chat and repository.
@@ -72,6 +72,6 @@ Your supervised desktop session can use your own account. Future unattended auto
 
 ## Before any push
 
-Ask the AI to show the app folder, destination owner/repo, branch, commit IDs, author, committer, and staged diff. Confirm the destination is yours. Inspect file contents for secrets, including files already tracked before `.gitignore` existed. A successful push needs verification on GitHub. A local commit alone is no proof of upload.
+Ask the AI to show the app folder, destination owner/repo, branch, outgoing commit IDs, author, committer, and outgoing commit diff. Review the staged diff before committing; it is normally empty after the commit. Confirm the destination is yours. Inspect file contents for secrets, including files already tracked before `.gitignore` existed. A successful push needs verification on GitHub. A local commit alone is no proof of upload.
 
 If authentication uses the wrong account, stop before the push. Follow the credential helper's account-switching instructions. Changing `user.email` will not change the login. If a commit has the wrong credit, correct future settings first and inspect whether that commit was shared. Do not rewrite shared history as an automatic fix.
