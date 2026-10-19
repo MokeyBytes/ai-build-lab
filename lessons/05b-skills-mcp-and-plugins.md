@@ -8,7 +8,7 @@ This is an optional side lesson after lesson 5. Allow 25 to 40 minutes. Use your
 
 ![Illustration showing a skill as reusable instructions, an MCP server as a connection to tools or data, and a plugin as an installable package that can include either.](../docs/images/05b-skills-mcp-plugins.svg)
 
-Authored walkthrough illustration. Choose an addition when it solves a current problem.
+Choose an addition when it solves a current problem.
 
 | Part | What it does | Tiny Wins example | When you need it |
 | --- | --- | --- | --- |
@@ -61,7 +61,7 @@ A remote HTTP server runs at the provider. A local STDIO server runs a program o
    | Claude Desktop, Code tab, Local | **+ > Connectors** manages supported integrations. For this custom server, ask the AI to prepare a reviewed merge of the inactive JSON example into `.mcp.json` at the course root. Restart the local session and review any trust prompt |
 
    [Codex's desktop setup](https://learn.chatgpt.com/docs/extend/mcp#configure-in-the-chatgpt-desktop-app), [Claude's connector controls](https://code.claude.com/docs/en/desktop#connect-external-tools). The [example files and removal steps](../exercises/05b-extensions/README.md) show the different formats. Preserve existing settings.
-3. Open `/mcp` in the coding session to inspect the connection. Then ask:
+3. In Codex, inspect **Settings > MCP servers**. In Claude, use **+ > Connectors** for listed integrations and ask which MCP tools are available in this Local session. Then ask:
 
    ```text
    Use openaiDeveloperDocs to find Codex's current project skill folder.
@@ -70,11 +70,11 @@ A remote HTTP server runs at the provider. A local STDIO server runs a program o
    ```
 
    A saved setting alone is not proof. Check that a tool call returned documentation, then open its source. Keep this marked untested if you did not connect it.
-4. Disable or remove only the server you added. Restart and check the server list. If you used an existing plugin connection, manage it through that plugin instead.
+4. Follow the exercise folder's [removal steps](../exercises/05b-extensions/README.md#undo-only-your-practice-setup), then check that the addition is absent. Preserve any connection that existed before the exercise.
 
-Other servers may read private records or change them. Check the provider, requested access, and account shown during sign-in. Git commit author and committer settings do not select an MCP connection's signed-in account. See [GitHub identity](../docs/github-identity.md).
+Before signing in to another server, check its provider, requested access, and selected account. Git author settings do not select that account. Read-only access can still disclose private records. Review [MCP security](https://code.claude.com/docs/en/security#mcp-security); Anthropic does not security-audit or manage MCP servers.
 
-For a read-only safety exercise, imagine a task that needs public documentation while an integration asks to manage every repository. Explain why that access exceeds the task and choose the public docs connection instead. Install nothing for this comparison. Read-only access to private records can still disclose them. Review [MCP security](https://code.claude.com/docs/en/security#mcp-security); Anthropic states that it does not security-audit or manage MCP servers.
+As a discussion exercise, imagine a public-docs task whose integration asks to manage every repository. Explain why you would reject that access. Install nothing for this comparison.
 
 ## Browse a plugin before installing it
 

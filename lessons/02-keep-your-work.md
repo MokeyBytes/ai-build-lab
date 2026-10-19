@@ -18,14 +18,12 @@ Show the full working directory before each group of commands.
 
 ![Illustration of editing app files, creating a local commit, then pushing that commit to the learner's own GitHub repository.](../docs/images/02-checkpoints.svg)
 
-Authored walkthrough illustration. The steps below do not depend on a particular app layout.
-
 ## Make an app folder
 
 1. Ask the AI to check `git --version`. If Git is missing, use [Git's installation guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). On Windows choose Git for Windows. On Mac follow the Mac option. Restart the AI app after installation if it cannot find Git.
 2. Ask it to create `work/tiny-wins` inside the course folder. Copy only the first exercise's `index.html` there, plus the reference app's [`.gitignore`](../reference/tiny-wins/.gitignore). Add a short `README.md` naming your app. Keep the original exercise as it is.
 3. Check the new folder in File Explorer or Finder. Open its `index.html` and check the counter. The course's `.gitignore` excludes `work/`; this folder will have its own history.
-4. Ask the AI to initialize Git in **that app folder**. `git init -b main` creates local history storage with a `main` branch. It uploads nothing. Check `git rev-parse --show-toplevel`; the result must end in `work/tiny-wins`.
+4. Have the AI show the full app-folder path before initializing Git there. `git init -b main` creates local history storage with a `main` branch. It uploads nothing. Afterward, check `git rev-parse --show-toplevel`; the result must end in `work/tiny-wins`. If it names the course folder, stop and correct the working folder before any further Git action.
 
 Keep the course folder open in the desktop app. The AI reads lessons here but runs the app's commands with `work/tiny-wins` as its working directory. If you move to a new AI chat, paste the lesson number and both folder paths.
 

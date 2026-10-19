@@ -28,7 +28,7 @@ The extracted folder may be called `ai-build-lab-main`. That is fine. Keep it so
 
 ![Illustration of downloading the ZIP, extracting it, selecting the folder containing AGENTS.md, and asking the desktop AI to begin.](docs/images/00-get-started.svg)
 
-Authored walkthrough illustration. It shows the files to find rather than a particular app's button layout.
+It shows the files to find rather than a particular app's button layout.
 
 A ZIP contains the files but not Git's history. [GitHub explains the difference](https://docs.github.com/en/repositories/working-with-files/using-files/downloading-source-code-archives). We introduce Git when you need checkpoints and recovery.
 
@@ -49,7 +49,7 @@ Select the folder containing `AGENTS.md`. A chat with uploaded files can have di
 
 `AGENTS.md` and `CLAUDE.md` are the instruction files for our coding tools. `.md` means Markdown text. You open the project in the app; you do not run these files. Keep their exact names, without an extra `.txt` extension. [How both tools share the instructions](docs/coding-agents.md#shared-tutor-instructions).
 
-Keep the app's permission controls active. Begin with **Ask for approval** in Codex or **Manual** in Claude Code. Codex can still edit workspace files without an individual prompt, so request a preview before the first edit. [Work safely with AI](docs/ai-safety.md#check-access-before-the-first-edit) shows the documented controls and their limits.
+Keep the app's permission controls active. Lesson 0's [safety walkthrough](docs/ai-safety.md#check-access-before-the-first-edit) shows which mode to choose before editing.
 
 Paste:
 
@@ -57,13 +57,9 @@ Paste:
 Read AGENTS.md and START-HERE.md. Let's start.
 ```
 
-The tutor should begin [lesson 0](lessons/00-read-the-docs.md), show a documentation source, and give one small step. Lesson 0 includes read-only safety practice before you edit anything. It should ask about your computer and account access when those details matter.
+The tutor should begin [lesson 0](lessons/00-read-the-docs.md) with a documentation source and one small step. It should ask about your computer and account access when those details matter.
 
-## Keep control of the work
-
-The AI can read files, make changes, and run tools when its permissions allow. Ask what an unfamiliar action does before approving it. You will check the app yourself and learn how to undo a change.
-
-A desktop interface does not install every tool an app might need. Later lessons will explain and check Git, Node.js, Docker, and other software when the project needs them.
+## Save your progress
 
 When you stop, ask the tutor to create or update `.learning/progress.md` using [the progress template](templates/progress.md). Read any existing note first and preserve information you still need. The `.learning` folder is ignored by Git. Ask for the saved note's full path. Paste those notes into a later session, or ask the tutor to read that file, to resume.
 

@@ -8,7 +8,7 @@ Containers are useful for repeatable services and tests. They are not required f
 
 ![Illustration showing the browser reaching port 5173 on the computer, the app running in a Linux container, and separate storage locations.](../docs/images/06-containers.svg)
 
-Authored walkthrough illustration. Publishing a port forwards traffic; it does not move browser storage into the container.
+Publishing a port forwards traffic; it does not move browser storage into the container.
 
 ## Check your computer first
 
@@ -18,6 +18,8 @@ Authored walkthrough illustration. Publishing a port forwards traffic; it does n
 4. Ask for `docker version` and `docker compose version`. The first command must show a reachable server as well as a client. Docker Desktop's engine is the program running containers; having the app installed does not prove the engine is ready. A permission or engine error needs diagnosis before continuing. Do not expose Docker's socket or disable protections to make it work.
 
 ## Run the same app in a container
+
+Start from updated local `main` in your app repository. Create a `local-containers` branch before adding the Compose file.
 
 ```text
 Read lesson 6. Work in work/tiny-wins. Stop our existing Vite server.
@@ -53,7 +55,7 @@ Before starting it, point to the app-folder mount and the `127.0.0.1` port bindi
 
 If the port is busy, identify the process before stopping anything. If you choose another port, expect a separate browser-storage list. Never run a whole-machine prune to fix one project.
 
-Review and commit the Compose file in your app repository. If you used a feature branch, [merge and update local `main`](../docs/local-workflow.md#finish-a-feature-branch) before lesson 7.
+Review and commit the Compose file, then [merge and update local `main`](../docs/local-workflow.md#finish-a-feature-branch) before lesson 7.
 
 ## Try it yourself
 

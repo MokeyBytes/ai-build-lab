@@ -1,6 +1,6 @@
 # Your desktop coding workspace
 
-Use Codex desktop or Claude Desktop's Code tab from the first lesson. Choose one. The AI teaches from the repository while it works on the app with you.
+Use this page if you need help choosing or reviewing a desktop workspace. Follow [Start here](../START-HERE.md) for the download and folder-opening steps.
 
 Desktop setup and its official sources reviewed on October 19, 2026. These steps still need beginner testing on fresh Windows and macOS systems.
 
@@ -8,6 +8,8 @@ Desktop setup and its official sources reviewed on October 19, 2026. These steps
 | --- | --- | --- |
 | Codex desktop | [Desktop guide](https://learn.chatgpt.com/docs/app), [local projects](https://learn.chatgpt.com/docs/projects?surface=app) | In the current documented ChatGPT desktop app, select Codex and add the repository folder as a local project |
 | Claude Desktop's Code tab | [Desktop quickstart](https://code.claude.com/docs/en/desktop-quickstart), [desktop reference](https://code.claude.com/docs/en/desktop) | Code tab, Local environment, then the repository folder |
+
+Before installing, check the linked app's supported OS and processor. The Codex Mac download is labeled Apple Silicon. Claude provides a universal Mac installer and separate x64/ARM64 Windows installers. Ask the tutor to identify your processor if you are unsure.
 
 Claude's Code tab is the graphical Claude Code experience used here. Its Chat and Cowork workspaces have different purposes and controls. Follow the Code instructions for the exercises.
 
@@ -25,13 +27,9 @@ Ask the AI to pause after each meaningful step. Start with explanations and one-
 
 ## Review and permissions
 
-Read the [Codex permission guidance](https://learn.chatgpt.com/docs/agent-approvals-security) or [Claude Code permission guidance](https://code.claude.com/docs/en/permissions). Use the app's controls to restrict actions. An instruction to wait is useful, but it does not replace those controls.
-
-Begin with Codex's **Ask for approval** or Claude Code's **Manual** mode. Codex's workspace edits may run without an individual prompt; Claude's Manual mode asks for edits and commands that need permission. For either tool, ask for a text preview before applying the first edit. [The safety walkthrough](ai-safety.md#check-access-before-the-first-edit) shows the controls and provides read-only practice in lesson 0.
+Use lesson 0's [safety walkthrough](ai-safety.md#check-access-before-the-first-edit) to choose the permission mode and practice reviewing requests. It explains how a preview request differs from an enforced restriction.
 
 Both desktop workflows provide ways to inspect changed files. See [Codex's local development and Git controls](https://learn.chatgpt.com/docs/environments/local-environment) and Claude's desktop reference above. If a diff view needs Git history that your downloaded folder does not have, compare the printed before/after lines and inspect the file. Introduce Git in the next lesson rather than assuming a ZIP includes it.
-
-Use one local session and one project folder for the first exercise. Worktrees, remote sessions, and cloud execution can come later. If the app requests a missing prerequisite, check its current official guide before installing anything.
 
 Current Claude Desktop can use a direct Local session before Git is installed. Its [Git troubleshooting section](https://code.claude.com/docs/en/desktop#git-and-git-lfs-errors) says older Windows versions asked for Git for every local session. Update the app if that happens in a direct Local session. A worktree still needs Git. Lesson 2 introduces Git for saving app history.
 
@@ -41,10 +39,6 @@ For lesson 2 onward, [Find your files and resume work](local-workflow.md) explai
 
 [AGENTS.md](../AGENTS.md) holds the tutor workflow. [Codex reads AGENTS.md](https://learn.chatgpt.com/docs/agent-configuration/agents-md). [CLAUDE.md](../CLAUDE.md) imports it through [Claude Code's documented import syntax](https://code.claude.com/docs/en/memory).
 
-Use the exact names `AGENTS.md` and `CLAUDE.md`, including capitalization. They are Markdown text files the coding apps load, not programs you run to start a session. Our `CLAUDE.md` contains `@AGENTS.md` so both tools use the same course rules. These instruction-file details were checked on October 19, 2026.
+Our `CLAUDE.md` contains `@AGENTS.md` so both tools use the same course rules. Keep shared instructions in `AGENTS.md` rather than copying them into both files.
 
-For Markdown, conditional guidance, command hooks, context injection, and model-based hooks, try optional [lesson 5a](../lessons/05a-instructions-and-hooks.md) after the testing lesson. It includes current official sources and an uninstalled demo.
-
-[Lesson 5b](../lessons/05b-skills-mcp-and-plugins.md) follows with skills, MCP servers, and plugins. It shows both desktop apps' controls, a small skill, and optional connection examples. Those extension instructions were source-checked on October 19, 2026. Add them when a task needs them.
-
-An editor extension or terminal client is an optional entry point later. The main course uses the desktop workspace.
+After lesson 5, optional [lesson 5a](../lessons/05a-instructions-and-hooks.md) explains instructions and hooks. [Lesson 5b](../lessons/05b-skills-mcp-and-plugins.md) covers skills, MCP servers, and plugins. Neither is required for the core app lessons.

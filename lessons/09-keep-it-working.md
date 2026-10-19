@@ -4,9 +4,9 @@ You will restore an exported task list, review service usage, and update one dep
 
 Allow 45 to 60 minutes after lesson 8, or after lesson 7 if you stayed local. The restore exercise uses a disposable browser copy. It needs no paid backup product.
 
-![Illustration showing task export, a separate empty restore copy, and a comparison of restored titles and completion states.](../docs/images/09-recovery.svg)
+![Illustration showing task export, a separate empty restore copy, and a comparison of restored titles, IDs, creation times, and completion states.](../docs/images/09-recovery.svg)
 
-Authored walkthrough illustration. A backup is useful only after you demonstrate that you can restore it.
+A backup is useful only after you demonstrate that you can restore it.
 
 ## Export and restore your tasks
 

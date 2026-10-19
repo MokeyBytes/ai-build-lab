@@ -11,7 +11,7 @@ Official documentation checked on **October 19, 2026**. App integration still ne
 Ask the AI to open the course's `AGENTS.md` and `CLAUDE.md` and explain their contents without changing them.
 
 - **`AGENTS.md`** is the project instruction file used by Codex. Use that exact spelling and capitalization. [Official OpenAI guide](https://learn.chatgpt.com/docs/agent-configuration/agents-md).
-- **`CLAUDE.md`** is Claude Code's project instruction file. Here it contains `@AGENTS.md`, which imports our shared instructions. Current Claude Code can also load `AGENTS.md` directly depending on version and settings. Keeping the import supports sessions that need it. [Claude's instruction and import guide](https://code.claude.com/docs/en/memory).
+- **`CLAUDE.md`** is Claude Code's project instruction file. Here it contains `@AGENTS.md`, which imports our shared instructions. [Claude's instruction and import guide](https://code.claude.com/docs/en/memory).
 
 The apps discover these files; you do not execute them to start the app. Keep shared rules in one place. Two copied rulebooks become easy to contradict.
 
@@ -23,7 +23,7 @@ The filename and the app's loader determine how the text is used. `README.md` ex
 
 ![Illustration comparing Markdown guidance, an event-triggered command with a testable result, and added context that the model still has to interpret.](../docs/images/05a-instructions-hooks.svg)
 
-Authored walkthrough illustration. A reminder to run a check and a program that runs the check have different effects.
+A reminder to run a check and a program that runs the check have different effects.
 
 | Mechanism | Tiny Wins example | What it establishes |
 | --- | --- | --- |

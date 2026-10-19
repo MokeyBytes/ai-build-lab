@@ -8,7 +8,7 @@ Get this repository, open the folder in Codex desktop or Claude Desktop's Code t
 
 No coding experience is required. The first session uses your AI app, a project folder, and a browser. A separate code editor and terminal client are optional.
 
-Beginner walkthrough reviewed on **October 19, 2026**. See [tool choices and official sources](docs/tools-and-costs.md) and [what has actually been tested](docs/validation.md).
+See [tool choices and official sources](docs/tools-and-costs.md) and [what has actually been tested](docs/validation.md).
 
 ## Get the guide
 

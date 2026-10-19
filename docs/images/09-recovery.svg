@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1080" height="460" viewBox="0 0 1080 460" role="img" aria-labelledby="title desc"><title id="title">Practice restoration on a separate copy</title><desc id="desc">Keep the original list. Test invalid backups without changing restored data.</desc>
 <rect width="1080" height="460" rx="16" fill="#f2f6fa"/>
 <style>text{font-family:Arial,Helvetica,sans-serif;fill:#172a3a}.heading{font-size:32px;font-weight:700}.label{font-size:22px;font-weight:700}.body{font-size:20px}.foot{font-size:18px}</style>
-<text x="38" y="44" class="foot">AI BUILD LAB  /  WALKTHROUGH ILLUSTRATION  /  2026-10-18</text>
+<text x="38" y="44" class="foot">AI BUILD LAB  /  WALKTHROUGH ILLUSTRATION  /  2026-10-19</text>
 <text x="38" y="91" class="heading">Practice restoration on a separate copy</text>
 <rect x="38" y="127" width="318" height="230" rx="12" fill="#ffffff" stroke="#bccbd6"/>
 <rect x="38" y="127" width="318" height="6" rx="3" fill="#087e8b"/>
@@ -19,8 +19,8 @@
 <rect x="722" y="127" width="318" height="230" rx="12" fill="#ffffff" stroke="#bccbd6"/>
 <rect x="722" y="127" width="318" height="6" rx="3" fill="#087e8b"/>
 <text x="741" y="174" class="label">3  Compare the result</text>
-<text x="741" y="214" class="body">Check titles, IDs,</text>
-<text x="741" y="243" class="body">completed states, counts,</text>
-<text x="741" y="272" class="body">and refresh.</text>
+<text x="741" y="214" class="body">Check titles, IDs, creation</text>
+<text x="741" y="243" class="body">times, completion states,</text>
+<text x="741" y="272" class="body">counts, and refresh.</text>
 <text x="38" y="398" class="foot">Keep the original list. Test invalid backups without changing restored data.</text>
 </svg>

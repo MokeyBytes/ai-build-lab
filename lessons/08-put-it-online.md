@@ -8,7 +8,7 @@ Deploying means putting a built version on a service other people can reach. The
 
 ![Illustration showing reviewed source on GitHub, built browser assets on Cloudflare, and account data in a separate Supabase project.](../docs/images/08-hosting.svg)
 
-Authored walkthrough illustration. A private source repository does not make a deployed URL private. Account policies protect the data.
+A private source repository does not make a deployed URL private. Account policies protect the data.
 
 ## Prepare before publishing
 
@@ -21,12 +21,12 @@ Do the local preparation first. Wait for my separate decision before creating
 hosted resources, changing a remote database, or publishing the app.
 ```
 
-1. Confirm lesson 7's access checks passed. Run `npm run check`. Record the exact app commit ID and verify it is pushed to your GitHub repo.
+1. From clean, updated local `main`, create a `hosting-setup` branch. Confirm lesson 7's access checks passed and run `npm run check`.
 2. Ask the AI to explain [Workers static assets](https://developers.cloudflare.com/workers/static-assets/) and [the configuration example](https://developers.cloudflare.com/workers/static-assets/binding/). This app serves browser assets from `dist/`; Supabase supplies the backend. It does not need a custom Worker API yet.
 3. Add the pinned Wrangler version from the reference as a development dependency. Copy and review [wrangler.jsonc](../reference/tiny-wins/wrangler.jsonc). Choose your own project name and retain the reviewed compatibility date. The assets directory must be `dist`, never the app's source folder.
 4. Add the reference's `workers:dev` and `deploy` scripts. `npm run build` creates the assets. `npm run workers:dev` serves them locally through Cloudflare's development runtime at `http://127.0.0.1:8787`. Check the built app there, then stop that server. Its browser storage is separate from port 5173.
-   Ask the AI to report any privileged credentials or private data in tracked files and this build by filename and setting name, without printing their values. Fix any findings before publishing. Public Supabase publishable keys are expected; privileged keys and login credentials are not. [Vite's browser-variable guidance](https://vite.dev/guide/env-and-mode#env-variables) explains why a local environment file does not keep a bundled value secret. Repeat this review for the final hosted-settings build before upload.
 5. Review [Workers pricing](https://developers.cloudflare.com/workers/platform/pricing/), [static asset limits](https://developers.cloudflare.com/workers/static-assets/billing-and-limitations/), and [Supabase billing](https://supabase.com/docs/guides/platform/billing-on-supabase). Use the Free plans for this pilot if they meet your needs. Avoid custom domains, paid add-ons, and upgrades. Know where to view usage. Do not treat alerts as hard spending caps.
+6. Review and commit the hosting files and lockfile. [Merge the branch and update local `main`](../docs/local-workflow.md#finish-a-feature-branch). Record this commit as the source version for the pilot. The hosting configuration must be saved before you deploy it.
 
 You can keep the app local here. If you choose to continue, state that you want a hosted pilot with fake data and understand that the app URL will be public.
 
@@ -43,7 +43,7 @@ The app currently offers sign-in for existing test users. It does not offer publ
 ## Publish the browser app
 
 1. Copy `.env.example` to `.env.production.local`. Put only the hosted project URL and **publishable** key in that ignored file. Keep `.env.local` for local Supabase. `npm run build` uses production settings; `npm run dev` uses development settings. Ask the AI to check for inherited settings that could override either file. [Vite's environment and mode rules](https://vite.dev/guide/env-and-mode#env-files).
-2. Run `npm run build`. The public `VITE_` values go into `dist` and are visible to visitors. Have the AI verify the target and check for accidental localhost URLs or privileged credentials without printing credentials.
+2. Run `npm run build`. The public `VITE_` values go into `dist` and are visible to visitors. Have the AI verify the target and inspect tracked files and `dist` for private data, credentials, or accidental localhost URLs. Report filenames and setting names without their values. A Supabase publishable key is expected public configuration. Fix any findings before upload. [Vite's browser-variable guidance](https://vite.dev/guide/env-and-mode#env-variables).
 3. Run the built app locally through `npm run workers:dev`. Sign in and check the hosted data, then sign out. Stop the server.
 4. Sign in to your Cloudflare account using Wrangler's official login flow. `npx --no-install wrangler whoami` helps check the account. Review the project name, source commit, plan, and files to upload. A GitHub push alone does not deploy in this manual route.
 5. After your publishing decision, `npm run deploy` uploads `dist` and creates a deployment. Record the returned `workers.dev` URL and version ID. This route does not need a purchased domain. [Static-assets getting started](https://developers.cloudflare.com/workers/static-assets/get-started/).

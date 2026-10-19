@@ -6,7 +6,7 @@ Allow one or two sessions after lesson 9. Choose a change that fits the existing
 
 ![Illustration of a learner choosing a feature, reviewing a small implementation, and presenting evidence plus recovery steps.](../docs/images/10-own-feature.svg)
 
-Authored walkthrough illustration. You own the goal and the acceptance decision.
+You own the goal and the acceptance decision.
 
 ## Choose a small change
 

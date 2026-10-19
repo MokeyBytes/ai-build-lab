@@ -52,6 +52,6 @@ Use the same process for an independent exercise that changes files. If you alre
 
 ## Stop for the day
 
-Ask the tutor to create or update `.learning/progress.md` using [the progress template](../templates/progress.md). Read any existing note first and preserve information you still need. This ignored folder keeps personal notes out of course commits. Record both folder paths, lesson and step, branch, last verified commit, and which services were running. Keep credentials out of the note.
+Use [Save your progress](../START-HERE.md#save-your-progress). Include both folder paths, the branch and last verified commit, and the services you will need next time.
 
 Stop the web server's task with its stop control or Ctrl+C in that task. In lesson 6 use `docker compose stop`; in lesson 7 use `npx --no-install supabase stop` to stop that app's stack while retaining local data. The AI should explain and run the command in the app folder. You can leave unrelated projects running.

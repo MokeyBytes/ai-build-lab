@@ -14,7 +14,7 @@ Ask the AI to open the relevant sections of [React's from-scratch guide](https:/
 
 ![Illustration of the AI preparing a React app, a local development server on port 5173, and a browser checking tasks.](../docs/images/03-local-app.svg)
 
-Authored walkthrough illustration. A local server runs on your computer while you work.
+A local server runs on your computer while you work.
 
 ## Prepare the app
 

@@ -6,7 +6,7 @@ Allow 60 to 90 minutes after lesson 6. This lesson runs Supabase on your compute
 
 ![Illustration showing two signed-in users reaching the same database while ownership policies keep their task rows separate.](../docs/images/07-user-data.svg)
 
-Authored walkthrough illustration. Hiding a task in the interface does not protect it. The database must enforce access.
+Hiding a task in the interface does not protect it. The database must enforce access.
 
 ## Learn the roles
 
@@ -17,6 +17,8 @@ The publishable key identifies the app. A signed-in user's session identifies th
 PostgreSQL is the database. Supabase also supplies account sign-in, a browser dashboard called Studio, and an API the app calls. A migration is a saved SQL file describing a database change. SQL is the language used to define and query these tables. You will review the supplied migration before applying it.
 
 ## Start local Supabase
+
+From updated local `main`, create an `accounts-and-data` branch in your app repository. Keep the migration and account feature together for review.
 
 ```text
 Read lesson 7 and the current Supabase changelog and local-development docs.

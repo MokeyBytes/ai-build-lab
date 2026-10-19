@@ -6,7 +6,7 @@ Allow 45 to 60 minutes after lesson 4. Start from the updated app `main` and [re
 
 ![Illustration of a task saved to browser storage, restored on refresh, and checked by a test.](../docs/images/05-storage-tests.svg)
 
-Authored walkthrough illustration. Browser storage belongs to one browser profile and origin.
+Browser storage belongs to one browser profile and origin.
 
 ## Keep the list after refresh
 

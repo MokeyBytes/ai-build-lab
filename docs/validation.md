@@ -1,58 +1,42 @@
 # Validation
 
-Beginner walkthrough and official-source review completed on **October 19, 2026**. The original backend verification dates from **October 18, 2026**. The core lessons are written. Documentation review, automated checks, and a beginner completing the walkthrough are different evidence.
+The latest guide and official-source review is from **October 19, 2026**. Backend tests retain their **October 18, 2026** evidence. Source review, automated checks, and a beginner completing the walkthrough establish different things.
 
-## Documentation review
+## Current guide review
 
-The lessons link official documentation beside the relevant claims. The review covers Git and GitHub identity, repository-specific settings, HTTPS credential managers, SSH, signing, pull requests, current desktop AI access, supported runtimes, React/Vite setup, browser storage, keyboard controls, containers, Supabase authentication and ownership, Workers static assets, costs, and recovery.
+The review followed setup and lessons 0 through 10, including the optional side lessons, examples, prompts, glossary, and images, for a Windows or Mac beginner. It removed repeated permission explanations and the safety guide's preview of later tools. Each later security check stays beside its tool. README.md contains no review date; dated source evidence remains here and in [tools and costs](tools-and-costs.md).
 
-Supabase's current changelog was checked for API exposure, key, and runtime changes. Direct package versions were read from the official npm registry, pinned in the [reference manifest](../reference/tiny-wins/package.json), and installed into its lockfile. The reference includes later tools for verification; learners add them only when their lesson needs them.
+The review clarified the initial app-repository check, added explicit branches for containers and accounts, and saved the hosting configuration before recording the deployment's source commit. The final production build gets the publication check. Extension instructions use each desktop's documented controls and share one set of removal steps.
 
-The core revision's linked documentation URLs returned HTTP 200 across the October 18 checks. One obsolete GitHub co-author URL was replaced with its current official page. The instruction and hook sources were reviewed separately on October 19. Reachability alone does not verify a claim; the source-content review checks the guidance.
+The official links and section anchors were rechecked. Source-content review covered the desktop controls, supported runtimes, identity, security boundaries, packages, containers, environment files, database access, hosting, and plan limits. The [security sources](tools-and-costs.md#security-source-checks) identify the supporting guidance. Link reachability alone does not establish that a claim is correct.
+
+All 134 linked external URLs returned HTTP 200 across 122 unique pages, with no missing checked section anchors. Repository checks passed 211 local Markdown links and anchors, 17 SVGs, eight JSON files, matching inactive MCP examples, and the shared Claude import. README.md and its embedded illustration contain no dates.
+
+Every walkthrough image was rendered and compared with its lesson. The recovery image now includes creation times, matching the restore checks. The images are authored illustrations, not captured product screens. The writing review covered all changed prose; the tutor rules received a separate agent-document audit.
+
+This revision changes documentation and one illustration. App code, dependencies, runtime configuration, exercise behavior, and the shared Claude import are unchanged. It does not rerun the earlier app or backend tests or establish fresh Windows/Mac onboarding, browser interaction, desktop enforcement, or beginner completion.
 
 ## October 19 instruction and hook checks
 
-[Lesson 5a](../lessons/05a-instructions-and-hooks.md) links the official references for each mechanism. The review checked Markdown syntax, Codex instruction discovery, Claude's import and direct AGENTS support, hook configuration and trust, supported handler types, event output, desktop settings compatibility, and the distinction from Git hooks.
+[Lesson 5a](../lessons/05a-instructions-and-hooks.md) uses a standalone demo, not an installed hook. Eight command-level tests passed on Node 24.22.0 and Node 26.10.0 on this Mac. They cover a matching deny decision, an ordinary write, keyword-based context, unsupported tools, malformed input, Windows-style path strings, and prompt text treated as data. Path-string tests do not establish Windows execution.
 
-The new official-source URLs and their linked section anchors passed reachability checks on October 19. The new walkthrough SVG parses and its rendered image was inspected for legibility. Local document links, JSON fixtures, and the unchanged shared import also passed checks.
-
-The [standalone demo](../exercises/05a-hooks/README.md) passed eight command-level tests on Node 24.22.0 and Node 26.10.0 on this Mac. It returns a repeatable deny decision for its matching sample event, no decision for an ordinary write, and extra context for its keyword-matched database prompt. Tests also cover Windows-style path strings, unsupported tools, invalid input, and prompt text treated as data. Windows-style input testing does not establish a Windows runtime test.
-
-The configuration example remains inactive. No hook was installed in Codex or Claude Code, and no permissions or trust settings were changed. Desktop event delivery, instruction-file loading, and enforcement still need client-level checks. The hook-only revision did not rerun app or backend checks; later checks have their own scope below.
+Official sources cover instruction loading, imports, handler support, configuration, and trust. No hook was installed in either desktop client. Event delivery and enforcement remain untested.
 
 ## October 19 skills, MCP, and plugin checks
 
-[Lesson 5b](../lessons/05b-skills-mcp-and-plugins.md) adds a skill exercise and optional connection and plugin walkthroughs for both desktop workspaces. The source review checked skill format, discovery paths, explicit and implicit selection, MCP transports and project scope, desktop controls, plugin packaging differences, account access, and cost boundaries. The review included the [Codex changelog](https://learn.chatgpt.com/docs/changelog) and [Claude Code changelog](https://code.claude.com/docs/en/changelog).
-
-All 16 official-source URLs in the new lesson and exercise guide returned HTTP 200, including the linked section anchors. The sample `SKILL.md` passed Skill Creator's frontmatter and naming validator. The inactive TOML and JSON settings parse and identify the same official documentation endpoint. The course's practice paths are ignored and contain no active installation. The shared Claude import is unchanged.
-
-The repository check passed 162 local Markdown links and anchors, 13 SVGs, and eight JSON files. The new SVG's rendered image was inspected for legibility. The prose received the full writing review; the skill received a separate agent-instruction review.
-
-No skill discovery, MCP handshake or tool call, or plugin installation was tested in either desktop client for that extension revision. Those walkthroughs still need client-level and beginner checks on Windows and macOS. No credentials, app accounts, user-wide settings, or hosted resources were changed. That revision did not rerun app or backend checks.
+The [lesson 5b](../lessons/05b-skills-mcp-and-plugins.md) skill passed the frontmatter and naming validator. Its inactive TOML and JSON examples parse and identify the same official endpoint. Practice installation paths are ignored and absent. No skill discovery, MCP handshake or tool call, or plugin installation was tested in either desktop client.
 
 ## October 19 beginner walkthrough review
 
-The review followed the repo from ZIP download through lesson 10, including the optional side lessons, reference app, prompts, templates, glossary, recovery instructions, and images. It fixed missing folder, command, server, identity, and branch transitions. The Mac HTTPS route now points to the official package installer. Hooks and extensions remain available as optional side lessons. Local development and a hosted pilot use separate environment files, and backup practice includes its restore control before the practice copy is made.
+Earlier on this Mac with Node 24.22.0, the reference's eight tests, TypeScript check, production build, and eight standalone hook tests passed again. Vite's real environment loader passed a temporary fake-settings check for development/production separation and process-variable precedence.
 
-All 116 linked external URLs returned HTTP 200 and all checked section anchors resolved. Source-content checks covered the product setup, account access, runtime support, credentials, environment precedence, containers, Supabase policies and cost boundaries, Workers deployment, and relevant release notes. The Supabase exposure claim now links the exact announcement. A GitHub-rendered section link was replaced with the installation page and its section name. Reachability is recorded separately from checking what a page says.
-
-All local document links and SVGs passed structure checks. Every walkthrough image was rendered and inspected against its lesson. New illustrations cover ZIP onboarding and the first heading change; the counter illustration uses the supplied HTML's actual labels and expected values. Illustrations remain distinct from product screenshots and browser testing.
-
-On this Mac with Node 24.22.0, the reference's eight tests, TypeScript check, and production build passed again. The eight standalone hook tests passed again. Vite's real environment loader also passed a temporary fake-settings check for separate development/production values and process-variable precedence. A temporary app repository passed local identity setup, staging, commit, single-file restore, and matching local/remote IDs using a disposable bare Git repository. That test did not authenticate to GitHub or exercise an OS credential manager.
-
-This review did not install desktop tools on fresh computers, observe a beginner, test Windows execution, install hooks or extensions in either client, create hosted resources, or rerun the Docker/Supabase lifecycle and isolation checks below. Those backend checks retain their October 18 evidence. Client-level and beginner testing remain release requirements.
+A disposable app repository passed identity setup, staging, commit, single-file restore, and matching IDs after a push to a local bare repository. That check did not authenticate to GitHub or exercise an OS credential manager. These local checks were not rerun for the current text review.
 
 ## October 19 AI safety review
 
-The new [safety walkthrough](ai-safety.md) is part of lesson 0, before the first edit. It adds read-only request cards, a fictional prompt-injection note, and two authored illustrations. Later lessons connect safety checks to GitHub, packages, hooks, extensions, containers, database access, publishing, and leaked-secret recovery. The recovery exercise is a discussion with an invented marker, not a real account operation.
+The [lesson 0 safety exercises](ai-safety.md) contain passive text, an invented credential marker, and no executable script or network destination. Their illustrations match the supplied cards and note. No permission, integration, credential, account, or hosted resource was changed. The credential-recovery exercise is discussion only.
 
-The [security source checks](tools-and-costs.md#security-source-checks) record current official documentation and release-note review separately from practical evidence. The source review covers desktop permission modes, data handling, instruction limits, MCP and hook trust, package installation scripts, Git ignore rules, credentials, container access, and public browser settings. The existing app code, dependency versions, runtime configuration, and access-check script are unchanged.
-
-All 135 linked external URLs returned HTTP 200 across 123 unique pages, with no missing checked section anchors. The source-content review checked the claims separately from reachability. Repository checks passed 218 local Markdown links and anchors, 17 SVGs, eight JSON files, the unchanged shared Claude import, and the inactive extension examples. Both new illustrations were rendered and inspected against their exercise text.
-
-The exercise files passed checks for passive, non-executable text, the invented marker, and the absence of a network destination. The SVGs include titles and descriptions and no active content or external resources. The prose received the full writing review, and the tutor instructions received a separate agent-document audit. No desktop permission setting, hook, integration, account, or hosted resource was changed for the review.
-
-Neither Codex nor Claude was tested for sandbox enforcement or prompt-injection resistance. Observing a model identify the fictional note would not establish either property. Fresh Windows/Mac sessions and beginner completion remain unperformed checks. App and backend results above and below keep their original dates and scope; this documentation addition does not claim a new runtime test.
+Neither desktop client was tested for sandbox enforcement or prompt-injection resistance. A model identifying the fictional note would not establish either property.
 
 ## October 18 app and backend evidence
 
@@ -77,6 +61,7 @@ The first HTML exercise also retains its earlier script syntax and stand-in DOM 
 ## Manual checks still needed
 
 - A beginner completing the desktop workflow on fresh supported Windows and macOS setups, including installation, local folder access, edits, review, and targeted recovery.
+- Desktop instruction and skill loading, hook enforcement, MCP connections, and plugin installation on both platforms. Read-only safety practice is not a test of these controls.
 - A fresh GitHub account's credential-manager login, private-repository creation, push, and pull request flow on both platforms. The identity guidance is source-checked; these onboarding sessions were not performed.
 - Actual browser clicks, keyboard navigation, storage errors, file export/import, responsive layout, and sign-in/out interface behaviour. The browser tool blocked the original local `file:` exercise. No product screenshots or browser interaction results are claimed here.
 - A dedicated hosted Supabase pilot, production API isolation checks, Cloudflare publication, phone access, and a live deployment rollback. No hosted resources were created for this revision.

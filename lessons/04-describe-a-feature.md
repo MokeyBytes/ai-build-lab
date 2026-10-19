@@ -6,7 +6,7 @@ Allow 30 to 45 minutes after lesson 3. Use the same app folder and desktop AI. N
 
 ![Illustration showing a user's need, written acceptance checks, and a small filter change.](../docs/images/04-feature-request.svg)
 
-Authored walkthrough illustration. Decide what success looks like before asking for code.
+Decide what success looks like before asking for code.
 
 ## Turn a need into checks
 

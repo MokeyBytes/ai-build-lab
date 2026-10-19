@@ -36,9 +36,7 @@ Our [tool and cost checks](../docs/tools-and-costs.md) record dated source revie
 
 ## Work safely before editing
 
-Complete [Work safely with AI](../docs/ai-safety.md) now. Inspect your app's permission mode, discuss the fictional request cards, and identify the attempted redirection in a supplied support note. The exercises use text files and an invented credential marker. They require no installation, upload, or settings bypass.
-
-Return here after explaining the safety checkpoint in your own words. Use this same check when a later lesson introduces a new tool.
+Complete [Work safely with AI](../docs/ai-safety.md) now, then return here. It provides the permission check and read-only exercises. Later lessons introduce security checks alongside the tool they concern.
 
 ## Try it yourself
 
