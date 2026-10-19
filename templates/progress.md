@@ -8,6 +8,8 @@ AI desktop app and local project folder:
 
 AI app version, if known:
 
+Observed permission mode, or ordinary chat without a desktop check:
+
 App folder and GitHub owner/repo, if created:
 
 Branch and last verified commit ID:

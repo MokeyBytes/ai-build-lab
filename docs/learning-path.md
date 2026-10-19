@@ -8,7 +8,7 @@ Follow lessons 0 through 10 in order. Lessons 5a and 5b are optional side lesson
 
 | Lesson | The learner directs the AI to do | Evidence of completion |
 | --- | --- | --- |
-| [0. Read the docs](../lessons/00-read-the-docs.md) | Find a reference and explain one relevant section | Identifies the source and explains a heading versus a tab title |
+| [0. Read the docs](../lessons/00-read-the-docs.md) | Check a reference, inspect permissions, and review fictional requests | Explains a heading versus a tab title and identifies an attempt to redirect the AI |
 | [1. Your first change](../lessons/01-your-first-change.md) | Propose, apply, and undo a one-line edit | Inspects the change and checks the page and button independently |
 | [2. Keep your work](../lessons/02-keep-your-work.md) | Set Git identity, commit, recover an edit, authenticate, and push to the learner's own GitHub repo | Checks author, committer, destination, and matching local/remote commit IDs |
 | [3. Build Tiny Wins](../lessons/03-build-tiny-wins.md) | Build a React, TypeScript, and Vite app in small steps | Verifies tasks and reviews a pull request |

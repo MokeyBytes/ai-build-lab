@@ -4,6 +4,10 @@
 | --- | --- |
 | AI assistant | A tool you can ask to explain, plan, write, or review work. Its answers need checking |
 | Agent | An AI assistant with tools that let it act, such as editing a file or running a command |
+| Permission | Access a tool or account allows, such as reading files or changing records |
+| Sandbox | Enforced restrictions on what a program can access; the restrictions depend on its configuration |
+| Least privilege | Giving a tool only the access needed for its task |
+| Prompt injection | Content that tries to redirect the AI from its authorized task |
 | Markdown, or `.md` | Plain text with simple formatting marks for headings, lists, and links |
 | Instruction file | A document the coding app loads to guide the model, such as `AGENTS.md` or `CLAUDE.md` |
 | Hook | An event-triggered handler configured in a tool, such as a command run before a tool call |
@@ -50,5 +54,7 @@
 | Authorization | Deciding what that user may access or change |
 | Row-level security, or RLS | Database rules that control access to individual records |
 | Secret | A credential such as a password or privileged API key |
+| Revoke | Invalidate a credential or remove an application's access |
+| Rotate a credential | Replace a credential and invalidate the old one |
 | Deploy | Put a version of an app into an environment where people can use it |
 | Rollback | Return an app to a previous version. Database changes may need separate recovery |

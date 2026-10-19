@@ -49,7 +49,7 @@ Select the folder containing `AGENTS.md`. A chat with uploaded files can have di
 
 `AGENTS.md` and `CLAUDE.md` are the instruction files for our coding tools. `.md` means Markdown text. You open the project in the app; you do not run these files. Keep their exact names, without an extra `.txt` extension. [How both tools share the instructions](docs/coding-agents.md#shared-tutor-instructions).
 
-Keep the app's permission controls active. The first step asks the AI to read and explain. In Claude Code, **Manual** mode lets you approve proposed edits. For Codex, use its documented permission controls and request a preview before an edit. The prompt does not enforce permissions.
+Keep the app's permission controls active. Begin with **Ask for approval** in Codex or **Manual** in Claude Code. Codex can still edit workspace files without an individual prompt, so request a preview before the first edit. [Work safely with AI](docs/ai-safety.md#check-access-before-the-first-edit) shows the documented controls and their limits.
 
 Paste:
 
@@ -57,7 +57,7 @@ Paste:
 Read AGENTS.md and START-HERE.md. Let's start.
 ```
 
-The tutor should begin [lesson 0](lessons/00-read-the-docs.md), show a documentation source, and give one small step. It should ask about your computer and account access when those details matter.
+The tutor should begin [lesson 0](lessons/00-read-the-docs.md), show a documentation source, and give one small step. Lesson 0 includes read-only safety practice before you edit anything. It should ask about your computer and account access when those details matter.
 
 ## Keep control of the work
 

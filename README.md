@@ -32,9 +32,10 @@ Read AGENTS.md and START-HERE.md. Let's start.
 ## Your first session
 
 1. Ask the AI to explain a short piece of documentation and show its source.
-2. Open the small exercise in your browser.
-3. Ask for one heading change and inspect the proposed change.
-4. Let the AI apply it, check the page yourself, then ask it to undo that edit.
+2. Complete [Work safely with AI](docs/ai-safety.md), part of lesson 0. Inspect permissions and discuss fictional requests before making an edit.
+3. Open the small exercise in your browser.
+4. Ask for one heading change and inspect the proposed change.
+5. Let the AI apply it, check the page yourself, then ask it to undo that edit.
 
 The exercise needs no app hosting, database account, or model API key. Your AI app still needs its own eligible access and available usage.
 

@@ -48,6 +48,27 @@ The exercises in lessons 0 and 1 need no cloud app account or model API key. The
 
 Review the plan and usage controls before creating hosted resources. A usage alert does not by itself establish a hard spending cap. Save progress when a free AI allowance runs out. Upgrades remain an explicit choice.
 
+## Security source checks
+
+The [safety walkthrough](ai-safety.md) and related lesson additions were checked against these current sources on **October 19, 2026**. This review adds no required service or security software. The text exercises use the existing AI allowance. These are documented capabilities and course recommendations, not results from testing each desktop client.
+
+| Topic | Supporting official guidance and course decision |
+| --- | --- |
+| Codex permissions | [Permission modes](https://learn.chatgpt.com/docs/permission-modes), [sandboxing](https://learn.chatgpt.com/docs/sandboxing), and [agent approvals](https://learn.chatgpt.com/docs/agent-approvals-security). Begin with Ask for approval. Routine workspace actions can run without a prompt; requesting a preview is a separate learning step. Read restrictions, command networking, web tools, and connections need their own review |
+| Claude desktop permissions | [Desktop mode selector](https://code.claude.com/docs/en/desktop#choose-a-permission-mode) and [security](https://code.claude.com/docs/en/security). Use Manual for supervised local practice. A command approved without sandbox restrictions can have broader access than a file-tool prompt suggests |
+| Data handling | [Codex's documented data flow](https://learn.chatgpt.com/docs/hipaa-configuration#shared-responsibility) and [Claude data usage](https://code.claude.com/docs/en/data-usage). Local files can enter model requests. Check the actual account's terms before using real work data; this course uses invented data |
+| Prompt injection and instructions | [OWASP prompt injection](https://genai.owasp.org/llmrisk/llm01-prompt-injection/) and [system-prompt leakage guidance](https://genai.owasp.org/llmrisk/llm072025-system-prompt-leakage/). Explain attempted redirection and enforce access outside model instructions. One successful exercise does not establish resistance to every attack |
+| Extensions and hooks | [Claude MCP security](https://code.claude.com/docs/en/security#mcp-security), [Claude hook security](https://code.claude.com/docs/en/hooks#security-considerations), and [Codex hooks](https://learn.chatgpt.com/docs/hooks). Review programs, permissions, data destinations, and removal steps before enabling an addition |
+| Packages | [npm installation lifecycle scripts](https://docs.npmjs.com/cli/v11/using-npm/scripts/). Installing dependencies can execute code. Review the package and release; preserve the lockfile |
+| Git and credentials | [Ignored files](https://docs.github.com/en/get-started/git-basics/ignoring-files) and [exposed-secret recovery](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository). Git ignore rules do not restrict an AI's file access. Invalidate an exposed credential before considering coordinated history cleanup |
+| Account protection | [GitHub's 2FA setup](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication). Configure the account's additional sign-in check privately and save recovery codes outside the project |
+| Containers | [Docker security](https://docs.docker.com/engine/security/) and [bind mounts](https://docs.docker.com/engine/storage/bind-mounts/). The course reviews the existing app-folder mount and loopback port. It adds no host-wide folder or Docker-socket access |
+| Browser and database | [Vite browser variables](https://vite.dev/guide/env-and-mode#env-variables), [Supabase keys](https://supabase.com/docs/guides/getting-started/api-keys), and [RLS](https://supabase.com/docs/guides/database/postgres/row-level-security). Public configuration is separate from privileged credentials. Keep the existing direct API ownership checks |
+
+The review included the current [Codex changelog](https://learn.chatgpt.com/docs/changelog), [Claude Code changelog](https://code.claude.com/docs/en/changelog), and [Supabase changelog](https://supabase.com/changelog). Supabase's [October 6 scoped-token announcement](https://supabase.com/changelog/scoped-personal-access-tokens-ga) supports limiting future integration access to needed projects and permissions. The core course needs no new management token. The [November 10 TLS change](https://supabase.com/changelog/cbc-tls-ciphers-deprecated) concerns old cipher support; these documentation additions introduce no new client runtime.
+
+See [validation](validation.md#october-19-ai-safety-review) for the checks performed and those still needed.
+
 ## Later routes
 
 A separate [instructions and hooks lesson](../lessons/05a-instructions-and-hooks.md) was source-checked on October 19, 2026. Its local demo uses the existing Node runtime and no model API calls. Model-based hooks add model work and are not a no-cost guarantee. Check support in the linked Codex and Claude references before enabling them.

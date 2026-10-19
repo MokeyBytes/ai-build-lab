@@ -85,6 +85,8 @@ This demonstrates the handler's output. It does not prove that your installed de
 
 The exercise includes an inactive [configuration example](../exercises/05a-hooks/hooks.example.json). Keep it there while learning. If you later choose to install it, ask the AI to inspect your existing settings, identify the actual desktop environment and absolute script path, and prepare a reviewed merge. Preserve existing hooks and trust controls. Test both a matching and non-matching event in that client, then demonstrate disabling only the new hook.
 
+Review a command hook as a program that will run on your computer. Check what it reads, writes, and contacts before enabling it. A hook installed for safety still needs this review. [Codex hook trust](https://learn.chatgpt.com/docs/hooks), [Claude hook security](https://code.claude.com/docs/en/hooks#security-considerations).
+
 Codex currently supports command and MCP-tool handlers; its docs say `prompt` and `agent` handlers are parsed but skipped. Claude Code supports prompt-based evaluation on selected events and experimental agent-based evaluation. These settings are not interchangeable. Check the linked references before copying a configuration. Model-based evaluation uses additional model work; do not assume that it is free.
 
 A Git hook is another mechanism. It runs on a Git event such as a commit, rather than a coding agent's lifecycle. A local hook can be absent or bypassed. Use CI and applicable GitHub rules for checks the shared repository must enforce. [Git hooks](https://git-scm.com/docs/githooks), [GitHub rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets).

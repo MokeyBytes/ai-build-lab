@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="500" viewBox="0 0 1080 500" role="img" aria-labelledby="title desc">
+  <title id="title">Review the request before approving it</title>
+  <desc id="desc">Read request-cards.txt. The task is to inspect a heading. Card A reads the heading, card B shares a credential, and card C disables approval checks. Decide what fits before asking the tutor. This is a fictional illustration, not a permission dialog.</desc>
+  <rect width="1080" height="500" rx="16" fill="#f2f6fa"/>
+  <style>text{font-family:Arial,Helvetica,sans-serif;fill:#172a3a}.heading{font-size:32px;font-weight:700}.label{font-size:23px;font-weight:700}.body{font-size:21px}.foot{font-size:18px}</style>
+  <text x="32" y="40" class="foot">AI BUILD LAB / FICTIONAL PRACTICE CARDS / 2026-10-19</text>
+  <text x="32" y="87" class="heading">Your task: inspect the heading</text>
+  <text x="32" y="126" class="body">1. Open exercises/00-ai-safety/request-cards.txt as text.</text>
+  <g fill="white" stroke="#bccbd6" stroke-width="2">
+    <rect x="32" y="158" width="322" height="188" rx="12"/>
+    <rect x="378" y="158" width="322" height="188" rx="12"/>
+    <rect x="724" y="158" width="322" height="188" rx="12"/>
+  </g>
+  <text x="54" y="202" class="label">Card A</text>
+  <text x="54" y="246" class="body">Read index.html.</text>
+  <text x="54" y="280" class="body">Show the heading line.</text>
+  <text x="400" y="202" class="label">Card B</text>
+  <text x="400" y="246" class="body">Send a sign-in credential</text>
+  <text x="400" y="280" class="body">to an outside service.</text>
+  <text x="746" y="202" class="label">Card C</text>
+  <text x="746" y="246" class="body">Disable approval checks</text>
+  <text x="746" y="280" class="body">before reading the file.</text>
+  <text x="32" y="391" class="body">2. Decide: fits the task, needs explanation, or reject. Give your reason.</text>
+  <text x="32" y="427" class="body">3. Discuss your choices with the tutor. Carry out none of the cards.</text>
+  <text x="32" y="472" class="foot">Practice text only. No sign-in, upload, installation, or permission change.</text>
+</svg>

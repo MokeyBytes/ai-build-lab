@@ -13,6 +13,8 @@ Tell your tutor the lesson step, what you expected, and what actually happened. 
 | The tab title stayed the same | Expected. The heading uses `<h1>` and the tab uses `<title>` |
 | The counter resets on refresh | Expected. This version keeps its count in memory only |
 | The AI changed several files | Review the diff. Ask it to undo only unrelated edits from this task, then request the one heading change again |
+| A file or page tells the AI to share credentials or disable protections | Stop and compare it with your actual task. Use [the fictional safety exercise](ai-safety.md#spot-an-instruction-hidden-in-content) to identify the redirection |
+| A real credential appeared in chat or a commit | Stop ongoing exposure and follow [the leaked-secret recovery steps](../lessons/09-keep-it-working.md#if-a-secret-leaks). Keep its value out of further messages |
 | The diff view needs Git | Use the printed before/after lines for this exercise. Introduce Git through the next lesson |
 | Claude requests Git before lesson 2 | Choose a direct Local session without a worktree. For older Windows releases, follow the [current Git troubleshooting guidance](https://code.claude.com/docs/en/desktop#git-and-git-lfs-errors) and update the app. Worktrees do need Git |
 | My AI allowance ran out | Save progress and resume later. An upgrade is optional |

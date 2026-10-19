@@ -67,6 +67,8 @@ Use [the branch review steps](../docs/local-workflow.md#finish-a-feature-branch)
 
 If any isolation check fails, stop. Do not publish the app. Fix the grants and ownership policies, then rerun the same checks. Never disable RLS or use a privileged key to make the client work.
 
+Explain why hiding a task or its Delete button is insufficient. The direct API checks must deny the same forbidden action independently of the interface. A passing build or the AI's review does not establish that access rules work.
+
 ## Recover and try it yourself
 
 `npx --no-install supabase stop` stops this local stack while retaining its data. Start it again and verify the tasks. Do not use `db reset` or `stop --no-backup` as a troubleshooting shortcut; those can remove local data.

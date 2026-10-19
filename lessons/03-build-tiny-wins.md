@@ -31,7 +31,7 @@ Show the files you will replace first. Begin with just the heading.
 Do not copy the completed reference App.tsx. Explain each command before running it.
 ```
 
-The [reference folder](../reference/tiny-wins/README.md) is an answer key and a tested toolchain, not a requirement to copy the finished app. Ask for a hint first if you get stuck. Package installs download code; check the package names and official sources before accepting them.
+The [reference folder](../reference/tiny-wins/README.md) is an answer key and a tested toolchain, not a requirement to copy the finished app. Ask for a hint first if you get stuck. Package installs download code and can run [installation scripts](https://docs.npmjs.com/cli/v11/using-npm/scripts/). Before accepting an install, have the AI show the exact package names, publishers, versions, and purpose. Use the official sources and the pinned reference versions. A lockfile records the choice; it does not establish that the code is safe.
 
 4. Have the AI add `dev` and `build` scripts matching the reference. A script is a named command in `package.json`. For `dev`, keep the reference's host, port, and `--strictPort` settings so a busy port produces an error instead of another address. `npm run dev` starts Vite at `http://127.0.0.1:5173`. Open that address in your browser. Leave the server task running while you work. [Starting and stopping the app](../docs/local-workflow.md#reopen-the-app).
 5. Check that the page shows your heading. This app needs the development server. Double-clicking its new `index.html` is no longer the right way to open it.

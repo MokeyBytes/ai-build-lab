@@ -64,6 +64,8 @@ For a mistake that was already committed and shared, ask about `git revert COMMI
 
 A denied push can mean the wrong login, wrong URL, missing permission, or repository rules. A rejected push is a reason to inspect the message. Do not bypass it with `--force`.
 
+An ignored file can still be readable by the AI. `.gitignore` controls tracking, not tool access. If a real credential enters a commit or chat, stop sharing it and follow [the leaked-secret steps](09-keep-it-working.md#if-a-secret-leaks) before continuing. Deleting the line alone does not invalidate the credential.
+
 ## Try it yourself
 
 Write your own request for a one-line README improvement. Review it, commit it, and push it. Show the uploaded change on GitHub. Explain which action saved locally, which action uploaded, and which identity supplied permission.

@@ -20,6 +20,8 @@ Use [Codex desktop or Claude Desktop's Code tab](coding-agents.md) as the tutor 
 - A small request for the AI to explain and do, a recovery step, and an independent learner-written request.
 - Evidence that the learner can do the task and explain it in their own words.
 
+Include the [read-only safety checkpoint](ai-safety.md) in lesson 0 before edits. Introduce later security checks with the tool they concern. Use fictional text and credentials for decision exercises; do not demonstrate unsafe access on a real account. Keep security-source review separate from client enforcement tests.
+
 Use diagrams for relationships and real screenshots for product controls and results. Record capture date and app version, redact private data, and add useful alt text. Text instructions must work without the images.
 
 ## Checks before a tested release

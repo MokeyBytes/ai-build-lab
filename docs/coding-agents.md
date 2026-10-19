@@ -27,7 +27,7 @@ Ask the AI to pause after each meaningful step. Start with explanations and one-
 
 Read the [Codex permission guidance](https://learn.chatgpt.com/docs/agent-approvals-security) or [Claude Code permission guidance](https://code.claude.com/docs/en/permissions). Use the app's controls to restrict actions. An instruction to wait is useful, but it does not replace those controls.
 
-Claude Code's documented **Manual** mode presents proposed changes for acceptance. Codex's approval controls depend on the permission profile; workspace edits may be allowed without a separate prompt for each line. For either tool, ask for a text preview before applying the first edit.
+Begin with Codex's **Ask for approval** or Claude Code's **Manual** mode. Codex's workspace edits may run without an individual prompt; Claude's Manual mode asks for edits and commands that need permission. For either tool, ask for a text preview before applying the first edit. [The safety walkthrough](ai-safety.md#check-access-before-the-first-edit) shows the controls and provides read-only practice in lesson 0.
 
 Both desktop workflows provide ways to inspect changed files. See [Codex's local development and Git controls](https://learn.chatgpt.com/docs/environments/local-environment) and Claude's desktop reference above. If a diff view needs Git history that your downloaded folder does not have, compare the printed before/after lines and inspect the file. Introduce Git in the next lesson rather than assuming a ZIP includes it.
 

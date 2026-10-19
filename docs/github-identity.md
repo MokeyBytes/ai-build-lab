@@ -52,6 +52,8 @@ For AI-assisted work, keep the learner's chosen identity when the learner direct
 
 Use one existing authentication route. A GitHub connection in an AI app does not by itself prove that the local Git process can push.
 
+Protect your GitHub account with two-factor authentication, or 2FA, an additional sign-in check. Follow [GitHub's setup guide](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication) if it is not configured. Complete setup yourself and save recovery codes privately outside the repository. Keep setup QR codes and one-time codes out of chat and screenshots. For an employer-managed account, follow its administrator's sign-in policy.
+
 - On Windows, current **Git for Windows** includes Git Credential Manager. Use its browser login when Git asks for authentication.
 - On Mac, first check for an existing working HTTPS credential helper. If one is missing, open Git Credential Manager's official [installation guide](https://github.com/git-ecosystem/git-credential-manager/blob/main/docs/install.md) and use its **macOS Package** section. Download its package for your processor and follow the installer. This route does not require Homebrew. Restart the AI app if it cannot find the helper.
 - If you already use GitHub CLI, `gh auth login` can configure HTTPS Git authentication. Choose GitHub.com, HTTPS, browser login, and allow it to authenticate Git. `gh auth status` checks the selected account; do not add `--show-token`.

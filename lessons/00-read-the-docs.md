@@ -1,6 +1,6 @@
 # Lesson 0: read the docs with your AI
 
-Your first task is to check an AI explanation against a source. Allow about 10 minutes. Use the desktop workspace from [Start here](../START-HERE.md), or read this lesson in a browser with an ordinary chat if that is the access you have.
+Your first task is to check an AI explanation against a source, then practice reviewing requests safely. Allow 25 to 30 minutes. Use the desktop workspace from [Start here](../START-HERE.md), or read this lesson in a browser with an ordinary chat if that is the access you have.
 
 Use your existing AI allowance. This lesson installs nothing and needs no app-hosting account.
 
@@ -34,10 +34,16 @@ Ask the tutor what you should check before following a setup guide. Look for the
 
 Our [tool and cost checks](../docs/tools-and-costs.md) record dated source reviews. Reopen the official sources before a later installation or purchase.
 
+## Work safely before editing
+
+Complete [Work safely with AI](../docs/ai-safety.md) now. Inspect your app's permission mode, discuss the fictional request cards, and identify the attempted redirection in a supplied support note. The exercises use text files and an invented credential marker. They require no installation, upload, or settings bypass.
+
+Return here after explaining the safety checkpoint in your own words. Use this same check when a later lesson introduces a new tool.
+
 ## Try it yourself
 
 Ask your AI where the text in an HTML `<title>` appears. Request the source and check the answer against [MDN's title reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/title).
 
-You have completed this lesson when you can identify the source and explain the difference between a page heading and its browser-tab title in your own words.
+You have completed this lesson when you can identify the source, explain a heading versus a browser-tab title, and complete the safety checkpoint in your own words. Record which permission controls you actually inspected; ordinary chat does not establish a desktop check.
 
 Continue with [lesson 1](01-your-first-change.md). The AI can help make the change; you will verify the result.

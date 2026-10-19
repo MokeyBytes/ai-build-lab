@@ -42,6 +42,18 @@ On this Mac with Node 24.22.0, the reference's eight tests, TypeScript check, an
 
 This review did not install desktop tools on fresh computers, observe a beginner, test Windows execution, install hooks or extensions in either client, create hosted resources, or rerun the Docker/Supabase lifecycle and isolation checks below. Those backend checks retain their October 18 evidence. Client-level and beginner testing remain release requirements.
 
+## October 19 AI safety review
+
+The new [safety walkthrough](ai-safety.md) is part of lesson 0, before the first edit. It adds read-only request cards, a fictional prompt-injection note, and two authored illustrations. Later lessons connect safety checks to GitHub, packages, hooks, extensions, containers, database access, publishing, and leaked-secret recovery. The recovery exercise is a discussion with an invented marker, not a real account operation.
+
+The [security source checks](tools-and-costs.md#security-source-checks) record current official documentation and release-note review separately from practical evidence. The source review covers desktop permission modes, data handling, instruction limits, MCP and hook trust, package installation scripts, Git ignore rules, credentials, container access, and public browser settings. The existing app code, dependency versions, runtime configuration, and access-check script are unchanged.
+
+All 135 linked external URLs returned HTTP 200 across 123 unique pages, with no missing checked section anchors. The source-content review checked the claims separately from reachability. Repository checks passed 218 local Markdown links and anchors, 17 SVGs, eight JSON files, the unchanged shared Claude import, and the inactive extension examples. Both new illustrations were rendered and inspected against their exercise text.
+
+The exercise files passed checks for passive, non-executable text, the invented marker, and the absence of a network destination. The SVGs include titles and descriptions and no active content or external resources. The prose received the full writing review, and the tutor instructions received a separate agent-document audit. No desktop permission setting, hook, integration, account, or hosted resource was changed for the review.
+
+Neither Codex nor Claude was tested for sandbox enforcement or prompt-injection resistance. Observing a model identify the fictional note would not establish either property. Fresh Windows/Mac sessions and beginner completion remain unperformed checks. App and backend results above and below keep their original dates and scope; this documentation addition does not claim a new runtime test.
+
 ## October 18 app and backend evidence
 
 Tests ran on this Mac with **Node 24.22.0**. The container used `node:24.22.0-bookworm-slim`. Supabase used the pinned **2.121.0** CLI and PostgreSQL 17. Cloudflare used the pinned **4.151.1** Wrangler. Existing local services occupied the default ports, so verification used an isolated Compose project on port 55173, Supabase on 624xx ports, and Wrangler on port 55187. Other projects were left running.

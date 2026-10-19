@@ -30,6 +30,8 @@ The [Compose file](../reference/tiny-wins/compose.yaml) mounts your app folder a
 
 A bind mount makes a computer folder available inside the container. A named volume is storage managed by Docker. You will inspect both in the next steps.
 
+Before starting it, point to the app-folder mount and the `127.0.0.1` port binding in this file. Explain why it needs neither your home folder nor Docker's control socket. Do this by reading the configuration, without trying an unsafe mount. Bind mounts can let container programs change shared files on the computer. [Docker's bind-mount guidance](https://docs.docker.com/engine/storage/bind-mounts/) explains the access; containers need reviewed configuration to provide useful isolation.
+
 1. Have the AI copy and explain the file. It should keep the pinned Node image and your committed npm lockfile.
 2. `docker compose config` checks the resolved configuration without starting it. Confirm the port maps **127.0.0.1:5173** on your computer to port 5173 inside the container. This keeps the development service on your computer's loopback interface.
 3. `docker compose up -d` downloads the image if needed, creates the service and volume, and starts the app. The first install can take a few minutes. Ask for `docker compose ps` and `docker compose logs --tail 30 web`. Wait for Vite's ready message.

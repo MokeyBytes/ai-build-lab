@@ -50,6 +50,14 @@ Finish by [updating local `main`](../docs/local-workflow.md#finish-a-feature-bra
 
 If the update fails, keep the failure evidence. Restore the previous manifest and lockfile on the branch, reinstall with `npm ci`, and recheck. Preserve unrelated work.
 
+## If a secret leaks
+
+Stop the action that is exposing it. Revoke the credential or rotate it, which replaces it and invalidates the old one, through the provider's official account controls. Update legitimate users of that credential privately and check the provider's activity records for unexpected use. A suspicious integration also needs its access revoked or disconnected.
+
+Deleting a chat message, source line, or latest file does not invalidate a credential or remove every copy. For a GitHub leak, follow [GitHub's recovery guide](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository). Coordinate any history cleanup; avoid an automatic force-push or repository reset.
+
+Practice without changing any account. Imagine that `DEMO-NOT-A-REAL-CREDENTIAL` appeared in a shared commit. Tell the tutor what you would stop, which provider control you would use, and why a new commit deleting it is insufficient. This is a discussion exercise. The marker has no access to revoke. Keep real credential values out of the recovery note.
+
 ## Try it yourself
 
 Write a recovery note someone else could follow. Include the backup location, restore destination, checks, source commit, deployed version if any, and what the backup omits. Explain which event needs a source rollback, a data restore, or both. Keep credentials out of the note.

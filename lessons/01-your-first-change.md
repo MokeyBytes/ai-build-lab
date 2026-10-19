@@ -2,6 +2,8 @@
 
 Ask the AI to change a heading, check the result yourself, then have it undo that edit. Allow about 20 minutes after [desktop setup](../START-HERE.md). The exercise uses no hosting or database account; AI access follows your plan.
 
+Finish lesson 0's [safety practice](../docs/ai-safety.md) first. Keep that permission mode active and review the proposed heading change before applying it.
+
 Use [MDN's heading reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements) and [title reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/title) from lesson 0. These sources were checked on October 18, 2026.
 
 ## Open the exercise

@@ -74,6 +74,8 @@ A remote HTTP server runs at the provider. A local STDIO server runs a program o
 
 Other servers may read private records or change them. Check the provider, requested access, and account shown during sign-in. Git commit author and committer settings do not select an MCP connection's signed-in account. See [GitHub identity](../docs/github-identity.md).
 
+For a read-only safety exercise, imagine a task that needs public documentation while an integration asks to manage every repository. Explain why that access exceeds the task and choose the public docs connection instead. Install nothing for this comparison. Read-only access to private records can still disclose them. Review [MCP security](https://code.claude.com/docs/en/security#mcp-security); Anthropic states that it does not security-audit or manage MCP servers.
+
 ## Browse a plugin before installing it
 
 A marketplace is a catalog of plugins. It is not itself a skill or a server. A catalog entry does not establish that every bundled action suits your project. See [Claude's plugin introduction](https://code.claude.com/docs/en/plugins).
